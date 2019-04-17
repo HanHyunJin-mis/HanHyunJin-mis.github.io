@@ -1,6 +1,7 @@
+@import url("https://fonts.googleapis.com/css?family=Ovo");
 html {
   font-size: 15px;
-  font-family: Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,Noto Sans CJK SC,WenQuanYi Micro Hei,Arial,sans-serif;
+  font-family: Ovo, Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,Noto Sans CJK SC,WenQuanYi Micro Hei,Arial,sans-serif;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased; }
 
