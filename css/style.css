@@ -8,19 +8,23 @@ a.tag.article-tag {
 
 @media screen and (min-width: 1024px) {
   .container {
-    max-width: 800px;
+    max-width: 900px;
     width: 800px; }
   .navbar.is-transparent .navbar-dropdown a.navbar-item:hover {
     color: #3273dc; } }
 
 .navbar-main {
   border-bottom: 1px solid #dbdbdb;
-  transition: 0.1s ease-in; }
+  transition: 0.1s ease-in;
+  height: 60px; }
   .navbar-main .navbar-logo {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 600; }
   .navbar-main .navbar-item {
-    text-align: center; }
+    text-align: center;
+    font-size: 1.2rem; }
+  .navbar-main .navbar-item img {
+    max-height: 2.2rem; }
   .navbar-main a.navbar-item.is-active {
     color: #3273dc; }
   .navbar-main .toc .navbar-dropdown {
