@@ -37,7 +37,7 @@
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.6.5/css/justifiedGallery.min.css">
 
 
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-light.min.css">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-dark.min.css">
 
 <link rel="stylesheet" href="/css/style.css">
 
@@ -92,7 +92,7 @@
         
         <div class="navbar-menu navbar-end">
             
-            <a class="navbar-item search" title="Search" href="javascript:;">
+            <a class="navbar-item search" title="Buscar" href="javascript:;">
                 <i class="fas fa-search"></i>
             </a>
             
@@ -115,6 +115,63 @@
         <article class="article content gallery" itemscope itemprop="blogPost">
     <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
         
+            <a href="/2019/04/18/190418-Dubstep/" itemprop="url">190418_Dubstep</a>
+        
+    </h1>
+    <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
+        <span class="column is-narrow">
+            <time datetime="2019-04-18T12:38:24.000Z" itemprop="datePublished">Apr 18 2019</time>
+        </span>
+        
+        <span class="column is-narrow article-category">
+            <i class="far fa-folder"></i>
+            <a class="article-category-link" href="/categories/Algorithm/">Algorithm</a>
+        </span>
+        
+        
+        <span class="column is-narrow">
+            
+            
+            2 minutes de lectura (Alrededor de 352 palabras)
+        </span>
+        
+    </div>
+    <div class="article-entry is-size-6-mobile" itemprop="articleBody">
+    
+        <h2 id="문제"><a href="#문제" class="headerlink" title="문제"></a>문제</h2><ol>
+<li>문자열에서 “WUB”이라는 문자가 단어의 사이 사이에는 1개 이상  </li>
+<li>단어의 맨 끝에는 0개 또는 1개가 올 수 있다.</li>
+<li>“WUB”을 제거하고 단어와 단어 사이에 하나의 공백으로 return<br> ex. WUB  WUB  I  WUB  AM  WUB  WUB  X<br> return  “I AM X”  </li>
+</ol>
+<p><br></p>
+<h2 id="내-코드"><a href="#내-코드" class="headerlink" title="내 코드"></a>내 코드</h2><figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">songDecoder</span>(<span class="hljs-params">song</span>) </span>&#123;</span><br><span class="line">	<span class="hljs-keyword">var</span> join = <span class="hljs-string">""</span>;</span><br><span class="line">	<span class="hljs-keyword">var</span> arr = [];</span><br><span class="line">	<span class="hljs-keyword">var</span> wub = song.replace(<span class="hljs-regexp">/WUB/gi</span>, <span class="hljs-string">" "</span>);</span><br><span class="line">	<span class="hljs-keyword">var</span> a = wub.split(<span class="hljs-string">" "</span>);</span><br><span class="line">	<span class="hljs-keyword">for</span> (i = <span class="hljs-number">0</span>; i &lt; a.length; i++) &#123;</span><br><span class="line">		<span class="hljs-keyword">if</span> (a[i] !== <span class="hljs-string">""</span>) &#123;</span><br><span class="line">			arr.push(a[i]);</span><br><span class="line">			join = arr.join(<span class="hljs-string">' '</span>);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="hljs-keyword">return</span> join;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><br></p>
+<h2 id="내-풀이"><a href="#내-풀이" class="headerlink" title="내 풀이"></a>내 풀이</h2><p><code>/search value/</code> : //사이에 검색할 문자를 입력<br><code>플래그</code><br><code>g</code>는 전체 모든 문자열을 변경한다는 말 : global<br><code>i</code>는 영문 대소문자 구분 없는 검색: case-intensive<br><code>m</code>은 여러 줄 검색 : multi-line search  </p>
+<p><br></p>
+<h2 id="다른-사람-풀이"><a href="#다른-사람-풀이" class="headerlink" title="다른 사람 풀이"></a>다른 사람 풀이</h2><figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">songDecoder</span>(<span class="hljs-params">song</span>) </span>&#123;</span><br><span class="line">	<span class="hljs-keyword">var</span> reg = <span class="hljs-regexp">/@+/gi</span>;</span><br><span class="line">	song1 = song.replace(<span class="hljs-regexp">/WUB/gi</span>, ‘@’).replace(<span class="hljs-regexp">/@+/gi</span>, <span class="hljs-string">' '</span>).replace(<span class="hljs-regexp">/^ | $/gi</span>,‘’);</span><br><span class="line">	<span class="hljs-keyword">return</span> song1;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p> 다른점 1.</p>
+<ul>
+<li><code>replace(/WUB/gi, &quot; &quot;)</code>에서 공백을 @로 바꿔줌 <code>replace(/WUB/gi, ‘@’)</code></li>
+<li>replace를 한번 더 써서 모든@를 하나의 공백으로 바꿔 줌  </li>
+<li><code>replace(/^ | $/gi,‘’)</code> : 처음 시작부터 공백이 있거나 맨 뒤에 공백이 있으면 삭제  </li>
+</ul>
+<p><br></p>
+<h3 id="팁"><a href="#팁" class="headerlink" title="팁"></a>팁</h3><p><code>trim( )</code> : 문자열 양 끝의 공백을 제거한다.<br><code>filter(word=&gt;word!=&#39;&#39;)</code> :  word라는 변수와 word가 “”(공백)이 아닌 것을 return<br><code>filter(parameter =&gt; return)</code> : 배열에 사용할 수 있음  </p>
+<p><code>replace(/(^\s*)|(\s*$)/gi, &quot;&quot;)</code>  : 맨 앞과 맨 뒤의 공백 제거<br><code>replace(/(WUB)+/g,&quot; &quot;)</code> : 한번 이상(+)인 WUB를 공백 하나로 바꿔주기  </p>
+
+    
+    </div>
+    
+    
+</article>
+
+
+
+
+    
+        <article class="article content gallery" itemscope itemprop="blogPost">
+    <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
+        
             <a href="/2019/04/16/190417_Multiples of 3 or 5/" itemprop="url">190417_Multiples of 3 or 5</a>
         
     </h1>
@@ -132,7 +189,7 @@
         <span class="column is-narrow">
             
             
-            2 minutes read (About 314 words)
+            2 minutes de lectura (Alrededor de 314 palabras)
         </span>
         
     </div>
@@ -145,7 +202,7 @@
 5. 단, 3과 5의 공배수는 한번만 더한다.
 </code></pre>
         <p class="article-more-link">
-            <a href="/2019/04/16/190417_Multiples of 3 or 5/#more">Read More</a>
+            <a href="/2019/04/16/190417_Multiples of 3 or 5/#more">Leer más</a>
         </p>
     
     </div>
@@ -177,7 +234,7 @@
         <span class="column is-narrow">
             
             
-            2 minutes read (About 287 words)
+            2 minutes de lectura (Alrededor de 290 palabras)
         </span>
         
     </div>
@@ -188,7 +245,7 @@
 3. val값이 삭제된 배열 nums의 길이를 return
 </code></pre>
         <p class="article-more-link">
-            <a href="/2019/04/16/190416_remove-element/#more">Read More</a>
+            <a href="/2019/04/16/190416_remove-element/#more">Leer más</a>
         </p>
     
     </div>
@@ -203,7 +260,7 @@
         <article class="article content gallery" itemscope itemprop="blogPost">
     <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
         
-            <a href="/2019/03/13/190313_hexo/" itemprop="url">2019_03_13 </a>
+            <a href="/2019/03/13/190313_hexo/" itemprop="url">190313_hexo</a>
         
     </h1>
     <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
@@ -215,19 +272,63 @@
         <span class="column is-narrow">
             
             
-            a minute read (About 112 words)
+            a minute de lectura (Alrededor de 112 palabras)
         </span>
         
     </div>
     <div class="article-entry is-size-6-mobile" itemprop="articleBody">
     
-        <h2 id="190313-hexo"><a href="#190313-hexo" class="headerlink" title="190313_hexo"></a>190313_hexo</h2><h3 id="실행-전"><a href="#실행-전" class="headerlink" title="실행 전"></a>실행 전</h3><ol>
+        <h2 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h2><h3 id="실행-전"><a href="#실행-전" class="headerlink" title="실행 전"></a>실행 전</h3><ol>
 <li>node js, git 설치 필수</li>
 <li>node js 버전에 따라 실행되지 않을 수 있다.</li>
 <li>window는 git bash에서 작업 시 작업 안될 수 있다.</li>
 </ol>
         <p class="article-more-link">
-            <a href="/2019/03/13/190313_hexo/#more">Read More</a>
+            <a href="/2019/03/13/190313_hexo/#more">Leer más</a>
+        </p>
+    
+    </div>
+    
+    
+</article>
+
+
+
+
+    
+        <article class="article content gallery" itemscope itemprop="blogPost">
+    <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
+        
+            <a href="/2019/03/06/190306_git, web/" itemprop="url">190306_git, web</a>
+        
+    </h1>
+    <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
+        <span class="column is-narrow">
+            <time datetime="2019-03-06T09:52:53.000Z" itemprop="datePublished">Mar 6 2019</time>
+        </span>
+        
+        <span class="column is-narrow article-category">
+            <i class="far fa-folder"></i>
+            <a class="article-category-link" href="/categories/Unknown-term/">Unknown term</a>
+        </span>
+        
+        
+        <span class="column is-narrow">
+            
+            
+            3 minutes de lectura (Alrededor de 459 palabras)
+        </span>
+        
+    </div>
+    <div class="article-entry is-size-6-mobile" itemprop="articleBody">
+    
+        <h2 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h2><p><code>Git</code> :  <code>분산 버전 관리 시스템</code>, 여러 개발자가 같은 프로젝트를 진행할 때 자신의 컴퓨터로 협업하면서 개발이 가능한 시스템이다.  </p>
+<p>git에는 로컬 저장소에 commit하기 전, <code>index 단계</code>가 있다.</p>
+<p><code>index 단계</code>는 <code>stage 영역</code>이라고도  한다.</p>
+<p><code>stage 영역</code> : 작업한 내용을 로컬 저장소에 commit하려고 할 때, commit할 파일에 대한 정보를 저장하는 공간이다.</p>
+<p><br><br></p>
+        <p class="article-more-link">
+            <a href="/2019/03/06/190306_git, web/#more">Leer más</a>
         </p>
     
     </div>
@@ -398,7 +499,7 @@
     <div class="searchbox-mask"></div>
     <div class="searchbox-container ins-search-container">
         <div class="searchbox-input-wrapper">
-            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something...">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="Escribe algo...">
             <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
         </div>
         <div class="searchbox-result-wrapper ins-section-wrapper">
@@ -411,10 +512,10 @@
         var INSIGHT_CONFIG = {
             TRANSLATION: {
                 POSTS: 'Posts',
-                PAGES: 'Pages',
-                CATEGORIES: 'Categories',
+                PAGES: 'Páginas',
+                CATEGORIES: 'Categorías',
                 TAGS: 'Tags',
-                UNTITLED: '(Untitled)',
+                UNTITLED: '(Sin título)',
             },
             CONTENT_URL: '/content.json',
         };
