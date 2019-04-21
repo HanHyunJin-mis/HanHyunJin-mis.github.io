@@ -8,7 +8,7 @@ a.tag.article-tag {
 
 @media screen and (min-width: 1024px) {
   .container {
-    max-width: 900px;
+    max-width: 1200px;
     width: 800px; }
   .navbar.is-transparent .navbar-dropdown a.navbar-item:hover {
     color: #3273dc; } }
@@ -22,7 +22,7 @@ a.tag.article-tag {
     font-weight: 600; }
   .navbar-main .navbar-item {
     text-align: center;
-    font-size: 1.2rem; }
+    font-size: 1.1rem; }
   .navbar-main .navbar-item img {
     max-height: 2.2rem; }
   .navbar-main a.navbar-item.is-active {

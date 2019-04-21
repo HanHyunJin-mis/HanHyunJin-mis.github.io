@@ -14,18 +14,18 @@
 
 
 
-    <meta name="description" content="문제1. nums에는 정렬되지 않은 배열이 들어옴 2. 배열 nums에서 val값이 있으면 삭제 3. val값이 삭제된 배열 nums의 길이를 return">
+    <meta name="description" content="문제 nums에는 정렬되지 않은 배열이 들어옴 배열 nums에서 val값이 있으면 삭제 val값이 삭제된 배열 nums의 길이를 return">
 <meta name="keywords" content="Algorithm">
 <meta property="og:type" content="article">
 <meta property="og:title" content="190416_remove-element">
 <meta property="og:url" content="http://HanHyunJin-mis.github.io/2019/04/16/190416_remove-element/index.html">
 <meta property="og:site_name">
-<meta property="og:description" content="문제1. nums에는 정렬되지 않은 배열이 들어옴 2. 배열 nums에서 val값이 있으면 삭제 3. val값이 삭제된 배열 nums의 길이를 return">
+<meta property="og:description" content="문제 nums에는 정렬되지 않은 배열이 들어옴 배열 nums에서 val값이 있으면 삭제 val값이 삭제된 배열 nums의 길이를 return">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-04-21T07:39:13.628Z">
+<meta property="og:updated_time" content="2019-04-21T08:28:30.238Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="190416_remove-element">
-<meta name="twitter:description" content="문제1. nums에는 정렬되지 않은 배열이 들어옴 2. 배열 nums에서 val값이 있으면 삭제 3. val값이 삭제된 배열 nums의 길이를 return">
+<meta name="twitter:description" content="문제 nums에는 정렬되지 않은 배열이 들어옴 배열 nums에서 val값이 있으면 삭제 val값이 삭제된 배열 nums의 길이를 return">
 
 
 
@@ -83,15 +83,21 @@
         
         <div class="navbar-menu navbar-start">
             
-            <a class="navbar-item " href="/archives">Archives</a>
+            <a class="navbar-item " href="/about">About</a>
+            
+            <a class="navbar-item " href="/categories/TIL">TIL</a>
+            
+            <a class="navbar-item " href="/categories/Computer Engineering">Computer Engineering</a>
             
             <a class="navbar-item " href="/categories/HTML, CSS">HTML, CSS</a>
+            
+            <a class="navbar-item " href="/categories/Javascript">Javascript</a>
             
             <a class="navbar-item " href="/categories/Algorithm">Algorithm</a>
             
             <a class="navbar-item " href="/categories/Unknown term">Unknown term</a>
             
-            <a class="navbar-item " href="/about">About</a>
+            <a class="navbar-item " href="/archives">Archives</a>
             
         </div>
         
@@ -142,14 +148,16 @@
     </div>
     <div class="article-entry is-size-6-mobile" itemprop="articleBody">
     
-        <h2 id="문제"><a href="#문제" class="headerlink" title="문제"></a>문제</h2><pre><code>1. nums에는 정렬되지 않은 배열이 들어옴
-2. 배열 nums에서 val값이 있으면 삭제
-3. val값이 삭제된 배열 nums의 길이를 return
-</code></pre><a id="more"></a>
+        <h3 id="문제"><a href="#문제" class="headerlink" title="문제"></a>문제</h3><ol>
+<li>nums에는 정렬되지 않은 배열이 들어옴</li>
+<li>배열 nums에서 val값이 있으면 삭제</li>
+<li>val값이 삭제된 배열 nums의 길이를 return</li>
+</ol>
+<a id="more"></a>
 <p><br></p>
-<h2 id="내-코드"><a href="#내-코드" class="headerlink" title="내 코드"></a>내 코드</h2><figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">var</span> removeElement = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">nums, val</span>) </span>&#123;</span><br><span class="line">    <span class="hljs-keyword">for</span> (i = <span class="hljs-number">0</span>; i &lt; nums.length; i++) &#123;</span><br><span class="line">        <span class="hljs-keyword">if</span> (nums.indexOf(val) !== <span class="hljs-number">-1</span>) &#123;</span><br><span class="line">            nums.splice(nums.indexOf(val), <span class="hljs-number">1</span>);</span><br><span class="line">            i--;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="hljs-keyword">return</span> nums.length;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<h3 id="내-코드"><a href="#내-코드" class="headerlink" title="내 코드"></a>내 코드</h3><figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">var</span> removeElement = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">nums, val</span>) </span>&#123;</span><br><span class="line">    <span class="hljs-keyword">for</span> (i = <span class="hljs-number">0</span>; i &lt; nums.length; i++) &#123;</span><br><span class="line">        <span class="hljs-keyword">if</span> (nums.indexOf(val) !== <span class="hljs-number">-1</span>) &#123;</span><br><span class="line">            nums.splice(nums.indexOf(val), <span class="hljs-number">1</span>);</span><br><span class="line">            i--;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="hljs-keyword">return</span> nums.length;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 <p><br></p>
-<h2 id="내-풀이"><a href="#내-풀이" class="headerlink" title="내 풀이"></a>내 풀이</h2><ol>
+<h3 id="내-풀이"><a href="#내-풀이" class="headerlink" title="내 풀이"></a>내 풀이</h3><ol>
 <li><p>배열에서 val의 값을 찾아 삭제하기  </p>
 <ul>
 <li><p>indexOf를 사용해서 배열 nums안에 있는 val의 index를 반환</p>
@@ -169,8 +177,8 @@
 <p>i = 1 일때 <code>nums의 길이가 1이 되었으므로 nums.length는 1</code>이 되어 반복문을 빠져나온다.<br>nums =&gt; [2]</p>
 <p><strong>오류 발생</strong><br><code>solution</code> : nums가 하나 삭제될때마다 length가 줄어들고 기존 숫자들의 index가 바뀌기 때문에 i에서 1을 빼주어야 한다.</p>
 <p><br></p>
-<h2 id="다른-사람-풀이"><a href="#다른-사람-풀이" class="headerlink" title="다른 사람 풀이"></a>다른 사람 풀이</h2><figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">var</span> removeElement = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">nums, val</span>) </span>&#123;</span><br><span class="line">    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &lt; nums.length; i++) &#123;</span><br><span class="line">        <span class="hljs-keyword">if</span> (nums[i] === val) &#123;</span><br><span class="line">            nums.splice(i, <span class="hljs-number">1</span>);</span><br><span class="line">            i--;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="hljs-keyword">return</span> nums.length;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-<h3 id="다른점"><a href="#다른점" class="headerlink" title="다른점"></a>다른점</h3><ol>
+<h3 id="다른-사람-풀이"><a href="#다른-사람-풀이" class="headerlink" title="다른 사람 풀이"></a>다른 사람 풀이</h3><figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">var</span> removeElement = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">nums, val</span>) </span>&#123;</span><br><span class="line">    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &lt; nums.length; i++) &#123;</span><br><span class="line">        <span class="hljs-keyword">if</span> (nums[i] === val) &#123;</span><br><span class="line">            nums.splice(i, <span class="hljs-number">1</span>);</span><br><span class="line">            i--;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="hljs-keyword">return</span> nums.length;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<h4 id="다른점"><a href="#다른점" class="headerlink" title="다른점"></a>다른점</h4><ol>
 <li>nums의 특정 index값과 val을 비교  </li>
 </ol>
 <p><strong>javascript에는 연산자를 두개를 잘 쓰지 않는다.  ===을 쓸 것!</strong></p>
