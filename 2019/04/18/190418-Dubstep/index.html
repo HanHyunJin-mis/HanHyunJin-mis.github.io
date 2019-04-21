@@ -14,18 +14,18 @@
 
 
 
-    <meta name="description" content="문제 문자열에서 “WUB”이라는 문자가 단어의 사이 사이에는 1개 이상   단어의 맨 끝에는 0개 또는 1개가 올 수 있다. “WUB”을 제거하고 단어와 단어 사이에 하나의 공백으로 return ex. WUB  WUB  I  WUB  AM  WUB  WUB  X return  “I AM X”     내 코드12345678910111213function so">
+    <meta name="description" content="문제 문자열에서 “WUB”이라는 문자가 단어의 사이 사이에는 1개 이상   단어의 맨 끝에는 0개 또는 1개가 올 수 있다. “WUB”을 제거하고 단어와 단어 사이에 하나의 공백으로 return ex. WUB  WUB  I  WUB  AM  WUB  WUB  X return  “I AM X”">
 <meta name="keywords" content="Algorithm">
 <meta property="og:type" content="article">
 <meta property="og:title" content="190418_Dubstep">
 <meta property="og:url" content="http://HanHyunJin-mis.github.io/2019/04/18/190418-Dubstep/index.html">
 <meta property="og:site_name">
-<meta property="og:description" content="문제 문자열에서 “WUB”이라는 문자가 단어의 사이 사이에는 1개 이상   단어의 맨 끝에는 0개 또는 1개가 올 수 있다. “WUB”을 제거하고 단어와 단어 사이에 하나의 공백으로 return ex. WUB  WUB  I  WUB  AM  WUB  WUB  X return  “I AM X”     내 코드12345678910111213function so">
+<meta property="og:description" content="문제 문자열에서 “WUB”이라는 문자가 단어의 사이 사이에는 1개 이상   단어의 맨 끝에는 0개 또는 1개가 올 수 있다. “WUB”을 제거하고 단어와 단어 사이에 하나의 공백으로 return ex. WUB  WUB  I  WUB  AM  WUB  WUB  X return  “I AM X”">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-04-18T12:43:28.565Z">
+<meta property="og:updated_time" content="2019-04-21T07:59:06.239Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="190418_Dubstep">
-<meta name="twitter:description" content="문제 문자열에서 “WUB”이라는 문자가 단어의 사이 사이에는 1개 이상   단어의 맨 끝에는 0개 또는 1개가 올 수 있다. “WUB”을 제거하고 단어와 단어 사이에 하나의 공백으로 return ex. WUB  WUB  I  WUB  AM  WUB  WUB  X return  “I AM X”     내 코드12345678910111213function so">
+<meta name="twitter:description" content="문제 문자열에서 “WUB”이라는 문자가 단어의 사이 사이에는 1개 이상   단어의 맨 끝에는 0개 또는 1개가 올 수 있다. “WUB”을 제거하고 단어와 단어 사이에 하나의 공백으로 return ex. WUB  WUB  I  WUB  AM  WUB  WUB  X return  “I AM X”">
 
 
 
@@ -97,7 +97,7 @@
         
         <div class="navbar-menu navbar-end">
             
-            <a class="navbar-item search" title="Buscar" href="javascript:;">
+            <a class="navbar-item search" title="Search" href="javascript:;">
                 <i class="fas fa-search"></i>
             </a>
             
@@ -136,7 +136,7 @@
         <span class="column is-narrow">
             
             
-            2 minutes de lectura (Alrededor de 352 palabras)
+            2 minutes read (About 356 words)
         </span>
         
     </div>
@@ -147,20 +147,20 @@
 <li>단어의 맨 끝에는 0개 또는 1개가 올 수 있다.</li>
 <li>“WUB”을 제거하고 단어와 단어 사이에 하나의 공백으로 return<br> ex. WUB  WUB  I  WUB  AM  WUB  WUB  X<br> return  “I AM X”  </li>
 </ol>
+<a id="more"></a>
 <p><br></p>
 <h2 id="내-코드"><a href="#내-코드" class="headerlink" title="내 코드"></a>내 코드</h2><figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">songDecoder</span>(<span class="hljs-params">song</span>) </span>&#123;</span><br><span class="line">	<span class="hljs-keyword">var</span> join = <span class="hljs-string">""</span>;</span><br><span class="line">	<span class="hljs-keyword">var</span> arr = [];</span><br><span class="line">	<span class="hljs-keyword">var</span> wub = song.replace(<span class="hljs-regexp">/WUB/gi</span>, <span class="hljs-string">" "</span>);</span><br><span class="line">	<span class="hljs-keyword">var</span> a = wub.split(<span class="hljs-string">" "</span>);</span><br><span class="line">	<span class="hljs-keyword">for</span> (i = <span class="hljs-number">0</span>; i &lt; a.length; i++) &#123;</span><br><span class="line">		<span class="hljs-keyword">if</span> (a[i] !== <span class="hljs-string">""</span>) &#123;</span><br><span class="line">			arr.push(a[i]);</span><br><span class="line">			join = arr.join(<span class="hljs-string">' '</span>);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="hljs-keyword">return</span> join;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p><br></p>
 <h2 id="내-풀이"><a href="#내-풀이" class="headerlink" title="내 풀이"></a>내 풀이</h2><p><code>/search value/</code> : //사이에 검색할 문자를 입력<br><code>플래그</code><br><code>g</code>는 전체 모든 문자열을 변경한다는 말 : global<br><code>i</code>는 영문 대소문자 구분 없는 검색: case-intensive<br><code>m</code>은 여러 줄 검색 : multi-line search  </p>
 <p><br></p>
 <h2 id="다른-사람-풀이"><a href="#다른-사람-풀이" class="headerlink" title="다른 사람 풀이"></a>다른 사람 풀이</h2><figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">songDecoder</span>(<span class="hljs-params">song</span>) </span>&#123;</span><br><span class="line">	<span class="hljs-keyword">var</span> reg = <span class="hljs-regexp">/@+/gi</span>;</span><br><span class="line">	song1 = song.replace(<span class="hljs-regexp">/WUB/gi</span>, ‘@’).replace(<span class="hljs-regexp">/@+/gi</span>, <span class="hljs-string">' '</span>).replace(<span class="hljs-regexp">/^ | $/gi</span>,‘’);</span><br><span class="line">	<span class="hljs-keyword">return</span> song1;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p> 다른점 1.</p>
-<ul>
+<h3 id="다른점"><a href="#다른점" class="headerlink" title="다른점"></a>다른점</h3><ol>
 <li><code>replace(/WUB/gi, &quot; &quot;)</code>에서 공백을 @로 바꿔줌 <code>replace(/WUB/gi, ‘@’)</code></li>
 <li>replace를 한번 더 써서 모든@를 하나의 공백으로 바꿔 줌  </li>
 <li><code>replace(/^ | $/gi,‘’)</code> : 처음 시작부터 공백이 있거나 맨 뒤에 공백이 있으면 삭제  </li>
-</ul>
+</ol>
 <p><br></p>
-<h3 id="팁"><a href="#팁" class="headerlink" title="팁"></a>팁</h3><p><code>trim( )</code> : 문자열 양 끝의 공백을 제거한다.<br><code>filter(word=&gt;word!=&#39;&#39;)</code> :  word라는 변수와 word가 “”(공백)이 아닌 것을 return<br><code>filter(parameter =&gt; return)</code> : 배열에 사용할 수 있음  </p>
+<h3 id="알게-된-것"><a href="#알게-된-것" class="headerlink" title="알게 된 것"></a>알게 된 것</h3><p><code>trim( )</code> : 문자열 양 끝의 공백을 제거한다.<br><code>filter(word=&gt;word!=&#39;&#39;)</code> :  word라는 변수와 word가 “”(공백)이 아닌 것을 return<br><code>filter(parameter =&gt; return)</code> : 배열에 사용할 수 있음  </p>
 <p><code>replace(/(^\s*)|(\s*$)/gi, &quot;&quot;)</code>  : 맨 앞과 맨 뒤의 공백 제거<br><code>replace(/(WUB)+/g,&quot; &quot;)</code> : 한번 이상(+)인 WUB를 공백 하나로 바꿔주기  </p>
 
     
@@ -174,7 +174,9 @@
     
     
     <div class="columns is-mobile is-multiline article-nav">
-        <span class="column is-12-mobile is-half-desktop is-hidden-mobile article-nav-prev">
+        <span class="column is-12-mobile is-half-desktop  article-nav-prev">
+            
+            <a href="/2019/04/20/190420/">190420_SCSS 특강</a>
             
         </span>
         <span class="column is-12-mobile is-half-desktop  article-nav-next">
@@ -198,7 +200,7 @@
 
 
 <div class="comments">
-    <h3 class="title is-4">Comentarios</h3>
+    <h3 class="title is-4">Comments</h3>
     
 <script>
     var disqus_config = function () {
@@ -380,7 +382,7 @@
     <div class="searchbox-mask"></div>
     <div class="searchbox-container ins-search-container">
         <div class="searchbox-input-wrapper">
-            <input type="text" class="searchbox-input ins-search-input" placeholder="Escribe algo...">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something...">
             <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
         </div>
         <div class="searchbox-result-wrapper ins-section-wrapper">
@@ -393,10 +395,10 @@
         var INSIGHT_CONFIG = {
             TRANSLATION: {
                 POSTS: 'Posts',
-                PAGES: 'Páginas',
-                CATEGORIES: 'Categorías',
+                PAGES: 'Pages',
+                CATEGORIES: 'Categories',
                 TAGS: 'Tags',
-                UNTITLED: '(Sin título)',
+                UNTITLED: '(Untitled)',
             },
             CONTENT_URL: '/content.json',
         };

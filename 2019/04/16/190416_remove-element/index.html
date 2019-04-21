@@ -22,7 +22,7 @@
 <meta property="og:site_name">
 <meta property="og:description" content="문제1. nums에는 정렬되지 않은 배열이 들어옴 2. 배열 nums에서 val값이 있으면 삭제 3. val값이 삭제된 배열 nums의 길이를 return">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-04-18T11:04:12.757Z">
+<meta property="og:updated_time" content="2019-04-21T07:39:13.628Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="190416_remove-element">
 <meta name="twitter:description" content="문제1. nums에는 정렬되지 않은 배열이 들어옴 2. 배열 nums에서 val값이 있으면 삭제 3. val값이 삭제된 배열 nums의 길이를 return">
@@ -97,7 +97,7 @@
         
         <div class="navbar-menu navbar-end">
             
-            <a class="navbar-item search" title="Buscar" href="javascript:;">
+            <a class="navbar-item search" title="Search" href="javascript:;">
                 <i class="fas fa-search"></i>
             </a>
             
@@ -136,7 +136,7 @@
         <span class="column is-narrow">
             
             
-            2 minutes de lectura (Alrededor de 290 palabras)
+            2 minutes read (About 290 words)
         </span>
         
     </div>
@@ -170,8 +170,10 @@
 <p><strong>오류 발생</strong><br><code>solution</code> : nums가 하나 삭제될때마다 length가 줄어들고 기존 숫자들의 index가 바뀌기 때문에 i에서 1을 빼주어야 한다.</p>
 <p><br></p>
 <h2 id="다른-사람-풀이"><a href="#다른-사람-풀이" class="headerlink" title="다른 사람 풀이"></a>다른 사람 풀이</h2><figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">var</span> removeElement = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">nums, val</span>) </span>&#123;</span><br><span class="line">    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &lt; nums.length; i++) &#123;</span><br><span class="line">        <span class="hljs-keyword">if</span> (nums[i] === val) &#123;</span><br><span class="line">            nums.splice(i, <span class="hljs-number">1</span>);</span><br><span class="line">            i--;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="hljs-keyword">return</span> nums.length;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-<h3 id="다른점-1"><a href="#다른점-1" class="headerlink" title="다른점 1."></a>다른점 1.</h3><pre><code>- nums의 특정 index값과 val을 비교  
-</code></pre><p><strong>javascript에는 연산자를 두개를 잘 쓰지 않는다.  ===을 쓸 것!</strong></p>
+<h3 id="다른점"><a href="#다른점" class="headerlink" title="다른점"></a>다른점</h3><ol>
+<li>nums의 특정 index값과 val을 비교  </li>
+</ol>
+<p><strong>javascript에는 연산자를 두개를 잘 쓰지 않는다.  ===을 쓸 것!</strong></p>
 
     
     </div>
@@ -210,7 +212,7 @@
 
 
 <div class="comments">
-    <h3 class="title is-4">Comentarios</h3>
+    <h3 class="title is-4">Comments</h3>
     
 <script>
     var disqus_config = function () {
@@ -392,7 +394,7 @@
     <div class="searchbox-mask"></div>
     <div class="searchbox-container ins-search-container">
         <div class="searchbox-input-wrapper">
-            <input type="text" class="searchbox-input ins-search-input" placeholder="Escribe algo...">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something...">
             <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
         </div>
         <div class="searchbox-result-wrapper ins-section-wrapper">
@@ -405,10 +407,10 @@
         var INSIGHT_CONFIG = {
             TRANSLATION: {
                 POSTS: 'Posts',
-                PAGES: 'Páginas',
-                CATEGORIES: 'Categorías',
+                PAGES: 'Pages',
+                CATEGORIES: 'Categories',
                 TAGS: 'Tags',
-                UNTITLED: '(Sin título)',
+                UNTITLED: '(Untitled)',
             },
             CONTENT_URL: '/content.json',
         };

@@ -2,7 +2,7 @@
 <html class="has-navbar-fixed-top">
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-<title>Tag: Unknown term</title>
+<title>190422_Directions Reduction</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/outdated-browser/1.1.5/outdatedbrowser.min.css">
@@ -14,13 +14,18 @@
 
 
 
-    <meta property="og:type" content="website">
-<meta property="og:title">
-<meta property="og:url" content="http://HanHyunJin-mis.github.io/tags/Unknown-term/index.html">
+    <meta name="description" content="문제1. n">
+<meta name="keywords" content="Algorithm">
+<meta property="og:type" content="article">
+<meta property="og:title" content="190422_Directions Reduction">
+<meta property="og:url" content="http://HanHyunJin-mis.github.io/2019/04/21/190422_Directions Reduction/index.html">
 <meta property="og:site_name">
+<meta property="og:description" content="문제1. n">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-04-21T08:01:00.730Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title">
+<meta name="twitter:title" content="190422_Directions Reduction">
+<meta name="twitter:description" content="문제1. n">
 
 
 
@@ -109,61 +114,110 @@
     </div>
 </nav>
 
-    <section class="section section-heading">
+    <section class="section">
     <div class="container">
-        <div class="content">
-            <h5>#Unknown term</h5>
-        </div>
-    </div>
-</section>
-<section class="section">
-    <div class="container">
-    
-        <article class="article content gallery" itemscope itemprop="blogPost">
+    <article class="article content gallery" itemscope itemprop="blogPost">
     <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
         
-            <a href="/2019/03/06/190306_git, web/" itemprop="url">190306_git, web</a>
+            190422_Directions Reduction
         
     </h1>
     <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
         <span class="column is-narrow">
-            <time datetime="2019-03-06T09:52:53.000Z" itemprop="datePublished">Mar 6 2019</time>
+            <time datetime="2019-04-21T06:39:47.000Z" itemprop="datePublished">Apr 21 2019</time>
         </span>
         
         <span class="column is-narrow article-category">
             <i class="far fa-folder"></i>
-            <a class="article-category-link" href="/categories/Unknown-term/">Unknown term</a>
+            <a class="article-category-link" href="/categories/Algorithm/">Algorithm</a>
         </span>
         
         
         <span class="column is-narrow">
             
             
-            3 minutes read (About 459 words)
+            a few seconds read (About 83 words)
         </span>
         
     </div>
     <div class="article-entry is-size-6-mobile" itemprop="articleBody">
     
-        <h2 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h2><p><code>Git</code> :  <code>분산 버전 관리 시스템</code>, 여러 개발자가 같은 프로젝트를 진행할 때 자신의 컴퓨터로 협업하면서 개발이 가능한 시스템이다.  </p>
-<p>git에는 로컬 저장소에 commit하기 전, <code>index 단계</code>가 있다.</p>
-<p><code>index 단계</code>는 <code>stage 영역</code>이라고도  한다.</p>
-<p><code>stage 영역</code> : 작업한 내용을 로컬 저장소에 commit하려고 할 때, commit할 파일에 대한 정보를 저장하는 공간이다.</p>
-<p><br><br></p>
-        <p class="article-more-link">
-            <a href="/2019/03/06/190306_git, web/#more">Read More</a>
-        </p>
+        <h2 id="문제"><a href="#문제" class="headerlink" title="문제"></a>문제</h2><pre><code>1. n
+</code></pre><a id="more"></a>
+<p><br></p>
+<h2 id="내-코드"><a href="#내-코드" class="headerlink" title="내 코드"></a>내 코드</h2><figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">dirReduc</span>(<span class="hljs-params">arr</span>) </span>&#123;</span><br><span class="line">    direc = &#123;</span><br><span class="line">        <span class="hljs-string">"NORTH"</span>: <span class="hljs-string">"SOUTH"</span>,</span><br><span class="line">        <span class="hljs-string">"SOUTH"</span>: <span class="hljs-string">"NORTH"</span>,</span><br><span class="line">        <span class="hljs-string">"EAST"</span>: <span class="hljs-string">"WEST"</span>,</span><br><span class="line">        <span class="hljs-string">"WEST"</span>: <span class="hljs-string">"EAST"</span></span><br><span class="line">    &#125;;</span><br><span class="line">    <span class="hljs-keyword">var</span> b = [];</span><br><span class="line">    <span class="hljs-keyword">for</span> (i = <span class="hljs-number">0</span>; i &lt; arr.length; i++) &#123;</span><br><span class="line">        <span class="hljs-keyword">if</span> ((b == []) || (direc[b[b.length - <span class="hljs-number">1</span>]] != arr[i])) &#123;</span><br><span class="line">            b.push(arr[i]);</span><br><span class="line">        &#125; <span class="hljs-keyword">else</span> &#123;</span><br><span class="line">            c = b.pop();</span><br><span class="line">            <span class="hljs-keyword">if</span> (direc[c] == arr[i]) &#123;</span><br><span class="line">                arr.splice(i - <span class="hljs-number">1</span>, <span class="hljs-number">2</span>);</span><br><span class="line">                i = i - <span class="hljs-number">2</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="hljs-keyword">return</span> arr;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><br></p>
+<h2 id="내-풀이"><a href="#내-풀이" class="headerlink" title="내 풀이"></a>내 풀이</h2><pre><code>1.  내풀이 1
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">	</span><br></pre></td></tr></table></figure>
+
+2.  풀이 과정 중 어려움
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">	</span><br></pre></td></tr></table></figure>
+</code></pre><p><br></p>
+<h2 id="다른-사람-풀이"><a href="#다른-사람-풀이" class="headerlink" title="다른 사람 풀이"></a>다른 사람 풀이</h2><p><br></p>
+<h3 id="다른점"><a href="#다른점" class="headerlink" title="다른점"></a>다른점</h3><p>1.</p>
+<p><br></p>
+<h3 id="알게-된-것"><a href="#알게-된-것" class="headerlink" title="알게 된 것"></a>알게 된 것</h3>
+    
+    </div>
+    
+    <div class="columns is-variable is-1 is-multiline is-mobile">
+    
+        <span class="column is-narrow"><a class="tag is-light article-tag" href="/tags/Algorithm/">#Algorithm</a></span>
     
     </div>
     
     
+    <div class="columns is-mobile is-multiline article-nav">
+        <span class="column is-12-mobile is-half-desktop  article-nav-prev">
+            
+            <a href="/2019/04/21/190419_Persistent Bugger/">190419_Persistent Bugger</a>
+            
+        </span>
+        <span class="column is-12-mobile is-half-desktop  article-nav-next">
+            
+            <a href="/2019/04/20/190420/">190420_SCSS 특강</a>
+            
+        </span>
+    </div>
+    
 </article>
 
 
+<div class="sharebox">
+    
+<div class="notification is-danger">
+    You need to set <code>install_url</code> to use ShareThis. Please set it in <code>_config.yml</code>.
+</div>
+
+</div>
 
 
+
+<div class="comments">
+    <h3 class="title is-4">Comments</h3>
     
+<script>
+    var disqus_config = function () {
+        this.page.url = 'http://HanHyunJin-mis.github.io/2019/04/21/190422_Directions Reduction/';
+        this.page.identifier = '2019/04/21/190422_Directions Reduction/';
+        
+        this.language = 'en';
+        
+    };
+    (function() {
+        var d = document, s = d.createElement('script');  
+        s.src = '//' + 'hyunlog' + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+
+<div id="disqus_thread">
     
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+</div>
+
     </div>
 </section>
     <footer class="footer">
