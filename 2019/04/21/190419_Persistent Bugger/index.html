@@ -15,13 +15,14 @@
 
 
     <meta name="description" content="문제 숫자를 각각 1자리 수로 떼서 곱하기 연산 자리수가 1이 될 때까지 연산한다. 1이 될 때까지 연산한 횟수를 returnex.39 -&amp;gt; 3 x 9 = 2727 -&amp;gt; 2 x 7 = 1414 -&amp;gt; 1 x 4 = 4return 3">
+<meta name="keywords" content="Algorithm">
 <meta property="og:type" content="article">
 <meta property="og:title" content="190419_Persistent Bugger">
 <meta property="og:url" content="http://HanHyunJin-mis.github.io/2019/04/21/190419_Persistent Bugger/index.html">
 <meta property="og:site_name">
 <meta property="og:description" content="문제 숫자를 각각 1자리 수로 떼서 곱하기 연산 자리수가 1이 될 때까지 연산한다. 1이 될 때까지 연산한 횟수를 returnex.39 -&amp;gt; 3 x 9 = 2727 -&amp;gt; 2 x 7 = 1414 -&amp;gt; 1 x 4 = 4return 3">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-04-21T08:18:45.773Z">
+<meta property="og:updated_time" content="2019-04-22T12:44:12.751Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="190419_Persistent Bugger">
 <meta name="twitter:description" content="문제 숫자를 각각 1자리 수로 떼서 곱하기 연산 자리수가 1이 될 때까지 연산한다. 1이 될 때까지 연산한 횟수를 returnex.39 -&amp;gt; 3 x 9 = 2727 -&amp;gt; 2 x 7 = 1414 -&amp;gt; 1 x 4 = 4return 3">
@@ -132,6 +133,11 @@
             <time datetime="2019-04-21T06:58:31.000Z" itemprop="datePublished">Apr 21 2019</time>
         </span>
         
+        <span class="column is-narrow article-category">
+            <i class="far fa-folder"></i>
+            <a class="article-category-link" href="/categories/Algorithm/">Algorithm</a>
+        </span>
+        
         
         <span class="column is-narrow">
             
@@ -175,6 +181,12 @@
 <li>array(원본 배열)<br>reduce 함수의 반환 값은 누산기에 할당되고 reduce 함수가 돌고 있을 때는 유지되기 때문에 최종 결과 값은 하나의 값이 된다.</li>
 </ol>
 <figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">[<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>].reduce(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">accumulator, currentValue, currentIndex, array</span>) </span>&#123;</span><br><span class="line">  <span class="hljs-keyword">return</span> accumulator + currentValue;</span><br><span class="line">&#125;,firstValue); </span><br><span class="line"><span class="hljs-comment">// firstValue부터 계산된다. </span></span><br><span class="line"><span class="hljs-comment">// firstValue가 없으면 accumulator는 0, currentValue는 1로 계산된다.</span></span><br></pre></td></tr></table></figure>
+    
+    </div>
+    
+    <div class="columns is-variable is-1 is-multiline is-mobile">
+    
+        <span class="column is-narrow"><a class="tag is-light article-tag" href="/tags/Algorithm/">#Algorithm</a></span>
     
     </div>
     
