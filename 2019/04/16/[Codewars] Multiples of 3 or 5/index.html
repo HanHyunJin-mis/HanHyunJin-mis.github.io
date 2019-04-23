@@ -2,7 +2,7 @@
 <html class="has-navbar-fixed-top">
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-<title>Categories</title>
+<title>[Codewars] Multiples of 3 or 5</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/outdated-browser/1.1.5/outdatedbrowser.min.css">
@@ -14,14 +14,18 @@
 
 
 
-    <meta name="keywords" content="Unknown term,TIL,ComputerEngineering,Algorithm">
-<meta property="og:type" content="website">
-<meta property="og:title">
-<meta property="og:url" content="http://HanHyunJin-mis.github.io/categories/index.html">
+    <meta name="description" content="문제 number이하의 숫자가 주어진다. number보다 작은 모든 3의 배수를 다 더한다. number보다 작은 모든 5의 배수를 다 더한다. 다 더한 3의 배수와 5의 배수의 합을 return 단, 3과 5의 공배수는 한번만 더한다.">
+<meta name="keywords" content="Algorithm">
+<meta property="og:type" content="article">
+<meta property="og:title" content="[Codewars] Multiples of 3 or 5">
+<meta property="og:url" content="http://HanHyunJin-mis.github.io/2019/04/16/[Codewars] Multiples of 3 or 5/index.html">
 <meta property="og:site_name">
+<meta property="og:description" content="문제 number이하의 숫자가 주어진다. number보다 작은 모든 3의 배수를 다 더한다. number보다 작은 모든 5의 배수를 다 더한다. 다 더한 3의 배수와 5의 배수의 합을 return 단, 3과 5의 공배수는 한번만 더한다.">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-04-23T11:44:23.912Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title">
+<meta name="twitter:title" content="[Codewars] Multiples of 3 or 5">
+<meta name="twitter:description" content="문제 number이하의 숫자가 주어진다. number보다 작은 모든 3의 배수를 다 더한다. number보다 작은 모든 5의 배수를 다 더한다. 다 더한 3의 배수와 5의 배수의 합을 return 단, 3과 5의 공배수는 한번만 더한다.">
 
 
 
@@ -116,34 +120,118 @@
     </div>
 </nav>
 
-    <section class="section section-heading">
+    <section class="section">
     <div class="container">
-        <div class="content">
-            <h5><i class="far fa-folder"></i>Categories</h5>
-        </div>
+    <article class="article content gallery" itemscope itemprop="blogPost">
+    <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
+        
+            [Codewars] Multiples of 3 or 5
+        
+    </h1>
+    <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
+        <span class="column is-narrow">
+            <time datetime="2019-04-16T12:38:56.000Z" itemprop="datePublished">Apr 16 2019</time>
+        </span>
+        
+        <span class="column is-narrow article-category">
+            <i class="far fa-folder"></i>
+            <a class="article-category-link" href="/categories/Algorithm/">Algorithm</a>
+        </span>
+        
+        
+        <span class="column is-narrow">
+            
+            
+            2 minutes read (About 314 words)
+        </span>
+        
     </div>
-</section>
-<section class="section">
-    <div class="container">
-        <div class="columns is-variable is-1 is-multiline is-mobile">
+    <div class="article-entry is-size-6-mobile" itemprop="articleBody">
+    
+        <h3 id="문제"><a href="#문제" class="headerlink" title="문제"></a>문제</h3><ol>
+<li>number이하의 숫자가 주어진다.</li>
+<li>number보다 작은 모든 3의 배수를 다 더한다.</li>
+<li>number보다 작은 모든 5의 배수를 다 더한다.</li>
+<li>다 더한 3의 배수와 5의 배수의 합을 return</li>
+<li>단, 3과 5의 공배수는 한번만 더한다.</li>
+</ol>
+<a id="more"></a>
+<p><br></p>
+<h3 id="내-코드"><a href="#내-코드" class="headerlink" title="내 코드"></a>내 코드</h3><figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">solution</span>(<span class="hljs-params">number</span>) </span>&#123;</span><br><span class="line">	<span class="hljs-keyword">var</span> count3 = <span class="hljs-number">0</span>;</span><br><span class="line">	<span class="hljs-keyword">var</span> count5 = <span class="hljs-number">0</span>;</span><br><span class="line">		<span class="hljs-keyword">for</span> (i = <span class="hljs-number">1</span>; i &lt; number / <span class="hljs-number">3</span>; i++) &#123;</span><br><span class="line">			<span class="hljs-keyword">var</span> temp = <span class="hljs-number">0</span>;</span><br><span class="line">			temp = <span class="hljs-number">3</span> * i;</span><br><span class="line">				<span class="hljs-keyword">if</span> ((temp % <span class="hljs-number">5</span>) !== <span class="hljs-number">0</span>) &#123;</span><br><span class="line">				count3 += temp;</span><br><span class="line">				&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="hljs-keyword">for</span> (i = <span class="hljs-number">1</span>; i &lt; number / <span class="hljs-number">5</span>; i++) &#123;</span><br><span class="line">			count5 += <span class="hljs-number">5</span> * i;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="hljs-keyword">return</span> count3 + count5;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><br></p>
+<h3 id="내-풀이"><a href="#내-풀이" class="headerlink" title="내 풀이"></a>내 풀이</h3><ol>
+<li>number를 각각 3과 5로 나눈 몫을 구한다.</li>
+<li>3의 몫으로 나온 숫자의 미만만큼( i ) 3을 곱하는 반복문으로 3의 배수를 구한다.<br> ex. 몫이 3.5이면 3 x 1, 3 x 2, 3 x 3 = 3, 6, 9를 구함.</li>
+<li>3의 배수를 count3이라는 변수에 모두 더한다.</li>
+<li><p>단, 3 x i 를 5로 나눈 나머지가 0이 된다면(5의 배수라면) 더하지 않는다.</p>
+</li>
+<li><p>5의 몫으로 나온 숫자의 미만만큼( i ) 5를 곱하는 반복문으로 5의 배수를 구한다.<br>ex. 몫이 3.5이면 5 x 1, 5 x 2, 5 x 3 = 5, 10, 15를 구함.</p>
+</li>
+<li>5의 배수를 count5이라는 변수에 모두 더한다.<br><code>3의 배수를 모두 더하는 과정에서 3과 5의 배수를 제거해줬으므로 5의 배수를 더하는 과정에서는 모두 더해도 상관없다.</code></li>
+<li>count3 + count5를 반환한다.</li>
+</ol>
+
+    
+    </div>
+    
+    <div class="columns is-variable is-1 is-multiline is-mobile">
+    
+        <span class="column is-narrow"><a class="tag is-light article-tag" href="/tags/Algorithm/">#Algorithm</a></span>
+    
+    </div>
+    
+    
+    <div class="columns is-mobile is-multiline article-nav">
+        <span class="column is-12-mobile is-half-desktop  article-nav-prev">
             
-            <span class="column is-narrow">
-                <a class="tag is-light article-tag" href="/categories/Unknown-term/">Unknown_term&nbsp;(1)</a>
-            </span>
+            <a href="/2019/04/17/190417-TIL/">190417_TIL</a>
             
-            <span class="column is-narrow">
-                <a class="tag is-light article-tag" href="/categories/TIL/">TIL&nbsp;(8)</a>
-            </span>
+        </span>
+        <span class="column is-12-mobile is-half-desktop  article-nav-next">
             
-            <span class="column is-narrow">
-                <a class="tag is-light article-tag" href="/categories/ComputerEngineering/">ComputerEngineering&nbsp;(2)</a>
-            </span>
+            <a href="/2019/04/16/[LeetCode] 27. remove-element/">[LeetCode] 27. remove-element</a>
             
-            <span class="column is-narrow">
-                <a class="tag is-light article-tag" href="/categories/Algorithm/">Algorithm&nbsp;(6)</a>
-            </span>
-            
-        </div>
+        </span>
+    </div>
+    
+</article>
+
+
+<div class="sharebox">
+    
+<div class="notification is-danger">
+    You need to set <code>install_url</code> to use ShareThis. Please set it in <code>_config.yml</code>.
+</div>
+
+</div>
+
+
+
+<div class="comments">
+    <h3 class="title is-4">Comments</h3>
+    
+<script>
+    var disqus_config = function () {
+        this.page.url = 'http://HanHyunJin-mis.github.io/2019/04/16/[Codewars] Multiples of 3 or 5/';
+        this.page.identifier = '2019/04/16/[Codewars] Multiples of 3 or 5/';
+        
+        this.language = 'en';
+        
+    };
+    (function() {
+        var d = document, s = d.createElement('script');  
+        s.src = '//' + 'hyunlog' + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+
+<div id="disqus_thread">
+    
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+</div>
+
     </div>
 </section>
     <footer class="footer">
