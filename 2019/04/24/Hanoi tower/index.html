@@ -2,7 +2,7 @@
 <html class="has-navbar-fixed-top">
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-<title>Tag: ComputerEngineering</title>
+<title>Hanoi tower</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/outdated-browser/1.1.5/outdatedbrowser.min.css">
@@ -14,13 +14,23 @@
 
 
 
-    <meta property="og:type" content="website">
-<meta property="og:title">
-<meta property="og:url" content="http://HanHyunJin-mis.github.io/tags/ComputerEngineering/index.html">
+    <meta name="description" content="하노이의 탑 세 개의 기둥과 이 기둥에 꽂을 수 있는 각각 다른 크기의 원판들이 있다. 처음에는 한 기둥에 원판이 아래부터 큰 순서대로 쌓여있다. 한 기둥에 꽂혀있는 원판들을 꽂혀있는 순서 그대로 다른 기둥으로 옮겨야 한다.  조건 한번에 하나의 원판만 움직일 수 있다. 큰 원판 위에 작은 원판이 올라갈 수 없다.">
+<meta name="keywords" content="Algorithm">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hanoi tower">
+<meta property="og:url" content="http://HanHyunJin-mis.github.io/2019/04/24/Hanoi tower/index.html">
 <meta property="og:site_name">
+<meta property="og:description" content="하노이의 탑 세 개의 기둥과 이 기둥에 꽂을 수 있는 각각 다른 크기의 원판들이 있다. 처음에는 한 기둥에 원판이 아래부터 큰 순서대로 쌓여있다. 한 기둥에 꽂혀있는 원판들을 꽂혀있는 순서 그대로 다른 기둥으로 옮겨야 한다.  조건 한번에 하나의 원판만 움직일 수 있다. 큰 원판 위에 작은 원판이 올라갈 수 없다.">
 <meta property="og:locale" content="default">
+<meta property="og:image" content="http://hanhyunjin-mis.github.io/images/img/190424/hanoi1.png">
+<meta property="og:image" content="http://hanhyunjin-mis.github.io/images/img/190424/hanoi2.png">
+<meta property="og:image" content="http://hanhyunjin-mis.github.io/images/img/190424/hanoi3.png">
+<meta property="og:image" content="http://hanhyunjin-mis.github.io/images/img/190424/hanoi4.png">
+<meta property="og:updated_time" content="2019-04-24T12:02:05.852Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title">
+<meta name="twitter:title" content="Hanoi tower">
+<meta name="twitter:description" content="하노이의 탑 세 개의 기둥과 이 기둥에 꽂을 수 있는 각각 다른 크기의 원판들이 있다. 처음에는 한 기둥에 원판이 아래부터 큰 순서대로 쌓여있다. 한 기둥에 꽂혀있는 원판들을 꽂혀있는 순서 그대로 다른 기둥으로 옮겨야 한다.  조건 한번에 하나의 원판만 움직일 수 있다. 큰 원판 위에 작은 원판이 올라갈 수 없다.">
+<meta name="twitter:image" content="http://hanhyunjin-mis.github.io/images/img/190424/hanoi1.png">
 
 
 
@@ -115,107 +125,110 @@
     </div>
 </nav>
 
-    <section class="section section-heading">
+    <section class="section">
     <div class="container">
-        <div class="content">
-            <h5>#ComputerEngineering</h5>
-        </div>
-    </div>
-</section>
-<section class="section">
-    <div class="container">
-    
-        <article class="article content gallery" itemscope itemprop="blogPost">
+    <article class="article content gallery" itemscope itemprop="blogPost">
     <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
         
-            <a href="/2019/04/22/190422_variables, function, closure, binary, linear search/" itemprop="url">190422_variables, function, closure, binary, linear search</a>
+            Hanoi tower
         
     </h1>
     <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
         <span class="column is-narrow">
-            <time datetime="2019-04-22T11:42:15.000Z" itemprop="datePublished">Apr 22 2019</time>
+            <time datetime="2019-04-24T11:38:21.000Z" itemprop="datePublished">Apr 24 2019</time>
         </span>
         
         <span class="column is-narrow article-category">
             <i class="far fa-folder"></i>
-            <a class="article-category-link" href="/categories/ComputerEngineering/">ComputerEngineering</a>
+            <a class="article-category-link" href="/categories/Algorithm/">Algorithm</a>
         </span>
         
         
         <span class="column is-narrow">
             
             
-            7 minutes read (About 1062 words)
+            2 minutes read (About 236 words)
         </span>
         
     </div>
     <div class="article-entry is-size-6-mobile" itemprop="articleBody">
     
-        <h2 id="함수"><a href="#함수" class="headerlink" title="함수"></a>함수</h2><ol>
-<li>namespace</li>
-<li>stack frame</li>
-<li>call by value(왜 call by value와 reference를 나누었을까?)<br> call by reference~<br> call by reference object</li>
+        <h3 id="하노이의-탑"><a href="#하노이의-탑" class="headerlink" title="하노이의 탑"></a>하노이의 탑</h3><ol>
+<li>세 개의 기둥과 이 기둥에 꽂을 수 있는 각각 다른 크기의 원판들이 있다.</li>
+<li>처음에는 한 기둥에 원판이 아래부터 큰 순서대로 쌓여있다.</li>
+<li>한 기둥에 꽂혀있는 원판들을 꽂혀있는 순서 그대로 다른 기둥으로 옮겨야 한다.</li>
 </ol>
-        <p class="article-more-link">
-            <a href="/2019/04/22/190422_variables, function, closure, binary, linear search/#more">Read More</a>
-        </p>
+<h4 id="조건"><a href="#조건" class="headerlink" title="조건"></a>조건</h4><ol>
+<li>한번에 하나의 원판만 움직일 수 있다.</li>
+<li>큰 원판 위에 작은 원판이 올라갈 수 없다.<a id="more"></a>
+<br><h3 id="코드"><a href="#코드" class="headerlink" title="코드"></a>코드</h3><figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">hanoi</span><span class="hljs-params">(n, _from, _by, _to)</span>:</span> </span><br><span class="line">    <span class="hljs-comment"># base case</span></span><br><span class="line">    <span class="hljs-keyword">if</span> n == <span class="hljs-number">1</span>:</span><br><span class="line">        print(<span class="hljs-string">f'<span class="hljs-subst">&#123;n&#125;</span>번째 쟁반을 <span class="hljs-subst">&#123;_from&#125;</span>에서 <span class="hljs-subst">&#123;_to&#125;</span>로 이동'</span>)</span><br><span class="line">        <span class="hljs-keyword">return</span></span><br><span class="line">    hanoi(n<span class="hljs-number">-1</span>, _from, _to, _by)</span><br><span class="line">    print(<span class="hljs-string">f'<span class="hljs-subst">&#123;n&#125;</span>번째 쟁반을 <span class="hljs-subst">&#123;_from&#125;</span>에서 <span class="hljs-subst">&#123;_to&#125;</span>로 이동'</span>)</span><br><span class="line">    hanoi(n<span class="hljs-number">-1</span>, _by, _from, _to)</span><br><span class="line"></span><br><span class="line">hanoi(<span class="hljs-number">4</span>, <span class="hljs-string">'A'</span>, <span class="hljs-string">'B'</span>, <span class="hljs-string">'C'</span>)</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p><br></p>
+<h3 id="풀이"><a href="#풀이" class="headerlink" title="풀이"></a>풀이</h3><p>코드가 이해가 가지 않아 직접 적어보았다…</p>
+<img src="/images/img/190424/hanoi1.png" width="800" title="test_title" alt="test_alt">  
+<img src="/images/img/190424/hanoi2.png" width="800" title="test_title" alt="test_alt">  
+<img src="/images/img/190424/hanoi3.png" width="800" title="test_title" alt="test_alt">  
+<img src="/images/img/190424/hanoi4.png" width="800" title="test_title" alt="test_alt">  
     
     </div>
     
+    <div class="columns is-variable is-1 is-multiline is-mobile">
+    
+        <span class="column is-narrow"><a class="tag is-light article-tag" href="/tags/Algorithm/">#Algorithm</a></span>
+    
+    </div>
+    
+    
+    <div class="columns is-mobile is-multiline article-nav">
+        <span class="column is-12-mobile is-half-desktop is-hidden-mobile article-nav-prev">
+            
+        </span>
+        <span class="column is-12-mobile is-half-desktop  article-nav-next">
+            
+            <a href="/2019/04/24/190424-TIL/">190424_TIL</a>
+            
+        </span>
+    </div>
     
 </article>
 
 
+<div class="sharebox">
+    
+<div class="notification is-danger">
+    You need to set <code>install_url</code> to use ShareThis. Please set it in <code>_config.yml</code>.
+</div>
 
-
-    
-        <article class="article content gallery" itemscope itemprop="blogPost">
-    <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
-        
-            <a href="/2019/04/20/190420_SCSS 특강/" itemprop="url">SCSS 특강</a>
-        
-    </h1>
-    <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
-        <span class="column is-narrow">
-            <time datetime="2019-04-20T08:40:03.000Z" itemprop="datePublished">Apr 20 2019</time>
-        </span>
-        
-        <span class="column is-narrow article-category">
-            <i class="far fa-folder"></i>
-            <a class="article-category-link" href="/categories/ComputerEngineering/">ComputerEngineering</a>
-        </span>
-        
-        
-        <span class="column is-narrow">
-            
-            
-            16 minutes read (About 2393 words)
-        </span>
-        
-    </div>
-    <div class="article-entry is-size-6-mobile" itemprop="articleBody">
-    
-        <h2 id="node-sass-설치"><a href="#node-sass-설치" class="headerlink" title="node sass 설치"></a>node sass 설치</h2><ol>
-<li>$ npm i -g node-sass</li>
-<li>$ npm i -D node-sass</li>
-<li>버전확인 : $ node-sass -v<pre><code>$ node -v
-</code></pre></li>
-</ol>
-<h2 id="SCSS-vs-CSS"><a href="#SCSS-vs-CSS" class="headerlink" title="SCSS vs CSS"></a>SCSS vs CSS</h2>
-        <p class="article-more-link">
-            <a href="/2019/04/20/190420_SCSS 특강/#more">Read More</a>
-        </p>
-    
-    </div>
-    
-    
-</article>
+</div>
 
 
 
+<div class="comments">
+    <h3 class="title is-4">Comments</h3>
+    
+<script>
+    var disqus_config = function () {
+        this.page.url = 'http://HanHyunJin-mis.github.io/2019/04/24/Hanoi tower/';
+        this.page.identifier = '2019/04/24/Hanoi tower/';
+        
+        this.language = 'en';
+        
+    };
+    (function() {
+        var d = document, s = d.createElement('script');  
+        s.src = '//' + 'hyunlog' + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
 
+<div id="disqus_thread">
     
-    
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+</div>
+
     </div>
 </section>
     <footer class="footer">
