@@ -22,15 +22,16 @@
 <meta property="og:site_name">
 <meta property="og:description" content="하노이의 탑 세 개의 기둥과 이 기둥에 꽂을 수 있는 각각 다른 크기의 원판들이 있다. 처음에는 한 기둥에 원판이 아래부터 큰 순서대로 쌓여있다. 한 기둥에 꽂혀있는 원판들을 꽂혀있는 순서 그대로 다른 기둥으로 옮겨야 한다.  조건 한번에 하나의 원판만 움직일 수 있다. 큰 원판 위에 작은 원판이 올라갈 수 없다.">
 <meta property="og:locale" content="default">
-<meta property="og:image" content="http://hanhyunjin-mis.github.io/images/img/190424/hanoi1.png">
-<meta property="og:image" content="http://hanhyunjin-mis.github.io/images/img/190424/hanoi2.png">
-<meta property="og:image" content="http://hanhyunjin-mis.github.io/images/img/190424/hanoi3.png">
-<meta property="og:image" content="http://hanhyunjin-mis.github.io/images/img/190424/hanoi4.png">
-<meta property="og:updated_time" content="2019-04-24T12:02:05.852Z">
+<meta property="og:image" content="https://user-images.githubusercontent.com/37561451/56805643-b12c4e80-6864-11e9-86d8-fbed88536eb5.PNG">
+<meta property="og:image" content="https://user-images.githubusercontent.com/37561451/56805731-e769ce00-6864-11e9-9b02-316ade20bc1e.PNG">
+<meta property="og:image" content="https://user-images.githubusercontent.com/37561451/56805738-eb95eb80-6864-11e9-8a51-49d82bc50306.PNG">
+<meta property="og:image" content="https://user-images.githubusercontent.com/37561451/56805740-ecc71880-6864-11e9-8839-62b26c8d5142.PNG">
+<meta property="og:image" content="https://user-images.githubusercontent.com/37561451/56805742-ed5faf00-6864-11e9-9cc7-dd528a93975c.PNG">
+<meta property="og:updated_time" content="2019-04-26T11:51:11.809Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hanoi tower">
 <meta name="twitter:description" content="하노이의 탑 세 개의 기둥과 이 기둥에 꽂을 수 있는 각각 다른 크기의 원판들이 있다. 처음에는 한 기둥에 원판이 아래부터 큰 순서대로 쌓여있다. 한 기둥에 꽂혀있는 원판들을 꽂혀있는 순서 그대로 다른 기둥으로 옮겨야 한다.  조건 한번에 하나의 원판만 움직일 수 있다. 큰 원판 위에 작은 원판이 올라갈 수 없다.">
-<meta name="twitter:image" content="http://hanhyunjin-mis.github.io/images/img/190424/hanoi1.png">
+<meta name="twitter:image" content="https://user-images.githubusercontent.com/37561451/56805643-b12c4e80-6864-11e9-86d8-fbed88536eb5.PNG">
 
 
 
@@ -147,7 +148,7 @@
         <span class="column is-narrow">
             
             
-            2 minutes read (About 236 words)
+            2 minutes read (About 267 words)
         </span>
         
     </div>
@@ -164,12 +165,13 @@
 <br><h3 id="코드"><a href="#코드" class="headerlink" title="코드"></a>코드</h3><figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">hanoi</span><span class="hljs-params">(n, _from, _by, _to)</span>:</span> </span><br><span class="line">    <span class="hljs-comment"># base case</span></span><br><span class="line">    <span class="hljs-keyword">if</span> n == <span class="hljs-number">1</span>:</span><br><span class="line">        print(<span class="hljs-string">f'<span class="hljs-subst">&#123;n&#125;</span>번째 쟁반을 <span class="hljs-subst">&#123;_from&#125;</span>에서 <span class="hljs-subst">&#123;_to&#125;</span>로 이동'</span>)</span><br><span class="line">        <span class="hljs-keyword">return</span></span><br><span class="line">    hanoi(n<span class="hljs-number">-1</span>, _from, _to, _by)</span><br><span class="line">    print(<span class="hljs-string">f'<span class="hljs-subst">&#123;n&#125;</span>번째 쟁반을 <span class="hljs-subst">&#123;_from&#125;</span>에서 <span class="hljs-subst">&#123;_to&#125;</span>로 이동'</span>)</span><br><span class="line">    hanoi(n<span class="hljs-number">-1</span>, _by, _from, _to)</span><br><span class="line"></span><br><span class="line">hanoi(<span class="hljs-number">4</span>, <span class="hljs-string">'A'</span>, <span class="hljs-string">'B'</span>, <span class="hljs-string">'C'</span>)</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
-<p><br></p>
+<p><img src="https://user-images.githubusercontent.com/37561451/56805643-b12c4e80-6864-11e9-86d8-fbed88536eb5.PNG" alt="hanoi"><br><br></p>
 <h3 id="풀이"><a href="#풀이" class="headerlink" title="풀이"></a>풀이</h3><p>코드가 이해가 가지 않아 직접 적어보았다…</p>
-<img src="/images/img/190424/hanoi1.png" width="800" title="test_title" alt="test_alt">  
-<img src="/images/img/190424/hanoi2.png" width="800" title="test_title" alt="test_alt">  
-<img src="/images/img/190424/hanoi3.png" width="800" title="test_title" alt="test_alt">  
-<img src="/images/img/190424/hanoi4.png" width="800" title="test_title" alt="test_alt">  
+<p><img src="https://user-images.githubusercontent.com/37561451/56805731-e769ce00-6864-11e9-9b02-316ade20bc1e.PNG" alt="hanoi1"></p>
+<p><img src="https://user-images.githubusercontent.com/37561451/56805738-eb95eb80-6864-11e9-8a51-49d82bc50306.PNG" alt="hanoi2"></p>
+<p><img src="https://user-images.githubusercontent.com/37561451/56805740-ecc71880-6864-11e9-8839-62b26c8d5142.PNG" alt="hanoi3"></p>
+<p><img src="https://user-images.githubusercontent.com/37561451/56805742-ed5faf00-6864-11e9-9cc7-dd528a93975c.PNG" alt="hanoi4"></p>
+
     
     </div>
     
