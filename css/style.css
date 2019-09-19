@@ -9,7 +9,7 @@ a.tag.article-tag {
 @media screen and (min-width: 1024px) {
   .container {
     max-width: 1200px;
-    width: 800px; }
+    width: 950px; }
   .navbar.is-transparent .navbar-dropdown a.navbar-item:hover {
     color: #3273dc; } }
 
