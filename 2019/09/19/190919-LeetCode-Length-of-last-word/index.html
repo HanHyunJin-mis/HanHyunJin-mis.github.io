@@ -22,7 +22,7 @@
 <meta property="og:site_name">
 <meta property="og:description" content="DescriptionGiven a string s consists of upper/lower-case alphabets and empty space characters ‘ ‘, return the length of last word in the string. If the last word does not exist, return 0. Note: A word">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-09-19T05:38:22.659Z">
+<meta property="og:updated_time" content="2019-10-02T08:31:13.244Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="[190919 LeetCode] Length of last word">
 <meta name="twitter:description" content="DescriptionGiven a string s consists of upper/lower-case alphabets and empty space characters ‘ ‘, return the length of last word in the string. If the last word does not exist, return 0. Note: A word">
@@ -142,7 +142,7 @@
         <span class="column is-narrow">
             
             
-            a few seconds read (About 76 words)
+            a few seconds read (About 77 words)
         </span>
         
     </div>
@@ -151,6 +151,7 @@
         <h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>Given a string s consists of upper/lower-case alphabets and empty space characters ‘ ‘, return the length of last word in the string.</p>
 <p>If the last word does not exist, return 0.</p>
 <p>Note: A word is defined as a character sequence consists of non-space characters only.</p>
+<a id="more"></a>
 <h3 id="Example"><a href="#Example" class="headerlink" title="Example:"></a>Example:</h3><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Input: &quot;Hello World&quot;</span><br><span class="line">Output: 5</span><br></pre></td></tr></table></figure>
 <h3 id="Submission"><a href="#Submission" class="headerlink" title="Submission"></a>Submission</h3><figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">var</span> lengthOfLastWord = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">s</span>) </span>&#123;</span><br><span class="line">  <span class="hljs-keyword">let</span> word = s.trim().split(<span class="hljs-string">" "</span>);</span><br><span class="line">  <span class="hljs-keyword">if</span> (word.length &gt;= <span class="hljs-number">1</span>) &#123;</span><br><span class="line">    <span class="hljs-keyword">let</span> OneW = word[word.length - <span class="hljs-number">1</span>];</span><br><span class="line">    <span class="hljs-keyword">return</span> OneW.length;</span><br><span class="line">  &#125; <span class="hljs-keyword">else</span> &#123;</span><br><span class="line">    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 

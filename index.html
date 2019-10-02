@@ -138,7 +138,7 @@
         <span class="column is-narrow">
             
             
-            a minute read (About 188 words)
+            a minute read (About 189 words)
         </span>
         
     </div>
@@ -148,9 +148,9 @@
 <p>Since they are friends, they would like to exchange one candy bar each so that after the exchange, they both have the same total amount of candy. (The total amount of candy a person has is the sum of the sizes of candy bars they have.)</p>
 <p>Return an integer array ans where ans[0] is the size of the candy bar that Alice must exchange, and ans[1] is the size of the candy bar that Bob must exchange.</p>
 <p>If there are multiple answers, you may return any one of them. It is guaranteed an answer exists.</p>
-<h3 id="Example"><a href="#Example" class="headerlink" title="Example:"></a>Example:</h3><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Input: A = [1,1], B = [2,2]</span><br><span class="line">Output: [1,2]</span><br></pre></td></tr></table></figure>
-<h3 id="Submission"><a href="#Submission" class="headerlink" title="Submission"></a>Submission</h3><figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">var</span> fairCandySwap = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">A, B</span>) </span>&#123;</span><br><span class="line">  <span class="hljs-keyword">let</span> first = A.reduce(<span class="hljs-function">(<span class="hljs-params">pre, cur</span>) =&gt;</span> pre + cur);</span><br><span class="line">  <span class="hljs-keyword">let</span> Aver = <span class="hljs-function">(<span class="hljs-params">first + B.reduce((pre, cur</span>) =&gt;</span> pre + cur)) / <span class="hljs-number">2</span>;</span><br><span class="line">  <span class="hljs-keyword">let</span> Bidx = <span class="hljs-number">0</span>;</span><br><span class="line">  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; A.length; i++) &#123;</span><br><span class="line">    Bidx = B.indexOf(A[i] - (first - Aver));</span><br><span class="line">    <span class="hljs-keyword">if</span> (Bidx !== <span class="hljs-number">-1</span>) <span class="hljs-keyword">return</span> [A[i], B[Bidx]];</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
+        <p class="article-more-link">
+            <a href="/2019/10/02/191001-LeetCode-1030/#more">Read More</a>
+        </p>
     
     </div>
     
@@ -181,7 +181,7 @@
         <span class="column is-narrow">
             
             
-            a minute read (About 182 words)
+            a minute read (About 183 words)
         </span>
         
     </div>
@@ -190,9 +190,9 @@
         <h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>We are given a matrix with R rows and C columns has cells with integer coordinates (r, c), where 0 &lt;= r &lt; R and 0 &lt;= c &lt; C.</p>
 <p>Additionally, we are given a cell in that matrix with coordinates (r0, c0).</p>
 <p>Return the coordinates of all cells in the matrix, sorted by their distance from (r0, c0) from smallest distance to largest distance. Here, the distance between two cells (r1, c1) and (r2, c2) is the Manhattan distance, |r1 - r2| + |c1 - c2|. (You may return the answer in any order that satisfies this condition.)</p>
-<h3 id="Example"><a href="#Example" class="headerlink" title="Example:"></a>Example:</h3><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Input: R = 2, C = 3, r0 = 1, c0 = 2</span><br><span class="line">Output: [[1,2],[0,2],[1,1],[0,1],[1,0],[0,0]]</span><br><span class="line">Explanation: The distances from (r0, c0) to other cells are: [0,1,1,2,2,3]</span><br><span class="line">There are other answers that would also be accepted as correct, such as [[1,2],[1,1],[0,2],[1,0],[0,1],[0,0]].</span><br></pre></td></tr></table></figure>
-<h3 id="Submission"><a href="#Submission" class="headerlink" title="Submission"></a>Submission</h3><figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">var</span> allCellsDistOrder = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">R, C, r0, c0</span>) </span>&#123;</span><br><span class="line">  <span class="hljs-keyword">let</span> Arr = [];</span><br><span class="line">  <span class="hljs-keyword">let</span> subArr = [];</span><br><span class="line">  <span class="hljs-keyword">let</span> <span class="hljs-keyword">get</span> = 0;</span><br><span class="line">  for (let i = 0; i &lt; R; i++) &#123;</span><br><span class="line">    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> j = <span class="hljs-number">0</span>; j &lt; C; j++) &#123;</span><br><span class="line">      <span class="hljs-keyword">get</span> = Math.abs(i - r0) + Math.abs(j - c0);</span><br><span class="line">      if (!subArr[<span class="hljs-keyword">get</span>]) &#123;</span><br><span class="line">        subArr[<span class="hljs-keyword">get</span>] = [];</span><br><span class="line">      &#125;</span><br><span class="line">      subArr[<span class="hljs-keyword">get</span>][subArr[<span class="hljs-keyword">get</span>].length] = [i, j];</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  for (let i = 0; i &lt; subArr.length; i++) &#123;</span><br><span class="line">    Arr.push(...subArr[i]);</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="hljs-keyword">return</span> Arr;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
+        <p class="article-more-link">
+            <a href="/2019/10/01/191001-LeetCode-888/#more">Read More</a>
+        </p>
     
     </div>
     
@@ -223,7 +223,7 @@
         <span class="column is-narrow">
             
             
-            a few seconds read (About 76 words)
+            a few seconds read (About 77 words)
         </span>
         
     </div>
@@ -232,9 +232,9 @@
         <h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>Given a string s consists of upper/lower-case alphabets and empty space characters ‘ ‘, return the length of last word in the string.</p>
 <p>If the last word does not exist, return 0.</p>
 <p>Note: A word is defined as a character sequence consists of non-space characters only.</p>
-<h3 id="Example"><a href="#Example" class="headerlink" title="Example:"></a>Example:</h3><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Input: &quot;Hello World&quot;</span><br><span class="line">Output: 5</span><br></pre></td></tr></table></figure>
-<h3 id="Submission"><a href="#Submission" class="headerlink" title="Submission"></a>Submission</h3><figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">var</span> lengthOfLastWord = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">s</span>) </span>&#123;</span><br><span class="line">  <span class="hljs-keyword">let</span> word = s.trim().split(<span class="hljs-string">" "</span>);</span><br><span class="line">  <span class="hljs-keyword">if</span> (word.length &gt;= <span class="hljs-number">1</span>) &#123;</span><br><span class="line">    <span class="hljs-keyword">let</span> OneW = word[word.length - <span class="hljs-number">1</span>];</span><br><span class="line">    <span class="hljs-keyword">return</span> OneW.length;</span><br><span class="line">  &#125; <span class="hljs-keyword">else</span> &#123;</span><br><span class="line">    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
+        <p class="article-more-link">
+            <a href="/2019/09/19/190919-LeetCode-Length-of-last-word/#more">Read More</a>
+        </p>
     
     </div>
     
