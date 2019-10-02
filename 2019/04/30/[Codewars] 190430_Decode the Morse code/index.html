@@ -14,18 +14,18 @@
 
 
 
-    <meta name="description" content="문제 n  내 코드1234567891011121314151617181920212223242526decodeMorse = function(morseCode)&amp;#123;    var str = morseCode.split(&apos; &apos;);    var imsi =[];    var store = &apos;&apos;;    var join = &apos;&apos;;    for(i = 0; i &amp;l">
+    <meta name="description" content="문제 n  내 코드1234567891011121314151617181920212223242526decodeMorse = function(morseCode) &amp;#123;  var str = morseCode.split(&quot; &quot;);  var imsi = [];  var store = &quot;&quot;;  var join = &quot;&quot;;  for (i = 0; i &amp;lt; str.">
 <meta name="keywords" content="Algorithm">
 <meta property="og:type" content="article">
 <meta property="og:title" content="[Codewars] Decode the Morse code">
 <meta property="og:url" content="http://HanHyunJin-mis.github.io/2019/04/30/[Codewars] 190430_Decode the Morse code/index.html">
 <meta property="og:site_name">
-<meta property="og:description" content="문제 n  내 코드1234567891011121314151617181920212223242526decodeMorse = function(morseCode)&amp;#123;    var str = morseCode.split(&apos; &apos;);    var imsi =[];    var store = &apos;&apos;;    var join = &apos;&apos;;    for(i = 0; i &amp;l">
+<meta property="og:description" content="문제 n  내 코드1234567891011121314151617181920212223242526decodeMorse = function(morseCode) &amp;#123;  var str = morseCode.split(&quot; &quot;);  var imsi = [];  var store = &quot;&quot;;  var join = &quot;&quot;;  for (i = 0; i &amp;lt; str.">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-05-02T12:05:31.960Z">
+<meta property="og:updated_time" content="2019-10-02T08:29:26.636Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="[Codewars] Decode the Morse code">
-<meta name="twitter:description" content="문제 n  내 코드1234567891011121314151617181920212223242526decodeMorse = function(morseCode)&amp;#123;    var str = morseCode.split(&apos; &apos;);    var imsi =[];    var store = &apos;&apos;;    var join = &apos;&apos;;    for(i = 0; i &amp;l">
+<meta name="twitter:description" content="문제 n  내 코드1234567891011121314151617181920212223242526decodeMorse = function(morseCode) &amp;#123;  var str = morseCode.split(&quot; &quot;);  var imsi = [];  var store = &quot;&quot;;  var join = &quot;&quot;;  for (i = 0; i &amp;lt; str.">
 
 
 
@@ -103,7 +103,7 @@
         
         <div class="navbar-menu navbar-end">
             
-            <a class="navbar-item search" title="Buscar" href="javascript:;">
+            <a class="navbar-item search" title="Search" href="javascript:;">
                 <i class="fas fa-search"></i>
             </a>
             
@@ -142,7 +142,7 @@
         <span class="column is-narrow">
             
             
-            a minute de lectura (Alrededor de 115 palabras)
+            a few seconds read (About 92 words)
         </span>
         
     </div>
@@ -151,13 +151,7 @@
         <h3 id="문제"><a href="#문제" class="headerlink" title="문제"></a>문제</h3><ol>
 <li>n</li>
 </ol>
-<h3 id="내-코드"><a href="#내-코드" class="headerlink" title="내 코드"></a>내 코드</h3><figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">decodeMorse = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">morseCode</span>)</span>&#123;</span><br><span class="line">    <span class="hljs-keyword">var</span> str = morseCode.split(<span class="hljs-string">' '</span>);</span><br><span class="line">    <span class="hljs-keyword">var</span> imsi =[];</span><br><span class="line">    <span class="hljs-keyword">var</span> store = <span class="hljs-string">''</span>;</span><br><span class="line">    <span class="hljs-keyword">var</span> join = <span class="hljs-string">''</span>;</span><br><span class="line">    <span class="hljs-keyword">for</span>(i = <span class="hljs-number">0</span>; i &lt; str.length; i++)&#123;</span><br><span class="line">        <span class="hljs-keyword">if</span>(str[i] == <span class="hljs-string">''</span>)&#123;</span><br><span class="line">            imsi.push(store);</span><br><span class="line">            store = <span class="hljs-string">''</span>;</span><br><span class="line">        &#125;<span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>(i == str.length <span class="hljs-number">-1</span>)&#123;</span><br><span class="line">            store += MORSE_CODE[str[i]];</span><br><span class="line">            imsi.push(store);</span><br><span class="line">            store = <span class="hljs-string">''</span>;</span><br><span class="line">        &#125;<span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>(str[i] != <span class="hljs-string">''</span>)&#123;</span><br><span class="line">            store += MORSE_CODE[str[i]];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="hljs-keyword">var</span> real = [];</span><br><span class="line">    <span class="hljs-keyword">for</span>(i = <span class="hljs-number">0</span>; i&lt; imsi.length; i ++)&#123;</span><br><span class="line">        <span class="hljs-keyword">if</span>(imsi[i] != <span class="hljs-string">''</span>)&#123;</span><br><span class="line">        real.push(imsi[i]);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    join = real.join(<span class="hljs-string">' '</span>);</span><br><span class="line">    <span class="hljs-keyword">return</span> join;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="내-풀이"><a href="#내-풀이" class="headerlink" title="내 풀이"></a>내 풀이</h3><pre><code>1.  내풀이 1
-<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">	</span><br></pre></td></tr></table></figure>
-
-2.  풀이 과정 중 어려움
-<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">	</span><br></pre></td></tr></table></figure>
-</code></pre><h3 id="다른-사람-풀이"><a href="#다른-사람-풀이" class="headerlink" title="다른 사람 풀이"></a>다른 사람 풀이</h3><h4 id="다른점"><a href="#다른점" class="headerlink" title="다른점"></a>다른점</h4><p>1.</p>
+<h3 id="내-코드"><a href="#내-코드" class="headerlink" title="내 코드"></a>내 코드</h3><figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">decodeMorse = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">morseCode</span>) </span>&#123;</span><br><span class="line">  <span class="hljs-keyword">var</span> str = morseCode.split(<span class="hljs-string">" "</span>);</span><br><span class="line">  <span class="hljs-keyword">var</span> imsi = [];</span><br><span class="line">  <span class="hljs-keyword">var</span> store = <span class="hljs-string">""</span>;</span><br><span class="line">  <span class="hljs-keyword">var</span> join = <span class="hljs-string">""</span>;</span><br><span class="line">  <span class="hljs-keyword">for</span> (i = <span class="hljs-number">0</span>; i &lt; str.length; i++) &#123;</span><br><span class="line">    <span class="hljs-keyword">if</span> (str[i] == <span class="hljs-string">""</span>) &#123;</span><br><span class="line">      imsi.push(store);</span><br><span class="line">      store = <span class="hljs-string">""</span>;</span><br><span class="line">    &#125; <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (i == str.length - <span class="hljs-number">1</span>) &#123;</span><br><span class="line">      store += MORSE_CODE[str[i]];</span><br><span class="line">      imsi.push(store);</span><br><span class="line">      store = <span class="hljs-string">""</span>;</span><br><span class="line">    &#125; <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (str[i] != <span class="hljs-string">""</span>) &#123;</span><br><span class="line">      store += MORSE_CODE[str[i]];</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="hljs-keyword">var</span> real = [];</span><br><span class="line">  <span class="hljs-keyword">for</span> (i = <span class="hljs-number">0</span>; i &lt; imsi.length; i++) &#123;</span><br><span class="line">    <span class="hljs-keyword">if</span> (imsi[i] != <span class="hljs-string">""</span>) &#123;</span><br><span class="line">      real.push(imsi[i]);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  join = real.join(<span class="hljs-string">" "</span>);</span><br><span class="line">  <span class="hljs-keyword">return</span> join;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 <h4 id="알게-된-것"><a href="#알게-된-것" class="headerlink" title="알게 된 것"></a>알게 된 것</h4><p>trimLeft, trimRight, trimEnd<br>/ +/ -&gt; 공백이 한개 이상일 때</p>
 
     
@@ -178,7 +172,7 @@
         </span>
         <span class="column is-12-mobile is-half-desktop  article-nav-next">
             
-            <a href="/2019/04/30/190430-TIL/">190430_TIL</a>
+            <a href="/2019/04/29/190429-TIL/">190429_TIL</a>
             
         </span>
     </div>
@@ -197,7 +191,7 @@
 
 
 <div class="comments">
-    <h3 class="title is-4">Comentarios</h3>
+    <h3 class="title is-4">Comments</h3>
     
 <script>
     var disqus_config = function () {
@@ -379,7 +373,7 @@
     <div class="searchbox-mask"></div>
     <div class="searchbox-container ins-search-container">
         <div class="searchbox-input-wrapper">
-            <input type="text" class="searchbox-input ins-search-input" placeholder="Escribe algo...">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something...">
             <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
         </div>
         <div class="searchbox-result-wrapper ins-section-wrapper">
@@ -392,10 +386,10 @@
         var INSIGHT_CONFIG = {
             TRANSLATION: {
                 POSTS: 'Posts',
-                PAGES: 'Páginas',
-                CATEGORIES: 'Categorías',
+                PAGES: 'Pages',
+                CATEGORIES: 'Categories',
                 TAGS: 'Tags',
-                UNTITLED: '(Sin título)',
+                UNTITLED: '(Untitled)',
             },
             CONTENT_URL: '/content.json',
         };

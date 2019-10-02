@@ -5,8 +5,8 @@
     
     <entry>
       <title>[191002 LeetCode] MatrixCells in Distance-Order</title>
-      <link href="/2019/10/02/191001-LeetCode-Matrix-Cells-in-Distance-Order/"/>
-      <url>/2019/10/02/191001-LeetCode-Matrix-Cells-in-Distance-Order/</url>
+      <link href="/2019/10/02/191001-LeetCode-1030/"/>
+      <url>/2019/10/02/191001-LeetCode-1030/</url>
       
         <content type="html"><![CDATA[<h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>Alice and Bob have candy bars of different sizes: A[i] is the size of the i-th bar of candy that Alice has, and B[j] is the size of the j-th bar of candy that Bob has.</p><p>Since they are friends, they would like to exchange one candy bar each so that after the exchange, they both have the same total amount of candy. (The total amount of candy a person has is the sum of the sizes of candy bars they have.)</p><p>Return an integer array ans where ans[0] is the size of the candy bar that Alice must exchange, and ans[1] is the size of the candy bar that Bob must exchange.</p><p>If there are multiple answers, you may return any one of them. It is guaranteed an answer exists.</p><h3 id="Example"><a href="#Example" class="headerlink" title="Example:"></a>Example:</h3><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Input: A = [1,1], B = [2,2]</span><br><span class="line">Output: [1,2]</span><br></pre></td></tr></table></figure><h3 id="Submission"><a href="#Submission" class="headerlink" title="Submission"></a>Submission</h3><figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">var</span> fairCandySwap = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">A, B</span>) </span>&#123;</span><br><span class="line">  <span class="hljs-keyword">let</span> first = A.reduce(<span class="hljs-function">(<span class="hljs-params">pre, cur</span>) =&gt;</span> pre + cur);</span><br><span class="line">  <span class="hljs-keyword">let</span> Aver = <span class="hljs-function">(<span class="hljs-params">first + B.reduce((pre, cur</span>) =&gt;</span> pre + cur)) / <span class="hljs-number">2</span>;</span><br><span class="line">  <span class="hljs-keyword">let</span> Bidx = <span class="hljs-number">0</span>;</span><br><span class="line">  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; A.length; i++) &#123;</span><br><span class="line">    Bidx = B.indexOf(A[i] - (first - Aver));</span><br><span class="line">    <span class="hljs-keyword">if</span> (Bidx !== <span class="hljs-number">-1</span>) <span class="hljs-keyword">return</span> [A[i], B[Bidx]];</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>]]></content>
       
@@ -30,8 +30,8 @@
     
     <entry>
       <title>[191001 LeetCode] Fair Candy Swap</title>
-      <link href="/2019/10/01/191001-LeetCode-Fair-Candy-Swap/"/>
-      <url>/2019/10/01/191001-LeetCode-Fair-Candy-Swap/</url>
+      <link href="/2019/10/01/191001-LeetCode-888/"/>
+      <url>/2019/10/01/191001-LeetCode-888/</url>
       
         <content type="html"><![CDATA[<h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>We are given a matrix with R rows and C columns has cells with integer coordinates (r, c), where 0 &lt;= r &lt; R and 0 &lt;= c &lt; C.</p><p>Additionally, we are given a cell in that matrix with coordinates (r0, c0).</p><p>Return the coordinates of all cells in the matrix, sorted by their distance from (r0, c0) from smallest distance to largest distance. Here, the distance between two cells (r1, c1) and (r2, c2) is the Manhattan distance, |r1 - r2| + |c1 - c2|. (You may return the answer in any order that satisfies this condition.)</p><h3 id="Example"><a href="#Example" class="headerlink" title="Example:"></a>Example:</h3><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Input: R = 2, C = 3, r0 = 1, c0 = 2</span><br><span class="line">Output: [[1,2],[0,2],[1,1],[0,1],[1,0],[0,0]]</span><br><span class="line">Explanation: The distances from (r0, c0) to other cells are: [0,1,1,2,2,3]</span><br><span class="line">There are other answers that would also be accepted as correct, such as [[1,2],[1,1],[0,2],[1,0],[0,1],[0,0]].</span><br></pre></td></tr></table></figure><h3 id="Submission"><a href="#Submission" class="headerlink" title="Submission"></a>Submission</h3><figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">var</span> allCellsDistOrder = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">R, C, r0, c0</span>) </span>&#123;</span><br><span class="line">  <span class="hljs-keyword">let</span> Arr = [];</span><br><span class="line">  <span class="hljs-keyword">let</span> subArr = [];</span><br><span class="line">  <span class="hljs-keyword">let</span> <span class="hljs-keyword">get</span> = 0;</span><br><span class="line">  for (let i = 0; i &lt; R; i++) &#123;</span><br><span class="line">    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> j = <span class="hljs-number">0</span>; j &lt; C; j++) &#123;</span><br><span class="line">      <span class="hljs-keyword">get</span> = Math.abs(i - r0) + Math.abs(j - c0);</span><br><span class="line">      if (!subArr[<span class="hljs-keyword">get</span>]) &#123;</span><br><span class="line">        subArr[<span class="hljs-keyword">get</span>] = [];</span><br><span class="line">      &#125;</span><br><span class="line">      subArr[<span class="hljs-keyword">get</span>][subArr[<span class="hljs-keyword">get</span>].length] = [i, j];</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  for (let i = 0; i &lt; subArr.length; i++) &#123;</span><br><span class="line">    Arr.push(...subArr[i]);</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="hljs-keyword">return</span> Arr;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>]]></content>
       
@@ -79,36 +79,11 @@
     
     
     <entry>
-      <title>[Codewars] Consecutive strings</title>
-      <link href="/2019/05/06/%5BCodewars%5D%20190507_Consecutive%20strings/"/>
-      <url>/2019/05/06/%5BCodewars%5D%20190507_Consecutive%20strings/</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      <categories>
-          
-          <category> Algorithm </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Algorithm </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>[Codewars] Double Cola</title>
       <link href="/2019/05/03/%5BCodewars%5D%20190503_%20Double%20Cola/"/>
       <url>/2019/05/03/%5BCodewars%5D%20190503_%20Double%20Cola/</url>
       
-        <content type="html"><![CDATA[<h3 id="문제"><a href="#문제" class="headerlink" title="문제"></a>문제</h3><ol><li>names라는 배열과 r이라는 수가 들어온다.</li><li>names라는 배열에</li><li></li><li></li></ol><h4 id="예시"><a href="#예시" class="headerlink" title="예시"></a>예시</h4><p><code>whoIsNext</code>([“Sheldon”, “Leonard”, “Penny”, “Rajesh”, “Howard”], 1) == <code>&quot;Sheldon&quot;</code><br><code>whoIsNext</code>([“Sheldon”, “Leonard”, “Penny”, “Rajesh”, “Howard”], 52) == <code>&quot;Penny&quot;</code></p><h3 id="내-코드"><a href="#내-코드" class="headerlink" title="내 코드"></a>내 코드</h3><figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">whoIsNext</span>(<span class="hljs-params">names, r</span>)</span>&#123;</span><br><span class="line">    <span class="hljs-keyword">var</span> count = <span class="hljs-number">0</span>;</span><br><span class="line">    <span class="hljs-keyword">var</span> sum = <span class="hljs-number">0</span>;</span><br><span class="line">    <span class="hljs-keyword">while</span> (sum &lt; r) &#123;</span><br><span class="line">        <span class="hljs-keyword">var</span> five = names.length * (<span class="hljs-number">2</span> ** count);</span><br><span class="line">        sum += five;</span><br><span class="line">        count++;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="hljs-keyword">var</span> pow = <span class="hljs-number">2</span> ** (count - <span class="hljs-number">1</span>);</span><br><span class="line">    <span class="hljs-keyword">var</span> new_idx= r - (sum - five) - <span class="hljs-number">1</span>;</span><br><span class="line">    </span><br><span class="line">    <span class="hljs-keyword">return</span> names[<span class="hljs-built_in">parseInt</span>(new_idx / pow)];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h3 id="내-풀이"><a href="#내-풀이" class="headerlink" title="내 풀이"></a>내 풀이</h3><pre><code>1.  내풀이 1<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>2.  풀이 과정 중 어려움five에 표현식을 할당하는 것을 while문 밖에서 선언하니 반복될 때마다 계산이 되지 않았다.names의 length가 경우에 따라 달라질 것이라는 것을 예상하지 못했다.</code></pre><h3 id="다른-사람-풀이"><a href="#다른-사람-풀이" class="headerlink" title="다른 사람 풀이"></a>다른 사람 풀이</h3><h4 id="다른점"><a href="#다른점" class="headerlink" title="다른점"></a>다른점</h4><p>1.</p><h4 id="알게-된-것"><a href="#알게-된-것" class="headerlink" title="알게 된 것"></a>알게 된 것</h4>]]></content>
+        <content type="html"><![CDATA[<h3 id="문제"><a href="#문제" class="headerlink" title="문제"></a>문제</h3><ol><li>names라는 배열과 r이라는 수가 들어온다.</li><li>names라는 배열에<br>3.<br>4.</li></ol><h4 id="예시"><a href="#예시" class="headerlink" title="예시"></a>예시</h4><p><code>whoIsNext</code>([“Sheldon”, “Leonard”, “Penny”, “Rajesh”, “Howard”], 1) == <code>&quot;Sheldon&quot;</code><br><code>whoIsNext</code>([“Sheldon”, “Leonard”, “Penny”, “Rajesh”, “Howard”], 52) == <code>&quot;Penny&quot;</code></p><h3 id="내-코드"><a href="#내-코드" class="headerlink" title="내 코드"></a>내 코드</h3><figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">whoIsNext</span>(<span class="hljs-params">names, r</span>) </span>&#123;</span><br><span class="line">  <span class="hljs-keyword">var</span> count = <span class="hljs-number">0</span>;</span><br><span class="line">  <span class="hljs-keyword">var</span> sum = <span class="hljs-number">0</span>;</span><br><span class="line">  <span class="hljs-keyword">while</span> (sum &lt; r) &#123;</span><br><span class="line">    <span class="hljs-keyword">var</span> five = names.length * <span class="hljs-number">2</span> ** count;</span><br><span class="line">    sum += five;</span><br><span class="line">    count++;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="hljs-keyword">var</span> pow = <span class="hljs-number">2</span> ** (count - <span class="hljs-number">1</span>);</span><br><span class="line">  <span class="hljs-keyword">var</span> new_idx = r - (sum - five) - <span class="hljs-number">1</span>;</span><br><span class="line"></span><br><span class="line">  <span class="hljs-keyword">return</span> names[<span class="hljs-built_in">parseInt</span>(new_idx / pow)];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h3 id="내-풀이"><a href="#내-풀이" class="headerlink" title="내 풀이"></a>내 풀이</h3><pre><code>1.  내풀이 1<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"> </span><br></pre></td></tr></table></figure>2.  풀이 과정 중 어려움five에 표현식을 할당하는 것을 while문 밖에서 선언하니 반복될 때마다 계산이 되지 않았다.names의 length가 경우에 따라 달라질 것이라는 것을 예상하지 못했다.</code></pre>]]></content>
       
       
       <categories>
@@ -133,7 +108,7 @@
       <link href="/2019/05/02/%5BCodewars%5D%20190502_Playing%20with%20digits/"/>
       <url>/2019/05/02/%5BCodewars%5D%20190502_Playing%20with%20digits/</url>
       
-        <content type="html"><![CDATA[<h3 id="문제"><a href="#문제" class="headerlink" title="문제"></a>문제</h3><ol><li><code>n이라는 정수</code>와 <code>p라는 정수</code> 두가지가 주어진다.</li><li>n이라는 정수의 <code>제일 큰 자릿수(10의 자리, 100의 자리)</code>의 수에 <code>p</code>라는 수만큼 제곱한다.</li><li>그 다음 자릿수에 <code>p+1만큼 제곱</code>한다.</li><li>자릿수가 커질수록 <code>p가 1씩 증가</code>한다.</li><li>제곱수를 모두 더한다.</li><li>더한 제곱수를 처음 <code>n이라는 값으로 나누어서</code> <code>정수이면 나눈 몫을 반환</code>, <code>정수가 아닌 경우에는 -1을 return</code>한다.</li></ol><h4 id="예시"><a href="#예시" class="headerlink" title="예시"></a>예시</h4><p><code>digPow(89, 1)</code> =&gt; 8¹ + 9² = 89 = 89 _ 1 <code>return 1</code><br><code>digPow(92, 1)</code> =&gt; there is no k such as 9¹ + 2² equals 92 _ k <code>return -1</code><br><code>digPow(695, 2)</code> =&gt; 6² + 9³ + 5⁴= 1390 = 695 * 2 <code>return 2</code></p><h3 id="내-코드"><a href="#내-코드" class="headerlink" title="내 코드"></a>내 코드</h3><figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">digPow</span>(<span class="hljs-params">n, p</span>) </span>&#123;</span><br><span class="line">  <span class="hljs-keyword">var</span> str_num = n.toString();</span><br><span class="line">  <span class="hljs-keyword">var</span> pow = <span class="hljs-number">0</span>;</span><br><span class="line">  <span class="hljs-keyword">var</span> sum = <span class="hljs-number">0</span>;</span><br><span class="line"></span><br><span class="line">  <span class="hljs-keyword">for</span> (i = <span class="hljs-number">0</span>; i &lt; str_num.length; i++) &#123;</span><br><span class="line">    pow = <span class="hljs-built_in">Math</span>.pow(str_num[i], p + i);</span><br><span class="line">    sum += pow;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="hljs-keyword">var</span> int_num = sum / n;</span><br><span class="line"></span><br><span class="line">  <span class="hljs-keyword">if</span> (int_num === <span class="hljs-built_in">parseInt</span>(int_num)) &#123;</span><br><span class="line">    <span class="hljs-keyword">return</span> int_num;</span><br><span class="line">  &#125; <span class="hljs-keyword">else</span> &#123;</span><br><span class="line">    <span class="hljs-keyword">return</span> <span class="hljs-number">-1</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h3 id="내-풀이"><a href="#내-풀이" class="headerlink" title="내 풀이"></a>내 풀이</h3><pre><code>1.  내풀이 1<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"> </span><br></pre></td></tr></table></figure>2.  풀이 과정 중 어려움<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"> </span><br></pre></td></tr></table></figure></code></pre><h3 id="다른-사람-풀이"><a href="#다른-사람-풀이" class="headerlink" title="다른 사람 풀이"></a>다른 사람 풀이</h3><h4 id="다른점"><a href="#다른점" class="headerlink" title="다른점"></a>다른점</h4><p>1.</p><h4 id="알게-된-것"><a href="#알게-된-것" class="headerlink" title="알게 된 것"></a>알게 된 것</h4>]]></content>
+        <content type="html"><![CDATA[<h3 id="문제"><a href="#문제" class="headerlink" title="문제"></a>문제</h3><ol><li><code>n이라는 정수</code>와 <code>p라는 정수</code> 두가지가 주어진다.</li><li>n이라는 정수의 <code>제일 큰 자릿수(10의 자리, 100의 자리)</code>의 수에 <code>p</code>라는 수만큼 제곱한다.</li><li>그 다음 자릿수에 <code>p+1만큼 제곱</code>한다.</li><li>자릿수가 커질수록 <code>p가 1씩 증가</code>한다.</li><li>제곱수를 모두 더한다.</li><li>더한 제곱수를 처음 <code>n이라는 값으로 나누어서</code> <code>정수이면 나눈 몫을 반환</code>, <code>정수가 아닌 경우에는 -1을 return</code>한다.</li></ol><h4 id="예시"><a href="#예시" class="headerlink" title="예시"></a>예시</h4><p><code>digPow(89, 1)</code> =&gt; 8¹ + 9² = 89 = 89 _ 1 <code>return 1</code><br><code>digPow(92, 1)</code> =&gt; there is no k such as 9¹ + 2² equals 92 _ k <code>return -1</code><br><code>digPow(695, 2)</code> =&gt; 6² + 9³ + 5⁴= 1390 = 695 * 2 <code>return 2</code></p><h3 id="내-코드"><a href="#내-코드" class="headerlink" title="내 코드"></a>내 코드</h3><figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">digPow</span>(<span class="hljs-params">n, p</span>) </span>&#123;</span><br><span class="line">  <span class="hljs-keyword">var</span> str_num = n.toString();</span><br><span class="line">  <span class="hljs-keyword">var</span> pow = <span class="hljs-number">0</span>;</span><br><span class="line">  <span class="hljs-keyword">var</span> sum = <span class="hljs-number">0</span>;</span><br><span class="line"></span><br><span class="line">  <span class="hljs-keyword">for</span> (i = <span class="hljs-number">0</span>; i &lt; str_num.length; i++) &#123;</span><br><span class="line">    pow = <span class="hljs-built_in">Math</span>.pow(str_num[i], p + i);</span><br><span class="line">    sum += pow;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="hljs-keyword">var</span> int_num = sum / n;</span><br><span class="line"></span><br><span class="line">  <span class="hljs-keyword">if</span> (int_num === <span class="hljs-built_in">parseInt</span>(int_num)) &#123;</span><br><span class="line">    <span class="hljs-keyword">return</span> int_num;</span><br><span class="line">  &#125; <span class="hljs-keyword">else</span> &#123;</span><br><span class="line">    <span class="hljs-keyword">return</span> <span class="hljs-number">-1</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
       
       
       <categories>
@@ -158,7 +133,7 @@
       <link href="/2019/04/30/%5BCodewars%5D%20190430_Decode%20the%20Morse%20code/"/>
       <url>/2019/04/30/%5BCodewars%5D%20190430_Decode%20the%20Morse%20code/</url>
       
-        <content type="html"><![CDATA[<h3 id="문제"><a href="#문제" class="headerlink" title="문제"></a>문제</h3><ol><li>n</li></ol><h3 id="내-코드"><a href="#내-코드" class="headerlink" title="내 코드"></a>내 코드</h3><figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">decodeMorse = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">morseCode</span>)</span>&#123;</span><br><span class="line">    <span class="hljs-keyword">var</span> str = morseCode.split(<span class="hljs-string">' '</span>);</span><br><span class="line">    <span class="hljs-keyword">var</span> imsi =[];</span><br><span class="line">    <span class="hljs-keyword">var</span> store = <span class="hljs-string">''</span>;</span><br><span class="line">    <span class="hljs-keyword">var</span> join = <span class="hljs-string">''</span>;</span><br><span class="line">    <span class="hljs-keyword">for</span>(i = <span class="hljs-number">0</span>; i &lt; str.length; i++)&#123;</span><br><span class="line">        <span class="hljs-keyword">if</span>(str[i] == <span class="hljs-string">''</span>)&#123;</span><br><span class="line">            imsi.push(store);</span><br><span class="line">            store = <span class="hljs-string">''</span>;</span><br><span class="line">        &#125;<span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>(i == str.length <span class="hljs-number">-1</span>)&#123;</span><br><span class="line">            store += MORSE_CODE[str[i]];</span><br><span class="line">            imsi.push(store);</span><br><span class="line">            store = <span class="hljs-string">''</span>;</span><br><span class="line">        &#125;<span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>(str[i] != <span class="hljs-string">''</span>)&#123;</span><br><span class="line">            store += MORSE_CODE[str[i]];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="hljs-keyword">var</span> real = [];</span><br><span class="line">    <span class="hljs-keyword">for</span>(i = <span class="hljs-number">0</span>; i&lt; imsi.length; i ++)&#123;</span><br><span class="line">        <span class="hljs-keyword">if</span>(imsi[i] != <span class="hljs-string">''</span>)&#123;</span><br><span class="line">        real.push(imsi[i]);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    join = real.join(<span class="hljs-string">' '</span>);</span><br><span class="line">    <span class="hljs-keyword">return</span> join;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h3 id="내-풀이"><a href="#내-풀이" class="headerlink" title="내 풀이"></a>내 풀이</h3><pre><code>1.  내풀이 1<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>2.  풀이 과정 중 어려움<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure></code></pre><h3 id="다른-사람-풀이"><a href="#다른-사람-풀이" class="headerlink" title="다른 사람 풀이"></a>다른 사람 풀이</h3><h4 id="다른점"><a href="#다른점" class="headerlink" title="다른점"></a>다른점</h4><p>1.</p><h4 id="알게-된-것"><a href="#알게-된-것" class="headerlink" title="알게 된 것"></a>알게 된 것</h4><p>trimLeft, trimRight, trimEnd<br>/ +/ -&gt; 공백이 한개 이상일 때</p>]]></content>
+        <content type="html"><![CDATA[<h3 id="문제"><a href="#문제" class="headerlink" title="문제"></a>문제</h3><ol><li>n</li></ol><h3 id="내-코드"><a href="#내-코드" class="headerlink" title="내 코드"></a>내 코드</h3><figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">decodeMorse = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">morseCode</span>) </span>&#123;</span><br><span class="line">  <span class="hljs-keyword">var</span> str = morseCode.split(<span class="hljs-string">" "</span>);</span><br><span class="line">  <span class="hljs-keyword">var</span> imsi = [];</span><br><span class="line">  <span class="hljs-keyword">var</span> store = <span class="hljs-string">""</span>;</span><br><span class="line">  <span class="hljs-keyword">var</span> join = <span class="hljs-string">""</span>;</span><br><span class="line">  <span class="hljs-keyword">for</span> (i = <span class="hljs-number">0</span>; i &lt; str.length; i++) &#123;</span><br><span class="line">    <span class="hljs-keyword">if</span> (str[i] == <span class="hljs-string">""</span>) &#123;</span><br><span class="line">      imsi.push(store);</span><br><span class="line">      store = <span class="hljs-string">""</span>;</span><br><span class="line">    &#125; <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (i == str.length - <span class="hljs-number">1</span>) &#123;</span><br><span class="line">      store += MORSE_CODE[str[i]];</span><br><span class="line">      imsi.push(store);</span><br><span class="line">      store = <span class="hljs-string">""</span>;</span><br><span class="line">    &#125; <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (str[i] != <span class="hljs-string">""</span>) &#123;</span><br><span class="line">      store += MORSE_CODE[str[i]];</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="hljs-keyword">var</span> real = [];</span><br><span class="line">  <span class="hljs-keyword">for</span> (i = <span class="hljs-number">0</span>; i &lt; imsi.length; i++) &#123;</span><br><span class="line">    <span class="hljs-keyword">if</span> (imsi[i] != <span class="hljs-string">""</span>) &#123;</span><br><span class="line">      real.push(imsi[i]);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  join = real.join(<span class="hljs-string">" "</span>);</span><br><span class="line">  <span class="hljs-keyword">return</span> join;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure><h4 id="알게-된-것"><a href="#알게-된-것" class="headerlink" title="알게 된 것"></a>알게 된 것</h4><p>trimLeft, trimRight, trimEnd<br>/ +/ -&gt; 공백이 한개 이상일 때</p>]]></content>
       
       
       <categories>
@@ -179,36 +154,11 @@
     
     
     <entry>
-      <title>190430_TIL</title>
-      <link href="/2019/04/30/190430-TIL/"/>
-      <url>/2019/04/30/190430-TIL/</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      <categories>
-          
-          <category> TIL </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> TIL </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>190429_TIL</title>
       <link href="/2019/04/29/190429-TIL/"/>
       <url>/2019/04/29/190429-TIL/</url>
       
-        <content type="html"><![CDATA[<h2 id="오늘-한-일"><a href="#오늘-한-일" class="headerlink" title="오늘 한 일"></a>오늘 한 일</h2><ul><li>javascript와 ECMAScript의 차이 정리</li><li>ES6를 사용시 transpiler와 module bundler</li></ul><h2 id="오늘-느낀-점"><a href="#오늘-느낀-점" class="headerlink" title="오늘 느낀 점"></a>오늘 느낀 점</h2>]]></content>
+        <content type="html"><![CDATA[<h2 id="오늘-한-일"><a href="#오늘-한-일" class="headerlink" title="오늘 한 일"></a>오늘 한 일</h2><ul><li>javascript와 ECMAScript의 차이 정리</li><li>ES6를 사용시 transpiler와 module bundler</li></ul>]]></content>
       
       
       <categories>
@@ -247,81 +197,6 @@
       <url>/2019/04/26/%5BCodewars%5D%20190426_Eureka/</url>
       
         <content type="html"><![CDATA[<h3 id="문제"><a href="#문제" class="headerlink" title="문제"></a>문제</h3><ol><li>n</li></ol><h3 id="내-코드"><a href="#내-코드" class="headerlink" title="내 코드"></a>내 코드</h3><figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">sumDigPow</span>(<span class="hljs-params">a, b</span>) </span>&#123;</span><br><span class="line">  <span class="hljs-keyword">var</span> li = [];</span><br><span class="line">            <span class="hljs-keyword">while</span> (a &lt; b) &#123;</span><br><span class="line">                <span class="hljs-keyword">var</span> a_arr = [];</span><br><span class="line">                a_arr = a.toString().split(<span class="hljs-string">''</span>);</span><br><span class="line">                <span class="hljs-keyword">var</span> sum = <span class="hljs-number">0</span>;</span><br><span class="line">                <span class="hljs-keyword">for</span> (i = a_arr.length - <span class="hljs-number">1</span>; i &gt;= <span class="hljs-number">0</span>; i--) &#123;</span><br><span class="line">                    sum += <span class="hljs-built_in">Math</span>.pow(a_arr[i], i + <span class="hljs-number">1</span>);</span><br><span class="line">                    <span class="hljs-keyword">if</span> (sum &gt;= a &amp;&amp; (i != <span class="hljs-number">0</span>)) &#123;</span><br><span class="line">                        <span class="hljs-keyword">break</span>;</span><br><span class="line">                    &#125; <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (a == sum) &#123;</span><br><span class="line">                        li.push(a);</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;</span><br><span class="line">                a++;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="hljs-keyword">return</span> li;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h3 id="내-풀이"><a href="#내-풀이" class="headerlink" title="내 풀이"></a>내 풀이</h3><pre><code>1.  내풀이 1<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>2.  풀이 과정 중 어려움<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure></code></pre><h3 id="다른-사람-풀이"><a href="#다른-사람-풀이" class="headerlink" title="다른 사람 풀이"></a>다른 사람 풀이</h3><h4 id="다른점"><a href="#다른점" class="headerlink" title="다른점"></a>다른점</h4><p>1.</p><h4 id="알게-된-것"><a href="#알게-된-것" class="headerlink" title="알게 된 것"></a>알게 된 것</h4>]]></content>
-      
-      
-      <categories>
-          
-          <category> Algorithm </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Algorithm </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>190426_TIL</title>
-      <link href="/2019/04/26/190426-TIL/"/>
-      <url>/2019/04/26/190426-TIL/</url>
-      
-        <content type="html"><![CDATA[<h2 id="오늘-한-일"><a href="#오늘-한-일" class="headerlink" title="오늘 한 일"></a>오늘 한 일</h2><ul><li></li></ul><h2 id="오늘-느낀-점"><a href="#오늘-느낀-점" class="headerlink" title="오늘 느낀 점"></a>오늘 느낀 점</h2>]]></content>
-      
-      
-      <categories>
-          
-          <category> TIL </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> TIL </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>190425_TIL</title>
-      <link href="/2019/04/25/190425-TIL/"/>
-      <url>/2019/04/25/190425-TIL/</url>
-      
-        <content type="html"><![CDATA[<h2 id="오늘-한-일"><a href="#오늘-한-일" class="headerlink" title="오늘 한 일"></a>오늘 한 일</h2><ul><li></li></ul><h2 id="오늘-느낀-점"><a href="#오늘-느낀-점" class="headerlink" title="오늘 느낀 점"></a>오늘 느낀 점</h2>]]></content>
-      
-      
-      <categories>
-          
-          <category> TIL </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> TIL </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>[Codewars] Maximum Subarray Sum</title>
-      <link href="/2019/04/24/%5BCodewars%5D%20190421_Maximum%20Subarray%20Sum/"/>
-      <url>/2019/04/24/%5BCodewars%5D%20190421_Maximum%20Subarray%20Sum/</url>
-      
-        <content type="html"><![CDATA[<h2 id="문제"><a href="#문제" class="headerlink" title="문제"></a>문제</h2><ol><li>n</li></ol><h2 id="내-코드"><a href="#내-코드" class="headerlink" title="내 코드"></a>내 코드</h2><figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">var</span> maxSequence = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">arr</span>)</span>&#123;</span><br><span class="line">            <span class="hljs-keyword">var</span> sum = <span class="hljs-number">0</span>;</span><br><span class="line">            <span class="hljs-keyword">var</span> max_num = <span class="hljs-number">0</span>;</span><br><span class="line">            <span class="hljs-keyword">for</span> (i = <span class="hljs-number">0</span>; i &lt; arr.length; i++) &#123;</span><br><span class="line">                sum += arr[i];</span><br><span class="line">                <span class="hljs-keyword">if</span> (sum &gt; max_num) &#123;</span><br><span class="line">                    max_num = sum;</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="hljs-keyword">if</span> (sum &lt; <span class="hljs-number">0</span>) &#123;</span><br><span class="line">                    sum = <span class="hljs-number">0</span>;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="hljs-keyword">return</span> max_num;</span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure><h2 id="내-풀이"><a href="#내-풀이" class="headerlink" title="내 풀이"></a>내 풀이</h2><pre><code>1.  내풀이 1<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>2.  풀이 과정 중 어려움<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure></code></pre><h2 id="다른-사람-풀이"><a href="#다른-사람-풀이" class="headerlink" title="다른 사람 풀이"></a>다른 사람 풀이</h2><h3 id="다른점"><a href="#다른점" class="headerlink" title="다른점"></a>다른점</h3><p>1.</p><h3 id="알게-된-것"><a href="#알게-된-것" class="headerlink" title="알게 된 것"></a>알게 된 것</h3>]]></content>
       
       
       <categories>
@@ -542,31 +417,6 @@
     
     
     <entry>
-      <title>190421_TIL</title>
-      <link href="/2019/04/21/190421-TIL/"/>
-      <url>/2019/04/21/190421-TIL/</url>
-      
-        <content type="html"><![CDATA[<h2 id="오늘-한-일"><a href="#오늘-한-일" class="headerlink" title="오늘 한 일"></a>오늘 한 일</h2><h2 id="오늘-느낀-점"><a href="#오늘-느낀-점" class="headerlink" title="오늘 느낀 점"></a>오늘 느낀 점</h2>]]></content>
-      
-      
-      <categories>
-          
-          <category> TIL </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> TIL </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>190420_TIL</title>
       <link href="/2019/04/20/190420-TIL/"/>
       <url>/2019/04/20/190420-TIL/</url>
@@ -609,31 +459,6 @@
         <tags>
             
             <tag> ComputerEngineering </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>190419_TIL</title>
-      <link href="/2019/04/19/190419-TIL/"/>
-      <url>/2019/04/19/190419-TIL/</url>
-      
-        <content type="html"><![CDATA[<h2 id="오늘-한-일"><a href="#오늘-한-일" class="headerlink" title="오늘 한 일"></a>오늘 한 일</h2><h2 id="오늘-느낀-점"><a href="#오늘-느낀-점" class="headerlink" title="오늘 느낀 점"></a>오늘 느낀 점</h2>]]></content>
-      
-      
-      <categories>
-          
-          <category> TIL </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> TIL </tag>
             
         </tags>
       
@@ -692,31 +517,6 @@
     
     
     <entry>
-      <title>190418_TIL</title>
-      <link href="/2019/04/18/190418-TIL/"/>
-      <url>/2019/04/18/190418-TIL/</url>
-      
-        <content type="html"><![CDATA[<h2 id="오늘-한-일"><a href="#오늘-한-일" class="headerlink" title="오늘 한 일"></a>오늘 한 일</h2><h2 id="오늘-느낀-점"><a href="#오늘-느낀-점" class="headerlink" title="오늘 느낀 점"></a>오늘 느낀 점</h2>]]></content>
-      
-      
-      <categories>
-          
-          <category> TIL </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> TIL </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>[Codewars] Multiples of 3 or 5</title>
       <link href="/2019/04/17/%5BCodewars%5D%20190417_Multiples%20of%203%20or%205/"/>
       <url>/2019/04/17/%5BCodewars%5D%20190417_Multiples%20of%203%20or%205/</url>
@@ -742,31 +542,6 @@
     
     
     <entry>
-      <title>190417_TIL</title>
-      <link href="/2019/04/17/190417-TIL/"/>
-      <url>/2019/04/17/190417-TIL/</url>
-      
-        <content type="html"><![CDATA[<h2 id="오늘-한-일"><a href="#오늘-한-일" class="headerlink" title="오늘 한 일"></a>오늘 한 일</h2><h2 id="오늘-느낀-점"><a href="#오늘-느낀-점" class="headerlink" title="오늘 느낀 점"></a>오늘 느낀 점</h2>]]></content>
-      
-      
-      <categories>
-          
-          <category> TIL </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> TIL </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>[LeetCode] 27. remove-element</title>
       <link href="/2019/04/16/%5BLeetCode%5D%20190416_27.%20remove-element/"/>
       <url>/2019/04/16/%5BLeetCode%5D%20190416_27.%20remove-element/</url>
@@ -784,31 +559,6 @@
         <tags>
             
             <tag> Algorithm </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>190416_TIL</title>
-      <link href="/2019/04/16/190416-TIL/"/>
-      <url>/2019/04/16/190416-TIL/</url>
-      
-        <content type="html"><![CDATA[<h2 id="오늘-한-일"><a href="#오늘-한-일" class="headerlink" title="오늘 한 일"></a>오늘 한 일</h2><h2 id="오늘-느낀-점"><a href="#오늘-느낀-점" class="headerlink" title="오늘 느낀 점"></a>오늘 느낀 점</h2>]]></content>
-      
-      
-      <categories>
-          
-          <category> TIL </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> TIL </tag>
             
         </tags>
       

@@ -14,18 +14,18 @@
 
 
 
-    <meta name="description" content="문제 names라는 배열과 r이라는 수가 들어온다. names라는 배열에    예시whoIsNext([“Sheldon”, “Leonard”, “Penny”, “Rajesh”, “Howard”], 1) == &amp;quot;Sheldon&amp;quot;whoIsNext([“Sheldon”, “Leonard”, “Penny”, “Rajesh”, “Howard”], 52)">
+    <meta name="description" content="문제 names라는 배열과 r이라는 수가 들어온다. names라는 배열에3.4.  예시whoIsNext([“Sheldon”, “Leonard”, “Penny”, “Rajesh”, “Howard”], 1) == &amp;quot;Sheldon&amp;quot;whoIsNext([“Sheldon”, “Leonard”, “Penny”, “Rajesh”, “Howard”], 5">
 <meta name="keywords" content="Algorithm">
 <meta property="og:type" content="article">
 <meta property="og:title" content="[Codewars] Double Cola">
 <meta property="og:url" content="http://HanHyunJin-mis.github.io/2019/05/03/[Codewars] 190503_ Double Cola/index.html">
 <meta property="og:site_name">
-<meta property="og:description" content="문제 names라는 배열과 r이라는 수가 들어온다. names라는 배열에    예시whoIsNext([“Sheldon”, “Leonard”, “Penny”, “Rajesh”, “Howard”], 1) == &amp;quot;Sheldon&amp;quot;whoIsNext([“Sheldon”, “Leonard”, “Penny”, “Rajesh”, “Howard”], 52)">
+<meta property="og:description" content="문제 names라는 배열과 r이라는 수가 들어온다. names라는 배열에3.4.  예시whoIsNext([“Sheldon”, “Leonard”, “Penny”, “Rajesh”, “Howard”], 1) == &amp;quot;Sheldon&amp;quot;whoIsNext([“Sheldon”, “Leonard”, “Penny”, “Rajesh”, “Howard”], 5">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-05-03T10:23:44.414Z">
+<meta property="og:updated_time" content="2019-10-02T08:29:43.094Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="[Codewars] Double Cola">
-<meta name="twitter:description" content="문제 names라는 배열과 r이라는 수가 들어온다. names라는 배열에    예시whoIsNext([“Sheldon”, “Leonard”, “Penny”, “Rajesh”, “Howard”], 1) == &amp;quot;Sheldon&amp;quot;whoIsNext([“Sheldon”, “Leonard”, “Penny”, “Rajesh”, “Howard”], 52)">
+<meta name="twitter:description" content="문제 names라는 배열과 r이라는 수가 들어온다. names라는 배열에3.4.  예시whoIsNext([“Sheldon”, “Leonard”, “Penny”, “Rajesh”, “Howard”], 1) == &amp;quot;Sheldon&amp;quot;whoIsNext([“Sheldon”, “Leonard”, “Penny”, “Rajesh”, “Howard”], 5">
 
 
 
@@ -103,7 +103,7 @@
         
         <div class="navbar-menu navbar-end">
             
-            <a class="navbar-item search" title="Buscar" href="javascript:;">
+            <a class="navbar-item search" title="Search" href="javascript:;">
                 <i class="fas fa-search"></i>
             </a>
             
@@ -142,7 +142,7 @@
         <span class="column is-narrow">
             
             
-            a minute de lectura (Alrededor de 165 palabras)
+            a minute read (About 152 words)
         </span>
         
     </div>
@@ -150,21 +150,18 @@
     
         <h3 id="문제"><a href="#문제" class="headerlink" title="문제"></a>문제</h3><ol>
 <li>names라는 배열과 r이라는 수가 들어온다.</li>
-<li>names라는 배열에</li>
-<li></li>
-<li></li>
+<li>names라는 배열에<br>3.<br>4.</li>
 </ol>
 <h4 id="예시"><a href="#예시" class="headerlink" title="예시"></a>예시</h4><p><code>whoIsNext</code>([“Sheldon”, “Leonard”, “Penny”, “Rajesh”, “Howard”], 1) == <code>&quot;Sheldon&quot;</code><br><code>whoIsNext</code>([“Sheldon”, “Leonard”, “Penny”, “Rajesh”, “Howard”], 52) == <code>&quot;Penny&quot;</code></p>
-<h3 id="내-코드"><a href="#내-코드" class="headerlink" title="내 코드"></a>내 코드</h3><figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">whoIsNext</span>(<span class="hljs-params">names, r</span>)</span>&#123;</span><br><span class="line">    <span class="hljs-keyword">var</span> count = <span class="hljs-number">0</span>;</span><br><span class="line">    <span class="hljs-keyword">var</span> sum = <span class="hljs-number">0</span>;</span><br><span class="line">    <span class="hljs-keyword">while</span> (sum &lt; r) &#123;</span><br><span class="line">        <span class="hljs-keyword">var</span> five = names.length * (<span class="hljs-number">2</span> ** count);</span><br><span class="line">        sum += five;</span><br><span class="line">        count++;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="hljs-keyword">var</span> pow = <span class="hljs-number">2</span> ** (count - <span class="hljs-number">1</span>);</span><br><span class="line">    <span class="hljs-keyword">var</span> new_idx= r - (sum - five) - <span class="hljs-number">1</span>;</span><br><span class="line">    </span><br><span class="line">    <span class="hljs-keyword">return</span> names[<span class="hljs-built_in">parseInt</span>(new_idx / pow)];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="내-코드"><a href="#내-코드" class="headerlink" title="내 코드"></a>내 코드</h3><figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">whoIsNext</span>(<span class="hljs-params">names, r</span>) </span>&#123;</span><br><span class="line">  <span class="hljs-keyword">var</span> count = <span class="hljs-number">0</span>;</span><br><span class="line">  <span class="hljs-keyword">var</span> sum = <span class="hljs-number">0</span>;</span><br><span class="line">  <span class="hljs-keyword">while</span> (sum &lt; r) &#123;</span><br><span class="line">    <span class="hljs-keyword">var</span> five = names.length * <span class="hljs-number">2</span> ** count;</span><br><span class="line">    sum += five;</span><br><span class="line">    count++;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="hljs-keyword">var</span> pow = <span class="hljs-number">2</span> ** (count - <span class="hljs-number">1</span>);</span><br><span class="line">  <span class="hljs-keyword">var</span> new_idx = r - (sum - five) - <span class="hljs-number">1</span>;</span><br><span class="line"></span><br><span class="line">  <span class="hljs-keyword">return</span> names[<span class="hljs-built_in">parseInt</span>(new_idx / pow)];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h3 id="내-풀이"><a href="#내-풀이" class="headerlink" title="내 풀이"></a>내 풀이</h3><pre><code>1.  내풀이 1
-<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">	</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"> </span><br></pre></td></tr></table></figure>
 
 2.  풀이 과정 중 어려움
 five에 표현식을 할당하는 것을 while문 밖에서 선언하니 반복될 때마다 계산이 되지 않았다.
 
 names의 length가 경우에 따라 달라질 것이라는 것을 예상하지 못했다.
-</code></pre><h3 id="다른-사람-풀이"><a href="#다른-사람-풀이" class="headerlink" title="다른 사람 풀이"></a>다른 사람 풀이</h3><h4 id="다른점"><a href="#다른점" class="headerlink" title="다른점"></a>다른점</h4><p>1.</p>
-<h4 id="알게-된-것"><a href="#알게-된-것" class="headerlink" title="알게 된 것"></a>알게 된 것</h4>
+</code></pre>
     
     </div>
     
@@ -178,7 +175,7 @@ names의 length가 경우에 따라 달라질 것이라는 것을 예상하지 �
     <div class="columns is-mobile is-multiline article-nav">
         <span class="column is-12-mobile is-half-desktop  article-nav-prev">
             
-            <a href="/2019/05/06/[Codewars] 190507_Consecutive strings/">[Codewars] Consecutive strings</a>
+            <a href="/2019/09/19/190919-LeetCode-Length-of-last-word/">[190919 LeetCode] Length of last word</a>
             
         </span>
         <span class="column is-12-mobile is-half-desktop  article-nav-next">
@@ -202,7 +199,7 @@ names의 length가 경우에 따라 달라질 것이라는 것을 예상하지 �
 
 
 <div class="comments">
-    <h3 class="title is-4">Comentarios</h3>
+    <h3 class="title is-4">Comments</h3>
     
 <script>
     var disqus_config = function () {
@@ -384,7 +381,7 @@ names의 length가 경우에 따라 달라질 것이라는 것을 예상하지 �
     <div class="searchbox-mask"></div>
     <div class="searchbox-container ins-search-container">
         <div class="searchbox-input-wrapper">
-            <input type="text" class="searchbox-input ins-search-input" placeholder="Escribe algo...">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something...">
             <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
         </div>
         <div class="searchbox-result-wrapper ins-section-wrapper">
@@ -397,10 +394,10 @@ names의 length가 경우에 따라 달라질 것이라는 것을 예상하지 �
         var INSIGHT_CONFIG = {
             TRANSLATION: {
                 POSTS: 'Posts',
-                PAGES: 'Páginas',
-                CATEGORIES: 'Categorías',
+                PAGES: 'Pages',
+                CATEGORIES: 'Categories',
                 TAGS: 'Tags',
-                UNTITLED: '(Sin título)',
+                UNTITLED: '(Untitled)',
             },
             CONTENT_URL: '/content.json',
         };
