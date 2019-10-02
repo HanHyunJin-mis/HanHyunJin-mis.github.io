@@ -98,7 +98,7 @@
         
         <div class="navbar-menu navbar-end">
             
-            <a class="navbar-item search" title="Search" href="javascript:;">
+            <a class="navbar-item search" title="Buscar" href="javascript:;">
                 <i class="fas fa-search"></i>
             </a>
             
@@ -121,6 +121,93 @@
         <article class="article content gallery" itemscope itemprop="blogPost">
     <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
         
+            <a href="/2019/04/26/[Codewars] 190426_Eureka/" itemprop="url">[Codewars] Take a Number And Sum Its Digits Raised To The Consecutive Powers And ....¡Eureka!!</a>
+        
+    </h1>
+    <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
+        <span class="column is-narrow">
+            <time datetime="2019-04-26T09:13:22.000Z" itemprop="datePublished">Apr 26 2019</time>
+        </span>
+        
+        <span class="column is-narrow article-category">
+            <i class="far fa-folder"></i>
+            <a class="article-category-link" href="/categories/Algorithm/">Algorithm</a>
+        </span>
+        
+        
+        <span class="column is-narrow">
+            
+            
+            a few seconds de lectura (Alrededor de 82 palabras)
+        </span>
+        
+    </div>
+    <div class="article-entry is-size-6-mobile" itemprop="articleBody">
+    
+        <h3 id="문제"><a href="#문제" class="headerlink" title="문제"></a>문제</h3><ol>
+<li>n</li>
+</ol>
+<h3 id="내-코드"><a href="#내-코드" class="headerlink" title="내 코드"></a>내 코드</h3><figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">sumDigPow</span>(<span class="hljs-params">a, b</span>) </span>&#123;</span><br><span class="line">  <span class="hljs-keyword">var</span> li = [];</span><br><span class="line">            <span class="hljs-keyword">while</span> (a &lt; b) &#123;</span><br><span class="line">                <span class="hljs-keyword">var</span> a_arr = [];</span><br><span class="line">                a_arr = a.toString().split(<span class="hljs-string">''</span>);</span><br><span class="line">                <span class="hljs-keyword">var</span> sum = <span class="hljs-number">0</span>;</span><br><span class="line">                <span class="hljs-keyword">for</span> (i = a_arr.length - <span class="hljs-number">1</span>; i &gt;= <span class="hljs-number">0</span>; i--) &#123;</span><br><span class="line">                    sum += <span class="hljs-built_in">Math</span>.pow(a_arr[i], i + <span class="hljs-number">1</span>);</span><br><span class="line">                    <span class="hljs-keyword">if</span> (sum &gt;= a &amp;&amp; (i != <span class="hljs-number">0</span>)) &#123;</span><br><span class="line">                        <span class="hljs-keyword">break</span>;</span><br><span class="line">                    &#125; <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (a == sum) &#123;</span><br><span class="line">                        li.push(a);</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;</span><br><span class="line">                a++;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="hljs-keyword">return</span> li;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="내-풀이"><a href="#내-풀이" class="headerlink" title="내 풀이"></a>내 풀이</h3><pre><code>1.  내풀이 1
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">	</span><br></pre></td></tr></table></figure>
+
+2.  풀이 과정 중 어려움
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">	</span><br></pre></td></tr></table></figure>
+</code></pre><h3 id="다른-사람-풀이"><a href="#다른-사람-풀이" class="headerlink" title="다른 사람 풀이"></a>다른 사람 풀이</h3><h4 id="다른점"><a href="#다른점" class="headerlink" title="다른점"></a>다른점</h4><p>1.</p>
+<h4 id="알게-된-것"><a href="#알게-된-것" class="headerlink" title="알게 된 것"></a>알게 된 것</h4>
+    
+    </div>
+    
+    
+</article>
+
+
+
+
+    
+        <article class="article content gallery" itemscope itemprop="blogPost">
+    <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
+        
+            <a href="/2019/04/26/190426-TIL/" itemprop="url">190426_TIL</a>
+        
+    </h1>
+    <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
+        <span class="column is-narrow">
+            <time datetime="2019-04-26T04:45:26.000Z" itemprop="datePublished">Apr 26 2019</time>
+        </span>
+        
+        <span class="column is-narrow article-category">
+            <i class="far fa-folder"></i>
+            <a class="article-category-link" href="/categories/TIL/">TIL</a>
+        </span>
+        
+        
+        <span class="column is-narrow">
+            
+            
+            a few seconds de lectura (Alrededor de 9 palabras)
+        </span>
+        
+    </div>
+    <div class="article-entry is-size-6-mobile" itemprop="articleBody">
+    
+        <h2 id="오늘-한-일"><a href="#오늘-한-일" class="headerlink" title="오늘 한 일"></a>오늘 한 일</h2><ul>
+<li></li>
+</ul>
+<h2 id="오늘-느낀-점"><a href="#오늘-느낀-점" class="headerlink" title="오늘 느낀 점"></a>오늘 느낀 점</h2>
+    
+    </div>
+    
+    
+</article>
+
+
+
+
+    
+        <article class="article content gallery" itemscope itemprop="blogPost">
+    <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
+        
             <a href="/2019/04/25/190425-TIL/" itemprop="url">190425_TIL</a>
         
     </h1>
@@ -138,7 +225,7 @@
         <span class="column is-narrow">
             
             
-            a few seconds read (About 9 words)
+            a few seconds de lectura (Alrededor de 9 palabras)
         </span>
         
     </div>
@@ -178,7 +265,7 @@
         <span class="column is-narrow">
             
             
-            a few seconds read (About 65 words)
+            a few seconds de lectura (Alrededor de 65 palabras)
         </span>
         
     </div>
@@ -225,7 +312,7 @@
         <span class="column is-narrow">
             
             
-            2 minutes read (About 267 words)
+            2 minutes de lectura (Alrededor de 267 palabras)
         </span>
         
     </div>
@@ -240,7 +327,7 @@
 <li>한번에 하나의 원판만 움직일 수 있다.</li>
 <li>큰 원판 위에 작은 원판이 올라갈 수 없다.</li></ol>
         <p class="article-more-link">
-            <a href="/2019/04/24/Hanoi tower/#more">Read More</a>
+            <a href="/2019/04/24/Hanoi tower/#more">Leer más</a>
         </p>
     
     </div>
@@ -272,7 +359,7 @@
         <span class="column is-narrow">
             
             
-            a few seconds read (About 29 words)
+            a few seconds de lectura (Alrededor de 29 palabras)
         </span>
         
     </div>
@@ -312,7 +399,7 @@
         <span class="column is-narrow">
             
             
-            2 minutes read (About 228 words)
+            2 minutes de lectura (Alrededor de 228 palabras)
         </span>
         
     </div>
@@ -324,7 +411,7 @@
 <li><code>기저 조건</code>을 만든다. (코드를 짜기 전에 기초가 되는 조건)</li>
 </ol>
         <p class="article-more-link">
-            <a href="/2019/04/23/190423_recursion, factorial, fibonacci/#more">Read More</a>
+            <a href="/2019/04/23/190423_recursion, factorial, fibonacci/#more">Leer más</a>
         </p>
     
     </div>
@@ -356,7 +443,7 @@
         <span class="column is-narrow">
             
             
-            a minute read (About 156 words)
+            a minute de lectura (Alrededor de 156 palabras)
         </span>
         
     </div>
@@ -371,7 +458,7 @@
 <p>ex. ints = [1, 4, 8, 7, 0, 15], s = 8  </p>
 <p>즉, 1과 7 또는 8과 0일 경우에는 인덱스 수가 가장 작은 1과 7을 반환한다.</p>
         <p class="article-more-link">
-            <a href="/2019/04/23/[Codewars] 190423_Sum of Pairs/#more">Read More</a>
+            <a href="/2019/04/23/[Codewars] 190423_Sum of Pairs/#more">Leer más</a>
         </p>
     
     </div>
@@ -403,7 +490,7 @@
         <span class="column is-narrow">
             
             
-            a minute read (About 146 words)
+            a minute de lectura (Alrededor de 146 palabras)
         </span>
         
     </div>
@@ -452,7 +539,7 @@
         <span class="column is-narrow">
             
             
-            a minute read (About 147 words)
+            a minute de lectura (Alrededor de 147 palabras)
         </span>
         
     </div>
@@ -492,104 +579,14 @@
 
 
     
-        <article class="article content gallery" itemscope itemprop="blogPost">
-    <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
-        
-            <a href="/2019/04/22/190422_variables, function, closure, binary, linear search/" itemprop="url">190422_variables, function, closure, binary, linear search</a>
-        
-    </h1>
-    <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
-        <span class="column is-narrow">
-            <time datetime="2019-04-22T11:42:15.000Z" itemprop="datePublished">Apr 22 2019</time>
-        </span>
-        
-        <span class="column is-narrow article-category">
-            <i class="far fa-folder"></i>
-            <a class="article-category-link" href="/categories/ComputerEngineering/">ComputerEngineering</a>
-        </span>
-        
-        
-        <span class="column is-narrow">
-            
-            
-            7 minutes read (About 1062 words)
-        </span>
-        
-    </div>
-    <div class="article-entry is-size-6-mobile" itemprop="articleBody">
-    
-        <h2 id="함수"><a href="#함수" class="headerlink" title="함수"></a>함수</h2><ol>
-<li>namespace</li>
-<li>stack frame</li>
-<li>call by value(왜 call by value와 reference를 나누었을까?)<br> call by reference~<br> call by reference object</li>
-</ol>
-        <p class="article-more-link">
-            <a href="/2019/04/22/190422_variables, function, closure, binary, linear search/#more">Read More</a>
-        </p>
-    
-    </div>
-    
-    
-</article>
-
-
-
-
-    
-        <article class="article content gallery" itemscope itemprop="blogPost">
-    <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
-        
-            <a href="/2019/04/22/[Codewars] 190422_Directions Reduction/" itemprop="url">[Codewars] Directions Reduction</a>
-        
-    </h1>
-    <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
-        <span class="column is-narrow">
-            <time datetime="2019-04-22T06:39:47.000Z" itemprop="datePublished">Apr 22 2019</time>
-        </span>
-        
-        <span class="column is-narrow article-category">
-            <i class="far fa-folder"></i>
-            <a class="article-category-link" href="/categories/Algorithm/">Algorithm</a>
-        </span>
-        
-        
-        <span class="column is-narrow">
-            
-            
-            2 minutes read (About 339 words)
-        </span>
-        
-    </div>
-    <div class="article-entry is-size-6-mobile" itemprop="articleBody">
-    
-        <h3 id="문제"><a href="#문제" class="headerlink" title="문제"></a>문제</h3><p>불필요한 경로 줄이기</p>
-<ol>
-<li><code>동쪽, 서쪽, 남쪽, 북쪽</code>의 방향이 있다.</li>
-<li><code>남쪽</code>으로 갔다 <code>북쪽</code>으로 가면 원점이므로 불필요한 이동</li>
-<li><code>동쪽</code>으로 갔다 <code>서쪽</code>으로 가면 원점이므로 불필요한 이동</li>
-<li>불필요한 이동을 줄여 최단 이동을 구하기<br>ex.  <code>[&quot;NORTH&quot;, &quot;SOUTH&quot;, &quot;SOUTH&quot;, &quot;EAST&quot;, &quot;WEST&quot;, &quot;NORTH&quot;, &quot;WEST&quot;]</code>   -&gt;   <code>[&quot;WEST&quot;]</code></li>
-</ol>
-        <p class="article-more-link">
-            <a href="/2019/04/22/[Codewars] 190422_Directions Reduction/#more">Read More</a>
-        </p>
-    
-    </div>
-    
-    
-</article>
-
-
-
-
-    
     
         
 <nav class="pagination is-centered is-rounded" role="navigation" aria-label="pagination">
     <div class="pagination-previous">
-        <a href="/">Prev</a>
+        <a href="/">Anterior</a>
     </div>
     <div class="pagination-next">
-        <a href="/page/3/">Next</a>
+        <a href="/page/3/">Siguiente</a>
     </div>
     <ul class="pagination-list is-hidden-mobile">
         
@@ -762,7 +759,7 @@
     <div class="searchbox-mask"></div>
     <div class="searchbox-container ins-search-container">
         <div class="searchbox-input-wrapper">
-            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something...">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="Escribe algo...">
             <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
         </div>
         <div class="searchbox-result-wrapper ins-section-wrapper">
@@ -775,10 +772,10 @@
         var INSIGHT_CONFIG = {
             TRANSLATION: {
                 POSTS: 'Posts',
-                PAGES: 'Pages',
-                CATEGORIES: 'Categories',
+                PAGES: 'Páginas',
+                CATEGORIES: 'Categorías',
                 TAGS: 'Tags',
-                UNTITLED: '(Untitled)',
+                UNTITLED: '(Sin título)',
             },
             CONTENT_URL: '/content.json',
         };
