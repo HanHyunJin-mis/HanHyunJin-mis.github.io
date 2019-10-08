@@ -154,31 +154,6 @@
     
     
     <entry>
-      <title>190429_TIL</title>
-      <link href="/2019/04/29/190429-TIL/"/>
-      <url>/2019/04/29/190429-TIL/</url>
-      
-        <content type="html"><![CDATA[<h2 id="오늘-한-일"><a href="#오늘-한-일" class="headerlink" title="오늘 한 일"></a>오늘 한 일</h2><ul><li>javascript와 ECMAScript의 차이 정리</li><li>ES6를 사용시 transpiler와 module bundler</li></ul>]]></content>
-      
-      
-      <categories>
-          
-          <category> TIL </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> TIL </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>sort</title>
       <link href="/2019/04/26/190426/"/>
       <url>/2019/04/26/190426/</url>
@@ -246,7 +221,7 @@
       <link href="/2019/04/24/190424-TIL/"/>
       <url>/2019/04/24/190424-TIL/</url>
       
-        <content type="html"><![CDATA[<h2 id="오늘-한-일"><a href="#오늘-한-일" class="headerlink" title="오늘 한 일"></a>오늘 한 일</h2><ul><li>hanoi tower(하노이의 탑) 코드 작동원리 이해하기<br>  <a href="/2019/04/24/Hanoi%20tower/">link</a>  </li></ul><h2 id="오늘-느낀-점"><a href="#오늘-느낀-점" class="headerlink" title="오늘 느낀 점"></a>오늘 느낀 점</h2>]]></content>
+        <content type="html"><![CDATA[<h2 id="오늘-한-일"><a href="#오늘-한-일" class="headerlink" title="오늘 한 일"></a>오늘 한 일</h2><ul><li>hanoi tower(하노이의 탑) 코드 작동원리 이해하기<br><a href="/2019/04/24/Hanoi%20tower/">link</a></li></ul>]]></content>
       
       
       <categories>
@@ -321,7 +296,7 @@
       <link href="/2019/04/23/190423-TIL/"/>
       <url>/2019/04/23/190423-TIL/</url>
       
-        <content type="html"><![CDATA[<h2 id="오늘-한-일"><a href="#오늘-한-일" class="headerlink" title="오늘 한 일"></a>오늘 한 일</h2><ul><li><p>recursion(재귀함수), factorial(계승), fibonacci(피보나치) 정리<br>  <a href="/2019/04/23/190423_recursion,%20factorial,%20fibonacci/">link</a>  </p></li><li><p>Codewars 알고리즘 스터디 후 풀이 리뷰<br>  <a href="/2019/04/23/[Codewars]%20Sum%20of%20Pairs/">[Codewars] Sum of Pairs</a>  </p></li><li><p>Codewars 다음 알고리즘 문제 풀이 생각하기<br>  <a href>[Codewars] Maximum subarray sum</a>  </p></li></ul><h2 id="오늘-느낀-점"><a href="#오늘-느낀-점" class="headerlink" title="오늘 느낀 점"></a>오늘 느낀 점</h2><ul><li>블로그에는 내가 정확히 아는 정보만 작성하자.</li><li>알고리즘 공부법을 세우자!<br>  한문제는 길어야 2시간 정도만 고민해본다.(제일 안되는 부분…)<br>  <code>알고리즘 공부 참고 블로그</code> : <a href="https://gmlwjd9405.github.io/2018/05/14/how-to-study-algorithms.html" target="_blank" rel="noopener">Heee’s Development Blog</a></li></ul>]]></content>
+        <content type="html"><![CDATA[<h2 id="오늘-한-일"><a href="#오늘-한-일" class="headerlink" title="오늘 한 일"></a>오늘 한 일</h2><ul><li><p>recursion(재귀함수), factorial(계승), fibonacci(피보나치) 정리<br><a href="/2019/04/23/190423_recursion,%20factorial,%20fibonacci/">link</a></p></li><li><p>Codewars 알고리즘 스터디 후 풀이 리뷰<br><a href="/2019/04/23/[Codewars]%20Sum%20of%20Pairs/">[Codewars] Sum of Pairs</a></p></li><li><p>Codewars 다음 알고리즘 문제 풀이 생각하기<br><a href>[Codewars] Maximum subarray sum</a></p></li></ul>]]></content>
       
       
       <categories>
@@ -346,7 +321,7 @@
       <link href="/2019/04/22/190422-TIL/"/>
       <url>/2019/04/22/190422-TIL/</url>
       
-        <content type="html"><![CDATA[<h2 id="오늘-한-일"><a href="#오늘-한-일" class="headerlink" title="오늘 한 일"></a>오늘 한 일</h2><ul><li><p>컴퓨터 공학 기초 수업 내용 정리</p><ul><li>name space</li><li>stack frame</li><li><p>call by value와 call by reference  </p></li><li><p>전역 변수 vs 지역변수</p></li><li><p>linear search, binary search</p></li><li><p><a href="/2019/04/22/190422_variables,%20function,%20closure,%20binary,%20linear%20search/">link</a>  </p></li></ul></li><li><p>Codewars 알고리즘 스터디 후 풀이 리뷰<br>  <a href="/2019/04/21/[Codewars]%20Directions%20Reduction/">[Codewars] Directions Reduction</a>  </p></li><li><p>Codewars 다음 알고리즘 문제 풀이 생각하기<br>  <a href="/2019/04/23/[Codewars]%20Sum%20of%20Pairs/">[Codewars] Sum of Pairs</a>  </p></li></ul><h2 id="오늘-느낀-점"><a href="#오늘-느낀-점" class="headerlink" title="오늘 느낀 점"></a>오늘 느낀 점</h2><ul><li>컴퓨터 공학을 짧은 시간에 배운다는 것은 불가능했다….<br>  나중에 복학하면 컴퓨터 공학에 대해 수업을 들어보고 제대로 배우고 싶다!</li></ul>]]></content>
+        <content type="html"><![CDATA[<h2 id="오늘-한-일"><a href="#오늘-한-일" class="headerlink" title="오늘 한 일"></a>오늘 한 일</h2><ul><li><p>컴퓨터 공학 기초 수업 내용 정리</p><ul><li>name space</li><li>stack frame</li><li><p>call by value와 call by reference</p></li><li><p>전역 변수 vs 지역변수</p></li><li><p>linear search, binary search</p></li><li><p><a href="/2019/04/22/190422_variables,%20function,%20closure,%20binary,%20linear%20search/">link</a></p></li></ul></li><li><p>Codewars 알고리즘 스터디 후 풀이 리뷰<br><a href="/2019/04/21/[Codewars]%20Directions%20Reduction/">[Codewars] Directions Reduction</a></p></li><li><p>Codewars 다음 알고리즘 문제 풀이 생각하기<br><a href="/2019/04/23/[Codewars]%20Sum%20of%20Pairs/">[Codewars] Sum of Pairs</a></p></li></ul>]]></content>
       
       
       <categories>
@@ -421,7 +396,7 @@
       <link href="/2019/04/20/190420-TIL/"/>
       <url>/2019/04/20/190420-TIL/</url>
       
-        <content type="html"><![CDATA[<h2 id="오늘-한-일"><a href="#오늘-한-일" class="headerlink" title="오늘 한 일"></a>오늘 한 일</h2><ul><li>Codewars 알고리즘 문제 풀기<br>  <a href="/2019/04/21/[Codewars]%20Directions%20Reduction/">[Codewars] Directions Reduction</a></li></ul><h2 id="오늘-느낀-점"><a href="#오늘-느낀-점" class="headerlink" title="오늘 느낀 점"></a>오늘 느낀 점</h2>]]></content>
+        <content type="html"><![CDATA[<h2 id="오늘-한-일"><a href="#오늘-한-일" class="headerlink" title="오늘 한 일"></a>오늘 한 일</h2><ul><li>Codewars 알고리즘 문제 풀기<br><a href="/2019/04/21/[Codewars]%20Directions%20Reduction/">[Codewars] Directions Reduction</a></li></ul>]]></content>
       
       
       <categories>
