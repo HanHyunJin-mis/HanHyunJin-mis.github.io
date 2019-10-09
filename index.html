@@ -133,6 +133,117 @@
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-10-09T13:42:02.000Z">2019-10-09</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/javascript/">javascript</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    4 minutes read (About 600 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2019/10/09/191009-제어문-연습문제/">제어문 연습문제</a>
+            
+        </h1>
+        <div class="content">
+            <p>var x = 15;</p>
+<h3 id="1-변수-x가-10보다-크고-20보다-작을-때-변수-x를-출력하는-조건식을-완성하라"><a href="#1-변수-x가-10보다-크고-20보다-작을-때-변수-x를-출력하는-조건식을-완성하라" class="headerlink" title="1. 변수 x가 10보다 크고 20보다 작을 때 변수 x를 출력하는 조건식을 완성하라."></a>1. 변수 x가 10보다 크고 20보다 작을 때 변수 x를 출력하는 조건식을 완성하라.</h3><figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">if</span> (<span class="hljs-number">10</span> &lt; x &amp;&amp; x &lt; <span class="hljs-number">20</span>) &#123;</span><br><span class="line">  <span class="hljs-built_in">console</span>.log(x);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="2-for문을-사용하여-0부터-10미만의-정수-중에서-짝수만을-작은-수부터-출력하시오"><a href="#2-for문을-사용하여-0부터-10미만의-정수-중에서-짝수만을-작은-수부터-출력하시오" class="headerlink" title="2. for문을 사용하여 0부터 10미만의 정수 중에서 짝수만을 작은 수부터 출력하시오."></a>2. for문을 사용하여 0부터 10미만의 정수 중에서 짝수만을 작은 수부터 출력하시오.</h3><figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">10</span>; i += <span class="hljs-number">2</span>) &#123;</span><br><span class="line">  <span class="hljs-built_in">console</span>.log(i);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="3-for문을-사용하여-0부터-10미만의-정수-중에서-짝수만을-작은-수부터-문자열로-출력하시오"><a href="#3-for문을-사용하여-0부터-10미만의-정수-중에서-짝수만을-작은-수부터-문자열로-출력하시오" class="headerlink" title="3. for문을 사용하여 0부터 10미만의 정수 중에서 짝수만을 작은 수부터 문자열로 출력하시오."></a>3. for문을 사용하여 0부터 10미만의 정수 중에서 짝수만을 작은 수부터 문자열로 출력하시오.</h3><figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">let</span> str = <span class="hljs-string">""</span>;</span><br><span class="line"><span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">10</span>; i += <span class="hljs-number">2</span>) &#123;</span><br><span class="line">  str += i;</span><br><span class="line">&#125;</span><br><span class="line"><span class="hljs-built_in">console</span>.log(str);</span><br></pre></td></tr></table></figure>
+<h3 id="4-for문을-사용하여-0부터-10미만의-정수-중에서-홀수만을-큰수부터-출력하시오"><a href="#4-for문을-사용하여-0부터-10미만의-정수-중에서-홀수만을-큰수부터-출력하시오" class="headerlink" title="4. for문을 사용하여 0부터 10미만의 정수 중에서 홀수만을 큰수부터 출력하시오."></a>4. for문을 사용하여 0부터 10미만의 정수 중에서 홀수만을 큰수부터 출력하시오.</h3><figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">9</span>; i &gt; <span class="hljs-number">0</span>; i -= <span class="hljs-number">2</span>) &#123;</span><br><span class="line">  <span class="hljs-built_in">console</span>.log(i);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="5-while문을-사용하여-0-부터-10-미만의-정수-중에서-짝수만을-작은-수부터-출력하시오"><a href="#5-while문을-사용하여-0-부터-10-미만의-정수-중에서-짝수만을-작은-수부터-출력하시오" class="headerlink" title="5. while문을 사용하여 0 부터 10 미만의 정수 중에서 짝수만을 작은 수부터 출력하시오."></a>5. while문을 사용하여 0 부터 10 미만의 정수 중에서 짝수만을 작은 수부터 출력하시오.</h3><figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">var</span> start = <span class="hljs-number">0</span>;</span><br><span class="line"><span class="hljs-keyword">while</span> (start &lt; <span class="hljs-number">10</span>) &#123;</span><br><span class="line">  <span class="hljs-keyword">if</span> (start % <span class="hljs-number">2</span> === <span class="hljs-number">0</span>) &#123;</span><br><span class="line">    <span class="hljs-built_in">console</span>.log(start);</span><br><span class="line">  &#125;</span><br><span class="line">  start++;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="6-while문을-사용하여-0-부터-10-미만의-정수-중에서-홀수만을-큰수부터-출력하시오"><a href="#6-while문을-사용하여-0-부터-10-미만의-정수-중에서-홀수만을-큰수부터-출력하시오" class="headerlink" title="6. while문을 사용하여 0 부터 10 미만의 정수 중에서 홀수만을 큰수부터 출력하시오."></a>6. while문을 사용하여 0 부터 10 미만의 정수 중에서 홀수만을 큰수부터 출력하시오.</h3><figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">var</span> start = <span class="hljs-number">9</span>;</span><br><span class="line"><span class="hljs-keyword">while</span> (start &gt;= <span class="hljs-number">0</span>) &#123;</span><br><span class="line">  <span class="hljs-keyword">if</span> (start % <span class="hljs-number">2</span> === <span class="hljs-number">1</span>) &#123;</span><br><span class="line">    <span class="hljs-built_in">console</span>.log(start);</span><br><span class="line">  &#125;</span><br><span class="line">  start--;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="7-for-문을-사용하여-0부터-10미만의-정수의-합을-출력하시오"><a href="#7-for-문을-사용하여-0부터-10미만의-정수의-합을-출력하시오" class="headerlink" title="7. for 문을 사용하여 0부터 10미만의 정수의 합을 출력하시오."></a>7. for 문을 사용하여 0부터 10미만의 정수의 합을 출력하시오.</h3><figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">let</span> sum = <span class="hljs-number">0</span>;</span><br><span class="line"><span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">10</span>; i++) &#123;</span><br><span class="line">  sum += i;</span><br><span class="line">&#125;</span><br><span class="line"><span class="hljs-built_in">console</span>.log(sum);</span><br></pre></td></tr></table></figure>
+<h3 id="8-1부터-20-미만의-정수-중에서-2-또는-3의-배수가-아닌-수의-총합을-구하시오"><a href="#8-1부터-20-미만의-정수-중에서-2-또는-3의-배수가-아닌-수의-총합을-구하시오" class="headerlink" title="8. 1부터 20 미만의 정수 중에서 2 또는 3의 배수가 아닌 수의 총합을 구하시오."></a>8. 1부터 20 미만의 정수 중에서 2 또는 3의 배수가 아닌 수의 총합을 구하시오.</h3><figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">let</span> sum = <span class="hljs-number">0</span>;</span><br><span class="line"><span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">1</span>; i &lt; <span class="hljs-number">20</span>; i++) &#123;</span><br><span class="line">  <span class="hljs-keyword">if</span> (i % <span class="hljs-number">2</span> !== <span class="hljs-number">0</span> &amp;&amp; i % <span class="hljs-number">3</span> !== <span class="hljs-number">0</span>) &#123;</span><br><span class="line">    sum += i;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="hljs-built_in">console</span>.log(sum);</span><br></pre></td></tr></table></figure>
+<h3 id="9-1부터-20-미만의-정수-중에서-2-또는-3의-배수인-수의-총합을-구하시오"><a href="#9-1부터-20-미만의-정수-중에서-2-또는-3의-배수인-수의-총합을-구하시오" class="headerlink" title="9. 1부터 20 미만의 정수 중에서 2 또는 3의 배수인 수의 총합을 구하시오."></a>9. 1부터 20 미만의 정수 중에서 2 또는 3의 배수인 수의 총합을 구하시오.</h3><figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">let</span> sum = <span class="hljs-number">0</span>;</span><br><span class="line"><span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">1</span>; i &lt; <span class="hljs-number">20</span>; i++) &#123;</span><br><span class="line">  <span class="hljs-keyword">if</span> (i % <span class="hljs-number">2</span> === <span class="hljs-number">0</span> || i % <span class="hljs-number">3</span> === <span class="hljs-number">0</span>) &#123;</span><br><span class="line">    sum += i;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="hljs-built_in">console</span>.log(sum);</span><br></pre></td></tr></table></figure>
+<h3 id="10-두-개의-주사위를-던졌을-때-눈의-합이-6이-되는-모든-경우의-수를-출력하시오"><a href="#10-두-개의-주사위를-던졌을-때-눈의-합이-6이-되는-모든-경우의-수를-출력하시오" class="headerlink" title="10. 두 개의 주사위를 던졌을 때, 눈의 합이 6이 되는 모든 경우의 수를 출력하시오."></a>10. 두 개의 주사위를 던졌을 때, 눈의 합이 6이 되는 모든 경우의 수를 출력하시오.</h3><figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">1</span>; i &lt; <span class="hljs-number">7</span>; i++) &#123;</span><br><span class="line">  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> j = <span class="hljs-number">1</span>; j &lt; <span class="hljs-number">7</span>; j++) &#123;</span><br><span class="line">    <span class="hljs-keyword">if</span> (i + j === <span class="hljs-number">6</span>) &#123;</span><br><span class="line">      <span class="hljs-built_in">console</span>.log([i, j]);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="11-삼각형-출력하기-pattern-1"><a href="#11-삼각형-출력하기-pattern-1" class="headerlink" title="11. 삼각형 출력하기 - pattern 1"></a>11. 삼각형 출력하기 - pattern 1</h3><p>for (let i = 0; i &lt; 5; i++) {<br>var star = “”;<br>for (let j = 0; j &lt; i + 1; j++) {<br>star += “*“;<br>}<br>star += “\n”;<br>console.log(star);<br>}</p>
+<h3 id="12-삼각형-출력하기-pattern-2"><a href="#12-삼각형-출력하기-pattern-2" class="headerlink" title="12. 삼각형 출력하기 - pattern 2"></a>12. 삼각형 출력하기 - pattern 2</h3><p>for (let i = 0; i &lt; 5; i++) {<br>var star = “”;<br>for (let j = 0; j &lt; 5; j++) {<br>if (i &lt;= j) {<br>star += “*“;<br>} else {<br>star += “ “;<br>}<br>}<br>star += “\n”;<br>console.log(star);<br>}</p>
+<h3 id="13-삼각형-출력하기-pattern-3"><a href="#13-삼각형-출력하기-pattern-3" class="headerlink" title="13. 삼각형 출력하기 - pattern 3"></a>13. 삼각형 출력하기 - pattern 3</h3><p>for (let i = 0; i &lt; 5; i++) {<br>var star = “”;<br>for (let j = i; j &lt; 5; j++) {<br>star += “*“;<br>}<br>star += “\n”;<br>console.log(star);<br>}</p>
+<h3 id="14-삼각형-출력하기-pattern-4"><a href="#14-삼각형-출력하기-pattern-4" class="headerlink" title="14. 삼각형 출력하기 - pattern 4"></a>14. 삼각형 출력하기 - pattern 4</h3><p>for (let i = 0; i &lt; 5; i++) {<br>var star = “”;<br>for (let j = 4; j &gt;= 0; j–) {<br>if (i &lt; j) {<br>star += “ “;<br>} else {<br>star += “*“;<br>}<br>}<br>star += “\n”;<br>console.log(star);<br>}</p>
+<h3 id="15-정삼각형-출력하기"><a href="#15-정삼각형-출력하기" class="headerlink" title="15. 정삼각형 출력하기"></a>15. 정삼각형 출력하기</h3><p>let star = “”;<br>for (var i = 0; i &lt; 5; i++) {<br>for (var j = 0; j &lt; 4 - i; j++) {<br>star += “ “;<br>}</p>
+<p>for (var k = 0; k &lt; 1 + i _ 2; k++) {<br>star += “_”;<br>}</p>
+<p>star += “\n”;<br>}<br>console.log(star);</p>
+<h3 id="16-역정삼각형-출력하기"><a href="#16-역정삼각형-출력하기" class="headerlink" title="16. 역정삼각형 출력하기"></a>16. 역정삼각형 출력하기</h3><p>let star = “”;<br>for (var i = 0; i &lt; 5; i++) {<br>for (var j = 0; j &lt; 4 - i; j++) {<br>star += “ “;<br>}</p>
+<p>for (var k = 0; k &lt; 1 + i _ 2; k++) {<br>star += “_”;<br>}</p>
+<p>star += “\n”;<br>}<br>console.log(star);</p>
+
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    
+<div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-10-09T13:37:32.000Z">2019-10-09</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/javascript/">javascript</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    a few seconds read (About 0 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2019/10/09/191009-브라우저-동작-원리/">브라우저 동작 원리</a>
+            
+        </h1>
+        <div class="content">
+            
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    
+<div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
                 <time class="level-item has-text-grey" datetime="2019-10-02T08:17:18.000Z">2019-10-02</time>
                 
                 <div class="level-item">
@@ -565,123 +676,15 @@ names의 length가 경우에 따라 달라질 것이라는 것을 예상하지 �
 
 
 
-    
-<div class="card">
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-04-24T11:38:21.000Z">2019-04-24</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    2 minutes read (About 267 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/2019/04/24/Hanoi tower/">Hanoi tower</a>
-            
-        </h1>
-        <div class="content">
-            <h3 id="하노이의-탑"><a href="#하노이의-탑" class="headerlink" title="하노이의 탑"></a>하노이의 탑</h3><ol>
-<li>세 개의 기둥과 이 기둥에 꽂을 수 있는 각각 다른 크기의 원판들이 있다.</li>
-<li>처음에는 한 기둥에 원판이 아래부터 큰 순서대로 쌓여있다.</li>
-<li>한 기둥에 꽂혀있는 원판들을 꽂혀있는 순서 그대로 다른 기둥으로 옮겨야 한다.</li>
-</ol>
-<h4 id="조건"><a href="#조건" class="headerlink" title="조건"></a>조건</h4><ol>
-<li>한번에 하나의 원판만 움직일 수 있다.</li>
-<li>큰 원판 위에 작은 원판이 올라갈 수 없다.</li></ol>
-        </div>
-        
-        
-        <div class="level is-mobile">
-            <div class="level-start">
-                <div class="level-item">
-                <a class="button is-size-7 is-light" href="/2019/04/24/Hanoi tower/#more">Read More</a>
-                </div>
-            </div>
-        </div>
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-    
-<div class="card">
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-04-24T11:38:04.000Z">2019-04-24</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/TIL/">TIL</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    a few seconds read (About 24 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/2019/04/24/190424-TIL/">190424_TIL</a>
-            
-        </h1>
-        <div class="content">
-            <h2 id="오늘-한-일"><a href="#오늘-한-일" class="headerlink" title="오늘 한 일"></a>오늘 한 일</h2><ul>
-<li>hanoi tower(하노이의 탑) 코드 작동원리 이해하기<br><a href="/2019/04/24/Hanoi%20tower/">link</a></li>
-</ul>
-
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
 
     
 <div class="card card-transparent">
     <nav class="pagination is-centered" role="navigation" aria-label="pagination">
         <div class="pagination-previous is-invisible is-hidden-mobile">
-            <a class="is-flex-grow has-text-black-ter" href="/page/0/">Anterior</a>
+            <a class="is-flex-grow has-text-black-ter" href="/page/0/">Previous</a>
         </div>
         <div class="pagination-next">
-            <a class="is-flex-grow has-text-black-ter" href="/page/2/">Siguiente</a>
+            <a class="is-flex-grow has-text-black-ter" href="/page/2/">Next</a>
         </div>
         <ul class="pagination-list is-hidden-mobile">
             
@@ -735,30 +738,30 @@ names의 length가 경우에 따라 달라질 것이라는 것을 예상하지 �
             <div class="level-item has-text-centered is-marginless">
                 <div>
                     <p class="heading">
-                        Entradas
+                        Posts
                     </p>
                     <p class="title has-text-weight-normal">
-                        24
+                        26
                     </p>
                 </div>
             </div>
             <div class="level-item has-text-centered is-marginless">
                 <div>
                     <p class="heading">
-                        Categorias
+                        Categories
                     </p>
                     <p class="title has-text-weight-normal">
-                        4
+                        5
                     </p>
                 </div>
             </div>
             <div class="level-item has-text-centered is-marginless">
                 <div>
                     <p class="heading">
-                        Etiquetas
+                        Tags
                     </p>
                     <p class="title has-text-weight-normal">
-                        4
+                        8
                     </p>
                 </div>
             </div>
@@ -766,7 +769,7 @@ names의 length가 경우에 따라 달라질 것이라는 것을 예상하지 �
         
         <div class="level">
             <a class="level-item button is-link is-rounded" href="https://github.com/HanHyunJin-mis" target="_blank">
-                SEGUIR</a>
+                Follow</a>
         </div>
         
         
@@ -856,7 +859,7 @@ names의 length가 경우에 따라 달라질 것이라는 것을 예상하지 �
     <div class="card-content">
         <div class="menu">
             <h3 class="menu-label">
-                Categorias
+                Categories
             </h3>
             <ul class="menu-list">
             <li>
@@ -891,6 +894,14 @@ names의 length가 경우에 따라 달라질 것이라는 것을 예상하지 �
             <span class="level-end">
                 <span class="level-item tag">1</span>
             </span>
+        </a></li><li>
+        <a class="level is-marginless" href="/categories/javascript/">
+            <span class="level-start">
+                <span class="level-item">javascript</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">2</span>
+            </span>
         </a></li>
             </ul>
         </div>
@@ -900,9 +911,9 @@ names의 length가 경우에 따라 달라질 것이라는 것을 예상하지 �
         <div class="card widget">
     <div class="card-content">
         <h3 class="menu-label">
-            Nube de etiquetas
+            Tag Cloud
         </h3>
-        <a href="/tags/Algorithm/" style="font-size: 20px;">Algorithm</a> <a href="/tags/ComputerEngineering/" style="font-size: 13.33px;">ComputerEngineering</a> <a href="/tags/TIL/" style="font-size: 16.67px;">TIL</a> <a href="/tags/Unknown-term/" style="font-size: 10px;">Unknown term</a>
+        <a href="/tags/Algorithm/" style="font-size: 20px;">Algorithm</a> <a href="/tags/ComputerEngineering/" style="font-size: 13.33px;">ComputerEngineering</a> <a href="/tags/TIL/" style="font-size: 16.67px;">TIL</a> <a href="/tags/Unknown-term/" style="font-size: 10px;">Unknown term</a> <a href="/tags/for/" style="font-size: 10px;">for</a> <a href="/tags/javascript/" style="font-size: 13.33px;">javascript</a> <a href="/tags/브라우저/" style="font-size: 10px;">브라우저</a> <a href="/tags/제어문/" style="font-size: 10px;">제어문</a>
     </div>
 </div>
     
@@ -912,8 +923,46 @@ names의 length가 경우에 따라 달라질 것이라는 것을 예상하지 �
             <div class="card widget">
     <div class="card-content">
         <h3 class="menu-label">
-            Recientes
+            Recent
         </h3>
+        
+        <article class="media">
+            
+            <a href="/2019/10/09/191009-제어문-연습문제/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="제어문 연습문제">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-10-09T13:42:02.000Z">2019-10-09</time></div>
+                    <a href="/2019/10/09/191009-제어문-연습문제/" class="title has-link-black-ter is-size-6 has-text-weight-normal">제어문 연습문제</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/javascript/">javascript</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2019/10/09/191009-브라우저-동작-원리/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="브라우저 동작 원리">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-10-09T13:37:32.000Z">2019-10-09</time></div>
+                    <a href="/2019/10/09/191009-브라우저-동작-원리/" class="title has-link-black-ter is-size-6 has-text-weight-normal">브라우저 동작 원리</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/javascript/">javascript</a>
+                    </p>
+                </div>
+            </div>
+        </article>
         
         <article class="media">
             
@@ -972,44 +1021,6 @@ names의 length가 경우에 따라 달라질 것이라는 것을 예상하지 �
             </div>
         </article>
         
-        <article class="media">
-            
-            <a href="/2019/05/03/[Codewars] 190503_ Double Cola/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="[Codewars] Double Cola">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-05-03T11:33:12.000Z">2019-05-03</time></div>
-                    <a href="/2019/05/03/[Codewars] 190503_ Double Cola/" class="title has-link-black-ter is-size-6 has-text-weight-normal">[Codewars] Double Cola</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
-            <a href="/2019/05/02/[Codewars] 190502_Playing with digits/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="[Codewars] Playing with digits">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-05-02T11:18:04.000Z">2019-05-02</time></div>
-                    <a href="/2019/05/02/[Codewars] 190502_Playing with digits/" class="title has-link-black-ter is-size-6 has-text-weight-normal">[Codewars] Playing with digits</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
     </div>
 </div>
         
@@ -1017,7 +1028,7 @@ names의 length가 경우에 따라 달라질 것이라는 것을 예상하지 �
     <div class="card-content">
         <div class="menu">
         <h3 class="menu-label">
-            Archivos
+            Archives
         </h3>
         <ul class="menu-list">
         
@@ -1027,7 +1038,7 @@ names의 length가 경우에 따라 달라질 것이라는 것을 예상하지 �
                     <span class="level-item">October 2019</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">2</span>
+                    <span class="level-item tag">4</span>
                 </span>
             </a>
         </li>
@@ -1085,7 +1096,7 @@ names의 length가 경우에 따라 달라질 것이라는 것을 예상하지 �
     <div class="card-content">
         <div class="menu">
             <h3 class="menu-label">
-                Etiquetas
+                Tags
             </h3>
             <div class="field is-grouped is-grouped-multiline">
                 
@@ -1117,6 +1128,34 @@ names의 length가 경우에 따라 달라질 것이라는 것을 예상하지 �
                     </a>
                 </div>
                 
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/for/">
+                        <span class="tag">for</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/javascript/">
+                        <span class="tag">javascript</span>
+                        <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/브라우저/">
+                        <span class="tag">브라우저</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/제어문/">
+                        <span class="tag">제어문</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
             </div>
         </div>
     </div>
@@ -1136,8 +1175,46 @@ names의 length가 경우에 따라 달라질 것이라는 것을 예상하지 �
         <div class="card widget">
     <div class="card-content">
         <h3 class="menu-label">
-            Recientes
+            Recent
         </h3>
+        
+        <article class="media">
+            
+            <a href="/2019/10/09/191009-제어문-연습문제/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="제어문 연습문제">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-10-09T13:42:02.000Z">2019-10-09</time></div>
+                    <a href="/2019/10/09/191009-제어문-연습문제/" class="title has-link-black-ter is-size-6 has-text-weight-normal">제어문 연습문제</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/javascript/">javascript</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2019/10/09/191009-브라우저-동작-원리/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="브라우저 동작 원리">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-10-09T13:37:32.000Z">2019-10-09</time></div>
+                    <a href="/2019/10/09/191009-브라우저-동작-원리/" class="title has-link-black-ter is-size-6 has-text-weight-normal">브라우저 동작 원리</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/javascript/">javascript</a>
+                    </p>
+                </div>
+            </div>
+        </article>
         
         <article class="media">
             
@@ -1196,44 +1273,6 @@ names의 length가 경우에 따라 달라질 것이라는 것을 예상하지 �
             </div>
         </article>
         
-        <article class="media">
-            
-            <a href="/2019/05/03/[Codewars] 190503_ Double Cola/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="[Codewars] Double Cola">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-05-03T11:33:12.000Z">2019-05-03</time></div>
-                    <a href="/2019/05/03/[Codewars] 190503_ Double Cola/" class="title has-link-black-ter is-size-6 has-text-weight-normal">[Codewars] Double Cola</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
-            <a href="/2019/05/02/[Codewars] 190502_Playing with digits/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="[Codewars] Playing with digits">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-05-02T11:18:04.000Z">2019-05-02</time></div>
-                    <a href="/2019/05/02/[Codewars] 190502_Playing with digits/" class="title has-link-black-ter is-size-6 has-text-weight-normal">[Codewars] Playing with digits</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
     </div>
 </div>
     
@@ -1241,7 +1280,7 @@ names의 length가 경우에 따라 달라질 것이라는 것을 예상하지 �
     <div class="card-content">
         <div class="menu">
         <h3 class="menu-label">
-            Archivos
+            Archives
         </h3>
         <ul class="menu-list">
         
@@ -1251,7 +1290,7 @@ names의 length가 경우에 따라 달라질 것이라는 것을 예상하지 �
                     <span class="level-item">October 2019</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">2</span>
+                    <span class="level-item tag">4</span>
                 </span>
             </a>
         </li>
@@ -1309,7 +1348,7 @@ names의 length가 경우에 따라 달라질 것이라는 것을 예상하지 �
     <div class="card-content">
         <div class="menu">
             <h3 class="menu-label">
-                Etiquetas
+                Tags
             </h3>
             <div class="field is-grouped is-grouped-multiline">
                 
@@ -1337,6 +1376,34 @@ names의 length가 경우에 따라 달라질 것이라는 것을 예상하지 �
                 <div class="control">
                     <a class="tags has-addons" href="/tags/Unknown-term/">
                         <span class="tag">Unknown term</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/for/">
+                        <span class="tag">for</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/javascript/">
+                        <span class="tag">javascript</span>
+                        <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/브라우저/">
+                        <span class="tag">브라우저</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/제어문/">
+                        <span class="tag">제어문</span>
                         <span class="tag is-grey">1</span>
                     </a>
                 </div>
@@ -1512,10 +1579,10 @@ document.addEventListener('DOMContentLoaded', function () {
     (function (window) {
         var INSIGHT_CONFIG = {
             TRANSLATION: {
-                POSTS: 'Entradas',
+                POSTS: 'Posts',
                 PAGES: 'Pages',
-                CATEGORIES: 'Categorias',
-                TAGS: 'Etiquetas',
+                CATEGORIES: 'Categories',
+                TAGS: 'Tags',
                 UNTITLED: '(Untitled)',
             },
             CONTENT_URL: '/content.json',
