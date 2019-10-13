@@ -7,7 +7,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-<title>Kategori: javascript</title>
+<title>Category: javascript</title>
 
 
     <meta property="og:type" content="website">
@@ -113,7 +113,7 @@
                 
                 
                 
-                <a class="navbar-item search" title="Pencarian" href="javascript:;">
+                <a class="navbar-item search" title="Search" href="javascript:;">
                     <i class="fas fa-search"></i>
                 </a>
                 
@@ -129,7 +129,7 @@
     <div class="card-content">
         <nav class="breadcrumb" aria-label="breadcrumbs">
         <ul>
-            <li><a href="/categories">Kategori</a></li>
+            <li><a href="/categories">Categories</a></li>
             
             <li class="is-active"><a href="#" aria-current="page">javascript</a></li>
         </ul>
@@ -154,7 +154,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    5 minutes membaca (Sekitar 769 kata)
+                    5 minutes read (About 769 words)
                 </span>
                 
                 
@@ -168,15 +168,15 @@
         </h1>
         <div class="content">
             <h3 id="1-변수-x가-10보다-크고-20보다-작을-때-변수-x를-출력하는-조건식을-완성하라"><a href="#1-변수-x가-10보다-크고-20보다-작을-때-변수-x를-출력하는-조건식을-완성하라" class="headerlink" title="1. 변수 x가 10보다 크고 20보다 작을 때 변수 x를 출력하는 조건식을 완성하라."></a>1. 변수 x가 10보다 크고 20보다 작을 때 변수 x를 출력하는 조건식을 완성하라.</h3><figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">var</span> x = <span class="hljs-number">15</span>;</span><br><span class="line"></span><br><span class="line"><span class="hljs-keyword">if</span> (<span class="hljs-number">10</span> &lt; x &amp;&amp; x &lt; <span class="hljs-number">20</span>) &#123;</span><br><span class="line">  <span class="hljs-built_in">console</span>.log(x);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="2-for문을-사용하여-0부터-10미만의-정수-중에서-짝수만을-작은-수부터-출력하시오"><a href="#2-for문을-사용하여-0부터-10미만의-정수-중에서-짝수만을-작은-수부터-출력하시오" class="headerlink" title="2. for문을 사용하여 0부터 10미만의 정수 중에서 짝수만을 작은 수부터 출력하시오."></a>2. for문을 사용하여 0부터 10미만의 정수 중에서 짝수만을 작은 수부터 출력하시오.</h3><figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment">// 첫번째 방법</span></span><br><span class="line"><span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">10</span>; i += <span class="hljs-number">2</span>) &#123;</span><br><span class="line">  <span class="hljs-built_in">console</span>.log(i);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="hljs-comment">// 두번째 방법</span></span><br><span class="line"><span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">10</span>; i++) &#123;</span><br><span class="line">  <span class="hljs-keyword">if</span> (i % <span class="hljs-number">2</span> === <span class="hljs-number">0</span>) <span class="hljs-built_in">console</span>.log(i);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="3-for문을-사용하여-0부터-10미만의-정수-중에서-짝수만을-작은-수부터-문자열로-출력하시오"><a href="#3-for문을-사용하여-0부터-10미만의-정수-중에서-짝수만을-작은-수부터-문자열로-출력하시오" class="headerlink" title="3. for문을 사용하여 0부터 10미만의 정수 중에서 짝수만을 작은 수부터 문자열로 출력하시오."></a>3. for문을 사용하여 0부터 10미만의 정수 중에서 짝수만을 작은 수부터 문자열로 출력하시오.</h3><figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">let</span> str = <span class="hljs-string">""</span>;</span><br><span class="line"></span><br><span class="line"><span class="hljs-comment">// 첫번째 방법</span></span><br><span class="line"><span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">10</span>; i += <span class="hljs-number">2</span>) &#123;</span><br><span class="line">  str += i;</span><br><span class="line">&#125;</span><br><span class="line"><span class="hljs-built_in">console</span>.log(str);</span><br><span class="line"></span><br><span class="line"><span class="hljs-comment">// 두번째 방법</span></span><br><span class="line"><span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">10</span>; i++) &#123;</span><br><span class="line">  <span class="hljs-keyword">if</span> (i % <span class="hljs-number">2</span> === <span class="hljs-number">0</span>) str += i;</span><br><span class="line">&#125;</span><br><span class="line"><span class="hljs-built_in">console</span>.log(str);</span><br></pre></td></tr></table></figure>
+<h3 id="2-for문을-사용하여-0부터-10미만의-정수-중에서-짝수만을-작은-수부터-출력하시오"><a href="#2-for문을-사용하여-0부터-10미만의-정수-중에서-짝수만을-작은-수부터-출력하시오" class="headerlink" title="2. for문을 사용하여 0부터 10미만의 정수 중에서 짝수만을 작은 수부터 출력하시오."></a>2. for문을 사용하여 0부터 10미만의 정수 중에서 짝수만을 작은 수부터 출력하시오.</h3><figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment">// 첫번째 방법</span></span><br><span class="line"><span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">10</span>; i += <span class="hljs-number">2</span>) &#123;</span><br><span class="line">  <span class="hljs-built_in">console</span>.log(i);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="hljs-comment">// 두번째 방법</span></span><br><span class="line"><span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">10</span>; i++) &#123;</span><br><span class="line">  <span class="hljs-keyword">if</span> (!(i % <span class="hljs-number">2</span>)) <span class="hljs-built_in">console</span>.log(i);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="3-for문을-사용하여-0부터-10미만의-정수-중에서-짝수만을-작은-수부터-문자열로-출력하시오"><a href="#3-for문을-사용하여-0부터-10미만의-정수-중에서-짝수만을-작은-수부터-문자열로-출력하시오" class="headerlink" title="3. for문을 사용하여 0부터 10미만의 정수 중에서 짝수만을 작은 수부터 문자열로 출력하시오."></a>3. for문을 사용하여 0부터 10미만의 정수 중에서 짝수만을 작은 수부터 문자열로 출력하시오.</h3><figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">let</span> str = <span class="hljs-string">""</span>;</span><br><span class="line"></span><br><span class="line"><span class="hljs-comment">// 첫번째 방법</span></span><br><span class="line"><span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">10</span>; i += <span class="hljs-number">2</span>) &#123;</span><br><span class="line">  str += i;</span><br><span class="line">&#125;</span><br><span class="line"><span class="hljs-built_in">console</span>.log(str);</span><br><span class="line"></span><br><span class="line"><span class="hljs-comment">// 두번째 방법</span></span><br><span class="line"><span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">10</span>; i++) &#123;</span><br><span class="line">  <span class="hljs-keyword">if</span> (!(i % <span class="hljs-number">2</span>)) str += i;</span><br><span class="line">&#125;</span><br><span class="line"><span class="hljs-built_in">console</span>.log(str);</span><br></pre></td></tr></table></figure>
         </div>
         
         
         <div class="level is-mobile">
             <div class="level-start">
                 <div class="level-item">
-                <a class="button is-size-7 is-light" href="/2019/10/09/191009-제어문-연습문제/#more">Selengkapnya</a>
+                <a class="button is-size-7 is-light" href="/2019/10/09/191009-제어문-연습문제/#more">Read More</a>
                 </div>
             </div>
         </div>
@@ -209,7 +209,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    a few seconds membaca (Sekitar 0 kata)
+                    a few seconds read (About 0 words)
                 </span>
                 
                 
@@ -278,7 +278,7 @@
             <div class="level-item has-text-centered is-marginless">
                 <div>
                     <p class="heading">
-                        Artikel
+                        Posts
                     </p>
                     <p class="title has-text-weight-normal">
                         26
@@ -288,7 +288,7 @@
             <div class="level-item has-text-centered is-marginless">
                 <div>
                     <p class="heading">
-                        Kategori
+                        Categories
                     </p>
                     <p class="title has-text-weight-normal">
                         5
@@ -298,7 +298,7 @@
             <div class="level-item has-text-centered is-marginless">
                 <div>
                     <p class="heading">
-                        Tag
+                        Tags
                     </p>
                     <p class="title has-text-weight-normal">
                         8
@@ -309,7 +309,7 @@
         
         <div class="level">
             <a class="level-item button is-link is-rounded" href="https://github.com/HanHyunJin-mis" target="_blank">
-                IKUTI</a>
+                Follow</a>
         </div>
         
         
@@ -362,7 +362,7 @@
     <div class="card-content">
         <div class="menu">
         <h3 class="menu-label">
-            Tautan
+            Links
         </h3>
         <ul class="menu-list">
         
@@ -399,7 +399,7 @@
     <div class="card-content">
         <div class="menu">
             <h3 class="menu-label">
-                Kategori
+                Categories
             </h3>
             <ul class="menu-list">
             <li>
@@ -451,7 +451,7 @@
         <div class="card widget">
     <div class="card-content">
         <h3 class="menu-label">
-            Awan tag
+            Tag Cloud
         </h3>
         <a href="/tags/Algorithm/" style="font-size: 20px;">Algorithm</a> <a href="/tags/ComputerEngineering/" style="font-size: 13.33px;">ComputerEngineering</a> <a href="/tags/TIL/" style="font-size: 16.67px;">TIL</a> <a href="/tags/Unknown-term/" style="font-size: 10px;">Unknown term</a> <a href="/tags/for/" style="font-size: 10px;">for</a> <a href="/tags/javascript/" style="font-size: 13.33px;">javascript</a> <a href="/tags/브라우저/" style="font-size: 10px;">브라우저</a> <a href="/tags/제어문/" style="font-size: 10px;">제어문</a>
     </div>
@@ -463,7 +463,7 @@
             <div class="card widget">
     <div class="card-content">
         <h3 class="menu-label">
-            Terbaru
+            Recent
         </h3>
         
         <article class="media">
@@ -568,7 +568,7 @@
     <div class="card-content">
         <div class="menu">
         <h3 class="menu-label">
-            Arsip
+            Archives
         </h3>
         <ul class="menu-list">
         
@@ -636,7 +636,7 @@
     <div class="card-content">
         <div class="menu">
             <h3 class="menu-label">
-                Tag
+                Tags
             </h3>
             <div class="field is-grouped is-grouped-multiline">
                 
@@ -715,7 +715,7 @@
         <div class="card widget">
     <div class="card-content">
         <h3 class="menu-label">
-            Terbaru
+            Recent
         </h3>
         
         <article class="media">
@@ -820,7 +820,7 @@
     <div class="card-content">
         <div class="menu">
         <h3 class="menu-label">
-            Arsip
+            Archives
         </h3>
         <ul class="menu-list">
         
@@ -888,7 +888,7 @@
     <div class="card-content">
         <div class="menu">
             <h3 class="menu-label">
-                Tag
+                Tags
             </h3>
             <div class="field is-grouped is-grouped-multiline">
                 
@@ -1083,7 +1083,7 @@ document.addEventListener('DOMContentLoaded', function () {
 </script>
     
     
-<a id="back-to-top" title="Kembali ke atas" href="javascript:;">
+<a id="back-to-top" title="Back to Top" href="javascript:;">
     <i class="fas fa-chevron-up"></i>
 </a>
 <script src="/js/back-to-top.js" defer></script>
@@ -1107,7 +1107,7 @@ document.addEventListener('DOMContentLoaded', function () {
     <div class="searchbox ins-search">
     <div class="searchbox-container ins-search-container">
         <div class="searchbox-input-wrapper">
-            <input type="text" class="searchbox-input ins-search-input" placeholder="Tulis Sesuatu.." />
+            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something..." />
             <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
         </div>
         <div class="searchbox-result-wrapper ins-section-wrapper">
@@ -1119,11 +1119,11 @@ document.addEventListener('DOMContentLoaded', function () {
     (function (window) {
         var INSIGHT_CONFIG = {
             TRANSLATION: {
-                POSTS: 'Artikel',
-                PAGES: 'Halaman',
-                CATEGORIES: 'Kategori',
-                TAGS: 'Tag',
-                UNTITLED: 'Tanpa Judul',
+                POSTS: 'Posts',
+                PAGES: 'Pages',
+                CATEGORIES: 'Categories',
+                TAGS: 'Tags',
+                UNTITLED: '(Untitled)',
             },
             CONTENT_URL: '/content.json',
         };
