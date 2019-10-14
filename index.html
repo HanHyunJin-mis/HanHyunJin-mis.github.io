@@ -133,6 +133,107 @@
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-10-14T01:35:47.000Z">2019-10-14</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/javascript/">javascript</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    a few seconds read (About 74 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2019/10/14/191014-오늘의-질문/">191014 오늘의 질문</a>
+            
+        </h1>
+        <div class="content">
+            <h3 id="오늘의-질문"><a href="#오늘의-질문" class="headerlink" title="오늘의 질문"></a>오늘의 질문</h3><figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">var</span> obj = &#123;</span><br><span class="line">  name: <span class="hljs-string">"Lee"</span>,</span><br><span class="line">  sayHi: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>&#123;</span><br><span class="line">    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Hi! "</span> + <span class="hljs-keyword">this</span>.name); <span class="hljs-comment">// Hi! Lee</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="hljs-built_in">console</span>.log(obj.sayHi()); <span class="hljs-comment">// undefined</span></span><br></pre></td></tr></table></figure>
+<p>두번째 콘솔에서 undefined가 나오는 이유는?</p>
+<p>답 : obj라는 객체 내부의 메소드에 return 문이 없으므로 함수 자체가 undefined를 반환하기 때문이다.</p>
+
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    
+<div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-10-11T02:23:50.000Z">2019-10-11</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/javascript/">javascript</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    a minute read (About 164 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2019/10/11/191011-오늘의-질문/">191011 오늘의 질문</a>
+            
+        </h1>
+        <div class="content">
+            <h3 id="오늘의-질문"><a href="#오늘의-질문" class="headerlink" title="오늘의 질문"></a>오늘의 질문</h3><figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">var</span> foo = <span class="hljs-number">20</span>;</span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">foo</span>(<span class="hljs-params"></span>) </span>&#123;</span><br><span class="line">  <span class="hljs-keyword">return</span> x + y;</span><br><span class="line">&#125;</span><br><span class="line"><span class="hljs-built_in">console</span>.log(foo); <span class="hljs-comment">// 20</span></span><br><span class="line"><span class="hljs-built_in">console</span>.log(foo()); <span class="hljs-comment">// foo is not a function</span></span><br></pre></td></tr></table></figure>
+<p>작동원리</p>
+<ul>
+<li>foo가 변수 호이스팅에 의해 변수명이 실행컨텍스트에 등록된다.</li>
+<li>함수 foo의 함수명과 같은 이름으로 변수명이 등록이 되어야 하는데 이미 foo가 있으므로 변수 foo에 함수가 재할당된다.</li>
+<li>이제 코드가 실행되는데 그때 변수 foo에 다시 20이라는 값이 재할당된다.</li>
+<li>최종적으로 foo에는 20이 있기 때문에 함수 호출문으로 호출을 하게되면 에러가 발생한다.</li>
+</ul>
+
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    
+<div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
                 <time class="level-item has-text-grey" datetime="2019-10-09T13:42:02.000Z">2019-10-09</time>
                 
                 <div class="level-item">
@@ -555,116 +656,6 @@ names의 length가 경우에 따라 달라질 것이라는 것을 예상하지 �
 
 
 
-    
-<div class="card">
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-04-26T12:24:28.000Z">2019-04-26</time>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    4 minutes read (About 595 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/2019/04/26/190426/">sort</a>
-            
-        </h1>
-        <div class="content">
-            <ol>
-<li>quick sort </li>
-</ol>
-<ul>
-<li>random pivot -&gt; 거의 average로 나옴</li>
-<li>O(n log n) -&gt; average</li>
-</ul>
-        </div>
-        
-        
-        <div class="level is-mobile">
-            <div class="level-start">
-                <div class="level-item">
-                <a class="button is-size-7 is-light" href="/2019/04/26/190426/#more">Read More</a>
-                </div>
-            </div>
-        </div>
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-    
-<div class="card">
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-04-26T09:13:22.000Z">2019-04-26</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    a few seconds read (About 82 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/2019/04/26/[Codewars] 190426_Eureka/">[Codewars] Take a Number And Sum Its Digits Raised To The Consecutive Powers And ....¡Eureka!!</a>
-            
-        </h1>
-        <div class="content">
-            <h3 id="문제"><a href="#문제" class="headerlink" title="문제"></a>문제</h3><ol>
-<li>n</li>
-</ol>
-<h3 id="내-코드"><a href="#내-코드" class="headerlink" title="내 코드"></a>내 코드</h3><figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">sumDigPow</span>(<span class="hljs-params">a, b</span>) </span>&#123;</span><br><span class="line">  <span class="hljs-keyword">var</span> li = [];</span><br><span class="line">            <span class="hljs-keyword">while</span> (a &lt; b) &#123;</span><br><span class="line">                <span class="hljs-keyword">var</span> a_arr = [];</span><br><span class="line">                a_arr = a.toString().split(<span class="hljs-string">''</span>);</span><br><span class="line">                <span class="hljs-keyword">var</span> sum = <span class="hljs-number">0</span>;</span><br><span class="line">                <span class="hljs-keyword">for</span> (i = a_arr.length - <span class="hljs-number">1</span>; i &gt;= <span class="hljs-number">0</span>; i--) &#123;</span><br><span class="line">                    sum += <span class="hljs-built_in">Math</span>.pow(a_arr[i], i + <span class="hljs-number">1</span>);</span><br><span class="line">                    <span class="hljs-keyword">if</span> (sum &gt;= a &amp;&amp; (i != <span class="hljs-number">0</span>)) &#123;</span><br><span class="line">                        <span class="hljs-keyword">break</span>;</span><br><span class="line">                    &#125; <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (a == sum) &#123;</span><br><span class="line">                        li.push(a);</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;</span><br><span class="line">                a++;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="hljs-keyword">return</span> li;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="내-풀이"><a href="#내-풀이" class="headerlink" title="내 풀이"></a>내 풀이</h3><pre><code>1.  내풀이 1
-<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">	</span><br></pre></td></tr></table></figure>
-
-2.  풀이 과정 중 어려움
-<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">	</span><br></pre></td></tr></table></figure>
-</code></pre><h3 id="다른-사람-풀이"><a href="#다른-사람-풀이" class="headerlink" title="다른 사람 풀이"></a>다른 사람 풀이</h3><h4 id="다른점"><a href="#다른점" class="headerlink" title="다른점"></a>다른점</h4><p>1.</p>
-<h4 id="알게-된-것"><a href="#알게-된-것" class="headerlink" title="알게 된 것"></a>알게 된 것</h4>
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
 
     
 <div class="card card-transparent">
@@ -730,7 +721,7 @@ names의 length가 경우에 따라 달라질 것이라는 것을 예상하지 �
                         Posts
                     </p>
                     <p class="title has-text-weight-normal">
-                        26
+                        28
                     </p>
                 </div>
             </div>
@@ -750,7 +741,7 @@ names의 length가 경우에 따라 달라질 것이라는 것을 예상하지 �
                         Tags
                     </p>
                     <p class="title has-text-weight-normal">
-                        8
+                        11
                     </p>
                 </div>
             </div>
@@ -889,7 +880,7 @@ names의 length가 경우에 따라 달라질 것이라는 것을 예상하지 �
                 <span class="level-item">javascript</span>
             </span>
             <span class="level-end">
-                <span class="level-item tag">2</span>
+                <span class="level-item tag">4</span>
             </span>
         </a></li>
             </ul>
@@ -902,7 +893,7 @@ names의 length가 경우에 따라 달라질 것이라는 것을 예상하지 �
         <h3 class="menu-label">
             Tag Cloud
         </h3>
-        <a href="/tags/Algorithm/" style="font-size: 20px;">Algorithm</a> <a href="/tags/ComputerEngineering/" style="font-size: 13.33px;">ComputerEngineering</a> <a href="/tags/TIL/" style="font-size: 16.67px;">TIL</a> <a href="/tags/Unknown-term/" style="font-size: 10px;">Unknown term</a> <a href="/tags/for/" style="font-size: 10px;">for</a> <a href="/tags/javascript/" style="font-size: 13.33px;">javascript</a> <a href="/tags/브라우저/" style="font-size: 10px;">브라우저</a> <a href="/tags/제어문/" style="font-size: 10px;">제어문</a>
+        <a href="/tags/Algorithm/" style="font-size: 20px;">Algorithm</a> <a href="/tags/ComputerEngineering/" style="font-size: 13.33px;">ComputerEngineering</a> <a href="/tags/TIL/" style="font-size: 16.67px;">TIL</a> <a href="/tags/Unknown-term/" style="font-size: 10px;">Unknown term</a> <a href="/tags/for/" style="font-size: 10px;">for</a> <a href="/tags/function/" style="font-size: 10px;">function</a> <a href="/tags/javascript/" style="font-size: 13.33px;">javascript</a> <a href="/tags/object/" style="font-size: 10px;">object</a> <a href="/tags/question/" style="font-size: 13.33px;">question</a> <a href="/tags/브라우저/" style="font-size: 10px;">브라우저</a> <a href="/tags/제어문/" style="font-size: 10px;">제어문</a>
     </div>
 </div>
     
@@ -914,6 +905,44 @@ names의 length가 경우에 따라 달라질 것이라는 것을 예상하지 �
         <h3 class="menu-label">
             Recent
         </h3>
+        
+        <article class="media">
+            
+            <a href="/2019/10/14/191014-오늘의-질문/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="191014 오늘의 질문">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-10-14T01:35:47.000Z">2019-10-14</time></div>
+                    <a href="/2019/10/14/191014-오늘의-질문/" class="title has-link-black-ter is-size-6 has-text-weight-normal">191014 오늘의 질문</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/javascript/">javascript</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2019/10/11/191011-오늘의-질문/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="191011 오늘의 질문">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-10-11T02:23:50.000Z">2019-10-11</time></div>
+                    <a href="/2019/10/11/191011-오늘의-질문/" class="title has-link-black-ter is-size-6 has-text-weight-normal">191011 오늘의 질문</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/javascript/">javascript</a>
+                    </p>
+                </div>
+            </div>
+        </article>
         
         <article class="media">
             
@@ -972,44 +1001,6 @@ names의 length가 경우에 따라 달라질 것이라는 것을 예상하지 �
             </div>
         </article>
         
-        <article class="media">
-            
-            <a href="/2019/10/01/191001-LeetCode-888/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="[191001 LeetCode] Fair Candy Swap">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-10-01T05:24:38.000Z">2019-10-01</time></div>
-                    <a href="/2019/10/01/191001-LeetCode-888/" class="title has-link-black-ter is-size-6 has-text-weight-normal">[191001 LeetCode] Fair Candy Swap</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
-            <a href="/2019/09/19/190919-LeetCode-Length-of-last-word/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="[190919 LeetCode] Length of last word">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-09-19T05:34:19.000Z">2019-09-19</time></div>
-                    <a href="/2019/09/19/190919-LeetCode-Length-of-last-word/" class="title has-link-black-ter is-size-6 has-text-weight-normal">[190919 LeetCode] Length of last word</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
     </div>
 </div>
         
@@ -1027,7 +1018,7 @@ names의 length가 경우에 따라 달라질 것이라는 것을 예상하지 �
                     <span class="level-item">October 2019</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">4</span>
+                    <span class="level-item tag">6</span>
                 </span>
             </a>
         </li>
@@ -1125,8 +1116,29 @@ names의 length가 경우에 따라 달라질 것이라는 것을 예상하지 �
                 </div>
                 
                 <div class="control">
+                    <a class="tags has-addons" href="/tags/function/">
+                        <span class="tag">function</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
                     <a class="tags has-addons" href="/tags/javascript/">
                         <span class="tag">javascript</span>
+                        <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/object/">
+                        <span class="tag">object</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/question/">
+                        <span class="tag">question</span>
                         <span class="tag is-grey">2</span>
                     </a>
                 </div>
@@ -1169,6 +1181,44 @@ names의 length가 경우에 따라 달라질 것이라는 것을 예상하지 �
         
         <article class="media">
             
+            <a href="/2019/10/14/191014-오늘의-질문/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="191014 오늘의 질문">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-10-14T01:35:47.000Z">2019-10-14</time></div>
+                    <a href="/2019/10/14/191014-오늘의-질문/" class="title has-link-black-ter is-size-6 has-text-weight-normal">191014 오늘의 질문</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/javascript/">javascript</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2019/10/11/191011-오늘의-질문/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="191011 오늘의 질문">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-10-11T02:23:50.000Z">2019-10-11</time></div>
+                    <a href="/2019/10/11/191011-오늘의-질문/" class="title has-link-black-ter is-size-6 has-text-weight-normal">191011 오늘의 질문</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/javascript/">javascript</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
             <a href="/2019/10/09/191009-제어문-연습문제/" class="media-left">
                 <p class="image is-64x64">
                     <img class="thumbnail" src="/images/thumbnail.svg" alt="제어문 연습문제">
@@ -1224,44 +1274,6 @@ names의 length가 경우에 따라 달라질 것이라는 것을 예상하지 �
             </div>
         </article>
         
-        <article class="media">
-            
-            <a href="/2019/10/01/191001-LeetCode-888/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="[191001 LeetCode] Fair Candy Swap">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-10-01T05:24:38.000Z">2019-10-01</time></div>
-                    <a href="/2019/10/01/191001-LeetCode-888/" class="title has-link-black-ter is-size-6 has-text-weight-normal">[191001 LeetCode] Fair Candy Swap</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
-            <a href="/2019/09/19/190919-LeetCode-Length-of-last-word/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="[190919 LeetCode] Length of last word">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-09-19T05:34:19.000Z">2019-09-19</time></div>
-                    <a href="/2019/09/19/190919-LeetCode-Length-of-last-word/" class="title has-link-black-ter is-size-6 has-text-weight-normal">[190919 LeetCode] Length of last word</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
     </div>
 </div>
     
@@ -1279,7 +1291,7 @@ names의 length가 경우에 따라 달라질 것이라는 것을 예상하지 �
                     <span class="level-item">October 2019</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">4</span>
+                    <span class="level-item tag">6</span>
                 </span>
             </a>
         </li>
@@ -1377,8 +1389,29 @@ names의 length가 경우에 따라 달라질 것이라는 것을 예상하지 �
                 </div>
                 
                 <div class="control">
+                    <a class="tags has-addons" href="/tags/function/">
+                        <span class="tag">function</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
                     <a class="tags has-addons" href="/tags/javascript/">
                         <span class="tag">javascript</span>
+                        <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/object/">
+                        <span class="tag">object</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/question/">
+                        <span class="tag">question</span>
                         <span class="tag is-grey">2</span>
                     </a>
                 </div>
