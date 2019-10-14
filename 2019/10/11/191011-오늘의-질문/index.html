@@ -19,7 +19,7 @@
 <meta property="og:description" content="오늘의 질문123456var foo = 20;function foo() &amp;#123;  return x + y;&amp;#125;console.log(foo); // 20console.log(foo()); // foo is not a function 작동원리  foo가 변수 호이스팅에 의해 변수명이 실행컨텍스트에 등록된다. 함수 foo의 함수명과 같은 이름으로 변수">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="http://hanhyunjin-mis.github.io/images/og_image.png">
-<meta property="og:updated_time" content="2019-10-14T01:56:05.004Z">
+<meta property="og:updated_time" content="2019-10-14T02:18:29.728Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="191011 오늘의 질문">
 <meta name="twitter:description" content="오늘의 질문123456var foo = 20;function foo() &amp;#123;  return x + y;&amp;#125;console.log(foo); // 20console.log(foo()); // foo is not a function 작동원리  foo가 변수 호이스팅에 의해 변수명이 실행컨텍스트에 등록된다. 함수 foo의 함수명과 같은 이름으로 변수">
@@ -147,7 +147,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    a minute read (About 164 words)
+                    a minute read (About 204 words)
                 </span>
                 
                 
@@ -168,6 +168,9 @@
 <li>이제 코드가 실행되는데 그때 변수 foo에 다시 20이라는 값이 재할당된다.</li>
 <li>최종적으로 foo에는 20이 있기 때문에 함수 호출문으로 호출을 하게되면 에러가 발생한다.</li>
 </ul>
+<a id="more"></a>
+<p>코드블록 뒤에는 ;(세미콜론)을 안붙인다.</p>
+<figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment">// 함수 선언문</span></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">foo</span>(<span class="hljs-params"></span>) </span>&#123;</span><br><span class="line">  <span class="hljs-keyword">return</span> x + y;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="hljs-comment">// 객체 리터럴</span></span><br><span class="line"><span class="hljs-keyword">var</span> foo = &#123;</span><br><span class="line">  property: <span class="hljs-string">"프로퍼티"</span></span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 
         </div>
         
