@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>191015 오늘의 질문</title>
+      <link href="/2019/10/15/191015-%EC%98%A4%EB%8A%98%EC%9D%98-%EC%A7%88%EB%AC%B8/"/>
+      <url>/2019/10/15/191015-%EC%98%A4%EB%8A%98%EC%9D%98-%EC%A7%88%EB%AC%B8/</url>
+      
+        <content type="html"><![CDATA[<ol><li>함수와 메소드의 차이</li></ol><ul><li>함수는 결국 window(전역객체)의 메소드라고 볼 수 있다.</li><li>하지만 객체 내에서 메소드 축약 표현으로 선언된 것은 메소드라고 부른다.</li></ul><p>=&gt; 전역 객체의 메소드는 함수라고 할 수 있고 객체 내의 함수나 메소드 축약 표현으로 선언된 것은 메소드라고 부르면 될 것 같다.</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> javascript </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> question </tag>
+            
+            <tag> function </tag>
+            
+            <tag> object </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>191014 오늘의 질문</title>
       <link href="/2019/10/14/191014-%EC%98%A4%EB%8A%98%EC%9D%98-%EC%A7%88%EB%AC%B8/"/>
       <url>/2019/10/14/191014-%EC%98%A4%EB%8A%98%EC%9D%98-%EC%A7%88%EB%AC%B8/</url>
