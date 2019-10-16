@@ -7,7 +7,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-<title>Etiqueta: question</title>
+<title>Tag: question</title>
 
 
     <meta property="og:type" content="website">
@@ -129,12 +129,63 @@
     <div class="card-content">
         <nav class="breadcrumb" aria-label="breadcrumbs">
         <ul>
-            <li><a href="/tags">Etiquetas</a></li>
+            <li><a href="/tags">Tags</a></li>
             <li class="is-active"><a href="#" aria-current="page">question</a></li>
         </ul>
         </nav>
     </div>
 </div>
+
+    
+<div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-10-16T01:14:02.000Z">2019-10-16</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/javascript/">javascript</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    2 minutes read (About 271 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2019/10/16/191016-오늘의-질문/">191016 오늘의 질문</a>
+            
+        </h1>
+        <div class="content">
+            <p>get과 set을 사용하는 이유?</p>
+<figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Person</span> </span>&#123;</span><br><span class="line">  <span class="hljs-keyword">constructor</span>(name) &#123;</span><br><span class="line">    <span class="hljs-keyword">this</span>._name = name;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="hljs-keyword">get</span> name() &#123;</span><br><span class="line">    <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>._name.toUpperCase();</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="hljs-keyword">set</span> name(otherName) &#123;</span><br><span class="line">    <span class="hljs-keyword">if</span> (otherName) &#123;</span><br><span class="line">      <span class="hljs-keyword">this</span>._name = otherName;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="hljs-keyword">let</span> man = <span class="hljs-keyword">new</span> Person(<span class="hljs-string">"Jin"</span>);</span><br><span class="line">man.name = <span class="hljs-string">"Hyun Jin"</span>;</span><br><span class="line"><span class="hljs-built_in">console</span>.log(man.name);</span><br></pre></td></tr></table></figure>
+<p>객체의 데이터를 보호하기 위해서 일반적으로 다른 언어에서는 private라는 접근 제한자를 사용한다.<br>하지만 지금까지의 javascript에서는 이 접근 제한자가 없었고 접근 제한자를 구현하기 위해서 프로퍼티에 _를 붙여 암묵적으로 접근을 불허했다.</p>
+<p>private를 사용하게 되면 원래는 외부에서 내부의 프로퍼티를 참조할 수 없게 되는데 이를 사용하기 위해서 get과 set을 사용한다.</p>
+<p>get을 사용하게 되면 원본은 유지되고 return된 복사값만 수정이 되기 때문에 원본을 유지할 수 있다는 장점이 있다.</p>
+<p>이걸 자세히 설명하기 위해서는 객체지향 프로그래밍의 원리에 대해서 알아야 한다. (추후 포스팅)</p>
+
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
 
     
 <div class="card">
@@ -338,17 +389,17 @@
             <div class="level-item has-text-centered is-marginless">
                 <div>
                     <p class="heading">
-                        Entradas
+                        Posts
                     </p>
                     <p class="title has-text-weight-normal">
-                        29
+                        31
                     </p>
                 </div>
             </div>
             <div class="level-item has-text-centered is-marginless">
                 <div>
                     <p class="heading">
-                        Categorias
+                        Categories
                     </p>
                     <p class="title has-text-weight-normal">
                         5
@@ -358,10 +409,10 @@
             <div class="level-item has-text-centered is-marginless">
                 <div>
                     <p class="heading">
-                        Etiquetas
+                        Tags
                     </p>
                     <p class="title has-text-weight-normal">
-                        11
+                        12
                     </p>
                 </div>
             </div>
@@ -369,7 +420,7 @@
         
         <div class="level">
             <a class="level-item button is-link is-rounded" href="https://github.com/HanHyunJin-mis" target="_blank">
-                SEGUIR</a>
+                Follow</a>
         </div>
         
         
@@ -459,7 +510,7 @@
     <div class="card-content">
         <div class="menu">
             <h3 class="menu-label">
-                Categorias
+                Categories
             </h3>
             <ul class="menu-list">
             <li>
@@ -500,7 +551,7 @@
                 <span class="level-item">javascript</span>
             </span>
             <span class="level-end">
-                <span class="level-item tag">5</span>
+                <span class="level-item tag">6</span>
             </span>
         </a></li>
             </ul>
@@ -511,9 +562,9 @@
         <div class="card widget">
     <div class="card-content">
         <h3 class="menu-label">
-            Nube de etiquetas
+            Tag Cloud
         </h3>
-        <a href="/tags/Algorithm/" style="font-size: 20px;">Algorithm</a> <a href="/tags/ComputerEngineering/" style="font-size: 12.5px;">ComputerEngineering</a> <a href="/tags/TIL/" style="font-size: 17.5px;">TIL</a> <a href="/tags/Unknown-term/" style="font-size: 10px;">Unknown term</a> <a href="/tags/for/" style="font-size: 10px;">for</a> <a href="/tags/function/" style="font-size: 12.5px;">function</a> <a href="/tags/javascript/" style="font-size: 12.5px;">javascript</a> <a href="/tags/object/" style="font-size: 12.5px;">object</a> <a href="/tags/question/" style="font-size: 15px;">question</a> <a href="/tags/브라우저/" style="font-size: 10px;">브라우저</a> <a href="/tags/제어문/" style="font-size: 10px;">제어문</a>
+        <a href="/tags/Algorithm/" style="font-size: 20px;">Algorithm</a> <a href="/tags/ComputerEngineering/" style="font-size: 13.33px;">ComputerEngineering</a> <a href="/tags/TIL/" style="font-size: 16.67px;">TIL</a> <a href="/tags/Unknown-term/" style="font-size: 10px;">Unknown term</a> <a href="/tags/for/" style="font-size: 10px;">for</a> <a href="/tags/function/" style="font-size: 13.33px;">function</a> <a href="/tags/get-set/" style="font-size: 10px;">get/set</a> <a href="/tags/javascript/" style="font-size: 13.33px;">javascript</a> <a href="/tags/object/" style="font-size: 13.33px;">object</a> <a href="/tags/question/" style="font-size: 16.67px;">question</a> <a href="/tags/브라우저/" style="font-size: 10px;">브라우저</a> <a href="/tags/제어문/" style="font-size: 10px;">제어문</a>
     </div>
 </div>
     
@@ -523,8 +574,46 @@
             <div class="card widget">
     <div class="card-content">
         <h3 class="menu-label">
-            Recientes
+            Recent
         </h3>
+        
+        <article class="media">
+            
+            <a href="/2019/10/16/191016-memo/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="191016 memo">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-10-16T03:34:26.000Z">2019-10-16</time></div>
+                    <a href="/2019/10/16/191016-memo/" class="title has-link-black-ter is-size-6 has-text-weight-normal">191016 memo</a>
+                    <p class="is-size-7 is-uppercase">
+                        
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2019/10/16/191016-오늘의-질문/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="191016 오늘의 질문">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-10-16T01:14:02.000Z">2019-10-16</time></div>
+                    <a href="/2019/10/16/191016-오늘의-질문/" class="title has-link-black-ter is-size-6 has-text-weight-normal">191016 오늘의 질문</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/javascript/">javascript</a>
+                    </p>
+                </div>
+            </div>
+        </article>
         
         <article class="media">
             
@@ -583,44 +672,6 @@
             </div>
         </article>
         
-        <article class="media">
-            
-            <a href="/2019/10/09/191009-제어문-연습문제/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="제어문 연습문제">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-10-09T13:42:02.000Z">2019-10-09</time></div>
-                    <a href="/2019/10/09/191009-제어문-연습문제/" class="title has-link-black-ter is-size-6 has-text-weight-normal">제어문 연습문제</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/javascript/">javascript</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
-            <a href="/2019/10/09/191009-브라우저-동작-원리/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="브라우저 동작 원리">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-10-09T13:37:32.000Z">2019-10-09</time></div>
-                    <a href="/2019/10/09/191009-브라우저-동작-원리/" class="title has-link-black-ter is-size-6 has-text-weight-normal">브라우저 동작 원리</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/javascript/">javascript</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
     </div>
 </div>
         
@@ -628,7 +679,7 @@
     <div class="card-content">
         <div class="menu">
         <h3 class="menu-label">
-            Archivos
+            Archives
         </h3>
         <ul class="menu-list">
         
@@ -638,7 +689,7 @@
                     <span class="level-item">October 2019</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">7</span>
+                    <span class="level-item tag">9</span>
                 </span>
             </a>
         </li>
@@ -696,7 +747,7 @@
     <div class="card-content">
         <div class="menu">
             <h3 class="menu-label">
-                Etiquetas
+                Tags
             </h3>
             <div class="field is-grouped is-grouped-multiline">
                 
@@ -743,6 +794,13 @@
                 </div>
                 
                 <div class="control">
+                    <a class="tags has-addons" href="/tags/get-set/">
+                        <span class="tag">get/set</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
                     <a class="tags has-addons" href="/tags/javascript/">
                         <span class="tag">javascript</span>
                         <span class="tag is-grey">2</span>
@@ -759,7 +817,7 @@
                 <div class="control">
                     <a class="tags has-addons" href="/tags/question/">
                         <span class="tag">question</span>
-                        <span class="tag is-grey">3</span>
+                        <span class="tag is-grey">4</span>
                     </a>
                 </div>
                 
@@ -796,8 +854,46 @@
         <div class="card widget">
     <div class="card-content">
         <h3 class="menu-label">
-            Recientes
+            Recent
         </h3>
+        
+        <article class="media">
+            
+            <a href="/2019/10/16/191016-memo/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="191016 memo">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-10-16T03:34:26.000Z">2019-10-16</time></div>
+                    <a href="/2019/10/16/191016-memo/" class="title has-link-black-ter is-size-6 has-text-weight-normal">191016 memo</a>
+                    <p class="is-size-7 is-uppercase">
+                        
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2019/10/16/191016-오늘의-질문/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="191016 오늘의 질문">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-10-16T01:14:02.000Z">2019-10-16</time></div>
+                    <a href="/2019/10/16/191016-오늘의-질문/" class="title has-link-black-ter is-size-6 has-text-weight-normal">191016 오늘의 질문</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/javascript/">javascript</a>
+                    </p>
+                </div>
+            </div>
+        </article>
         
         <article class="media">
             
@@ -856,44 +952,6 @@
             </div>
         </article>
         
-        <article class="media">
-            
-            <a href="/2019/10/09/191009-제어문-연습문제/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="제어문 연습문제">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-10-09T13:42:02.000Z">2019-10-09</time></div>
-                    <a href="/2019/10/09/191009-제어문-연습문제/" class="title has-link-black-ter is-size-6 has-text-weight-normal">제어문 연습문제</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/javascript/">javascript</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
-            <a href="/2019/10/09/191009-브라우저-동작-원리/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="브라우저 동작 원리">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-10-09T13:37:32.000Z">2019-10-09</time></div>
-                    <a href="/2019/10/09/191009-브라우저-동작-원리/" class="title has-link-black-ter is-size-6 has-text-weight-normal">브라우저 동작 원리</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/javascript/">javascript</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
     </div>
 </div>
     
@@ -901,7 +959,7 @@
     <div class="card-content">
         <div class="menu">
         <h3 class="menu-label">
-            Archivos
+            Archives
         </h3>
         <ul class="menu-list">
         
@@ -911,7 +969,7 @@
                     <span class="level-item">October 2019</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">7</span>
+                    <span class="level-item tag">9</span>
                 </span>
             </a>
         </li>
@@ -969,7 +1027,7 @@
     <div class="card-content">
         <div class="menu">
             <h3 class="menu-label">
-                Etiquetas
+                Tags
             </h3>
             <div class="field is-grouped is-grouped-multiline">
                 
@@ -1016,6 +1074,13 @@
                 </div>
                 
                 <div class="control">
+                    <a class="tags has-addons" href="/tags/get-set/">
+                        <span class="tag">get/set</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
                     <a class="tags has-addons" href="/tags/javascript/">
                         <span class="tag">javascript</span>
                         <span class="tag is-grey">2</span>
@@ -1032,7 +1097,7 @@
                 <div class="control">
                     <a class="tags has-addons" href="/tags/question/">
                         <span class="tag">question</span>
-                        <span class="tag is-grey">3</span>
+                        <span class="tag is-grey">4</span>
                     </a>
                 </div>
                 
@@ -1185,7 +1250,7 @@ document.addEventListener('DOMContentLoaded', function () {
 </script>
     
     
-<a id="back-to-top" title="Kembali ke atas" href="javascript:;">
+<a id="back-to-top" title="Back to Top" href="javascript:;">
     <i class="fas fa-chevron-up"></i>
 </a>
 <script src="/js/back-to-top.js" defer></script>
@@ -1221,10 +1286,10 @@ document.addEventListener('DOMContentLoaded', function () {
     (function (window) {
         var INSIGHT_CONFIG = {
             TRANSLATION: {
-                POSTS: 'Entradas',
+                POSTS: 'Posts',
                 PAGES: 'Pages',
-                CATEGORIES: 'Categorias',
-                TAGS: 'Etiquetas',
+                CATEGORIES: 'Categories',
+                TAGS: 'Tags',
                 UNTITLED: '(Untitled)',
             },
             CONTENT_URL: '/content.json',
