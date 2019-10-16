@@ -8,7 +8,7 @@
       <link href="/2019/10/16/191016-memo/"/>
       <url>/2019/10/16/191016-memo/</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<h3 id="React-memo란"><a href="#React-memo란" class="headerlink" title="React.memo란?"></a>React.memo란?</h3><ul><li><p>컴포넌트의 props가 바뀌지 않았다면, 리렌더링을 방지하여 컴포넌트의 리렌더링 성능 최적화를 해줄 수 있는 함수이다.</p></li><li><p>리렌더링이 필요한 상황에서만 리렌더링을 할 수 있도록 설정해줄 수 있다.</p></li></ul>]]></content>
       
       
       <categories>
@@ -76,9 +76,9 @@
             
             <tag> question </tag>
             
-            <tag> function </tag>
-            
             <tag> object </tag>
+            
+            <tag> function </tag>
             
         </tags>
       
