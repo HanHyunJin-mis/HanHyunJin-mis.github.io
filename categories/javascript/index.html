@@ -203,7 +203,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    2 minutes read (About 336 words)
+                    2 minutes read (About 333 words)
                 </span>
                 
                 
@@ -216,7 +216,7 @@
             
         </h1>
         <div class="content">
-            <h2 id="compiler-vs-interpreter"><a href="#compiler-vs-interpreter" class="headerlink" title="compiler vs interpreter"></a>compiler vs interpreter</h2><h3 id="compiler란"><a href="#compiler란" class="headerlink" title="compiler란?"></a>compiler란?</h3><ol>
+            <h2 id="compiler란"><a href="#compiler란" class="headerlink" title="compiler란?"></a>compiler란?</h2><ol>
 <li>전체 소스코드를 읽어들여 명령어를 수집하고 그것을 재구성한다.</li>
 <li>따로 기계어로 변환하는 <strong>빌드 과정이 필요</strong>하다.</li>
 <li>컴파일 후에 <strong>실행파일을 생성</strong>한다.</li>
@@ -225,7 +225,7 @@
 <li>실행파일을 생성해야 하기 때문에 <strong>수정 시 빌드 과정을 다시 거쳐야 한다.</strong></li>
 </ol>
 <p><strong>compiler 언어</strong> : C, Java, C#, C++</p>
-<h3 id="interpreter란"><a href="#interpreter란" class="headerlink" title="interpreter란?"></a>interpreter란?</h3><ol>
+<h2 id="interpreter란"><a href="#interpreter란" class="headerlink" title="interpreter란?"></a>interpreter란?</h2><ol>
 <li>소스코드의 각 행을 연속적으로 분석(읽어들여 변환)하여 실행한다.</li>
 <li>기계어로 따로 변환하지 않고 해석한 즉시 바로 명령어를 실행한다. <strong>(빌드 시간이 존재하지 않는다.)</strong></li>
 <li><strong>실행파일을 생성하지 않는다.</strong> (별도의 컴파일 시간이 없다.)</li>
@@ -280,8 +280,7 @@
             
         </h1>
         <div class="content">
-            <p>get과 set을 사용하는 이유?</p>
-<figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Person</span> </span>&#123;</span><br><span class="line">  <span class="hljs-keyword">constructor</span>(name) &#123;</span><br><span class="line">    <span class="hljs-keyword">this</span>._name = name;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="hljs-keyword">get</span> name() &#123;</span><br><span class="line">    <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>._name.toUpperCase();</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="hljs-keyword">set</span> name(otherName) &#123;</span><br><span class="line">    <span class="hljs-keyword">if</span> (otherName) &#123;</span><br><span class="line">      <span class="hljs-keyword">this</span>._name = otherName;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="hljs-keyword">let</span> man = <span class="hljs-keyword">new</span> Person(<span class="hljs-string">"Jin"</span>);</span><br><span class="line">man.name = <span class="hljs-string">"Hyun Jin"</span>;</span><br><span class="line"><span class="hljs-built_in">console</span>.log(man.name);</span><br></pre></td></tr></table></figure>
+            <h2 id="get과-set을-사용하는-이유"><a href="#get과-set을-사용하는-이유" class="headerlink" title="get과 set을 사용하는 이유?"></a>get과 set을 사용하는 이유?</h2><figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Person</span> </span>&#123;</span><br><span class="line">  <span class="hljs-keyword">constructor</span>(name) &#123;</span><br><span class="line">    <span class="hljs-keyword">this</span>._name = name;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="hljs-keyword">get</span> name() &#123;</span><br><span class="line">    <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>._name.toUpperCase();</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="hljs-keyword">set</span> name(otherName) &#123;</span><br><span class="line">    <span class="hljs-keyword">if</span> (otherName) &#123;</span><br><span class="line">      <span class="hljs-keyword">this</span>._name = otherName;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="hljs-keyword">let</span> man = <span class="hljs-keyword">new</span> Person(<span class="hljs-string">"Jin"</span>);</span><br><span class="line">man.name = <span class="hljs-string">"Hyun Jin"</span>;</span><br><span class="line"><span class="hljs-built_in">console</span>.log(man.name);</span><br></pre></td></tr></table></figure>
 <p>객체의 데이터를 보호하기 위해서 일반적으로 다른 언어에서는 private라는 접근 제한자를 사용한다.<br>하지만 지금까지의 javascript에서는 이 접근 제한자가 없었고 접근 제한자를 구현하기 위해서 프로퍼티에 _를 붙여 암묵적으로 접근을 불허했다.</p>
 <p>private를 사용하게 되면 원래는 외부에서 내부의 프로퍼티를 참조할 수 없게 되는데 이를 사용하기 위해서 get과 set을 사용한다.</p>
 <p>get을 사용하게 되면 원본은 유지되고 return된 복사값만 수정이 되기 때문에 원본을 유지할 수 있다는 장점이 있다.</p>
@@ -331,10 +330,7 @@
             
         </h1>
         <div class="content">
-            <ol>
-<li>함수와 메소드의 차이</li>
-</ol>
-<ul>
+            <h2 id="1-함수와-메소드의-차이"><a href="#1-함수와-메소드의-차이" class="headerlink" title="1. 함수와 메소드의 차이"></a>1. 함수와 메소드의 차이</h2><ul>
 <li>함수는 결국 window(전역객체)의 메소드라고 볼 수 있다.</li>
 <li>하지만 객체 내에서 메소드 축약 표현으로 선언된 것은 메소드라고 부른다.</li>
 </ul>
@@ -371,7 +367,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    a few seconds read (About 74 words)
+                    a few seconds read (About 69 words)
                 </span>
                 
                 
@@ -384,8 +380,7 @@
             
         </h1>
         <div class="content">
-            <h3 id="오늘의-질문"><a href="#오늘의-질문" class="headerlink" title="오늘의 질문"></a>오늘의 질문</h3><figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">var</span> obj = &#123;</span><br><span class="line">  name: <span class="hljs-string">"Lee"</span>,</span><br><span class="line">  sayHi: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>&#123;</span><br><span class="line">    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Hi! "</span> + <span class="hljs-keyword">this</span>.name); <span class="hljs-comment">// Hi! Lee</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="hljs-built_in">console</span>.log(obj.sayHi()); <span class="hljs-comment">// undefined</span></span><br></pre></td></tr></table></figure>
-<p>두번째 콘솔에서 undefined가 나오는 이유는?</p>
+            <h2 id="두번째-콘솔에서-undefined가-나오는-이유는"><a href="#두번째-콘솔에서-undefined가-나오는-이유는" class="headerlink" title="두번째 콘솔에서 undefined가 나오는 이유는?"></a>두번째 콘솔에서 undefined가 나오는 이유는?</h2><figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">var</span> obj = &#123;</span><br><span class="line">  name: <span class="hljs-string">"Lee"</span>,</span><br><span class="line">  sayHi: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>&#123;</span><br><span class="line">    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Hi! "</span> + <span class="hljs-keyword">this</span>.name); <span class="hljs-comment">// Hi! Lee</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="hljs-built_in">console</span>.log(obj.sayHi()); <span class="hljs-comment">// undefined</span></span><br></pre></td></tr></table></figure>
 <p>답 : obj라는 객체 내부의 메소드에 return 문이 없으므로 함수 자체가 undefined를 반환하기 때문이다.</p>
 
         </div>
@@ -419,7 +414,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    a minute read (About 204 words)
+                    a minute read (About 199 words)
                 </span>
                 
                 
@@ -432,8 +427,7 @@
             
         </h1>
         <div class="content">
-            <h3 id="오늘의-질문"><a href="#오늘의-질문" class="headerlink" title="오늘의 질문"></a>오늘의 질문</h3><figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">var</span> foo = <span class="hljs-number">20</span>;</span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">foo</span>(<span class="hljs-params"></span>) </span>&#123;</span><br><span class="line">  <span class="hljs-keyword">return</span> x + y;</span><br><span class="line">&#125;</span><br><span class="line"><span class="hljs-built_in">console</span>.log(foo); <span class="hljs-comment">// 20</span></span><br><span class="line"><span class="hljs-built_in">console</span>.log(foo()); <span class="hljs-comment">// foo is not a function</span></span><br></pre></td></tr></table></figure>
-<p>작동원리</p>
+            <h2 id="작동원리"><a href="#작동원리" class="headerlink" title="작동원리"></a>작동원리</h2><figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">var</span> foo = <span class="hljs-number">20</span>;</span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">foo</span>(<span class="hljs-params"></span>) </span>&#123;</span><br><span class="line">  <span class="hljs-keyword">return</span> x + y;</span><br><span class="line">&#125;</span><br><span class="line"><span class="hljs-built_in">console</span>.log(foo); <span class="hljs-comment">// 20</span></span><br><span class="line"><span class="hljs-built_in">console</span>.log(foo()); <span class="hljs-comment">// foo is not a function</span></span><br></pre></td></tr></table></figure>
 <ul>
 <li>foo가 변수 호이스팅에 의해 변수명이 실행컨텍스트에 등록된다.</li>
 <li>함수 foo의 함수명과 같은 이름으로 변수명이 등록이 되어야 하는데 이미 foo가 있으므로 변수 foo에 함수가 재할당된다.</li>

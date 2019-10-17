@@ -10,19 +10,19 @@
 <title>191014 오늘의 질문</title>
 
 
-    <meta name="description" content="오늘의 질문12345678var obj = &amp;#123;  name: &quot;Lee&quot;,  sayHi: function() &amp;#123;    console.log(&quot;Hi! &quot; + this.name); // Hi! Lee  &amp;#125;&amp;#125;;console.log(obj.sayHi()); // undefined 두번째 콘솔에서 undefined가 나오는 이유는?">
+    <meta name="description" content="두번째 콘솔에서 undefined가 나오는 이유는?12345678var obj = &amp;#123;  name: &quot;Lee&quot;,  sayHi: function() &amp;#123;    console.log(&quot;Hi! &quot; + this.name); // Hi! Lee  &amp;#125;&amp;#125;;console.log(obj.sayHi()); // undefined 답 : obj">
 <meta name="keywords" content="question,object">
 <meta property="og:type" content="article">
 <meta property="og:title" content="191014 오늘의 질문">
 <meta property="og:url" content="http://HanHyunJin-mis.github.io/2019/10/14/191014-오늘의-질문/index.html">
 <meta property="og:site_name">
-<meta property="og:description" content="오늘의 질문12345678var obj = &amp;#123;  name: &quot;Lee&quot;,  sayHi: function() &amp;#123;    console.log(&quot;Hi! &quot; + this.name); // Hi! Lee  &amp;#125;&amp;#125;;console.log(obj.sayHi()); // undefined 두번째 콘솔에서 undefined가 나오는 이유는?">
+<meta property="og:description" content="두번째 콘솔에서 undefined가 나오는 이유는?12345678var obj = &amp;#123;  name: &quot;Lee&quot;,  sayHi: function() &amp;#123;    console.log(&quot;Hi! &quot; + this.name); // Hi! Lee  &amp;#125;&amp;#125;;console.log(obj.sayHi()); // undefined 답 : obj">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="http://hanhyunjin-mis.github.io/images/og_image.png">
-<meta property="og:updated_time" content="2019-10-14T01:37:40.135Z">
+<meta property="og:updated_time" content="2019-10-17T06:48:00.480Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="191014 오늘의 질문">
-<meta name="twitter:description" content="오늘의 질문12345678var obj = &amp;#123;  name: &quot;Lee&quot;,  sayHi: function() &amp;#123;    console.log(&quot;Hi! &quot; + this.name); // Hi! Lee  &amp;#125;&amp;#125;;console.log(obj.sayHi()); // undefined 두번째 콘솔에서 undefined가 나오는 이유는?">
+<meta name="twitter:description" content="두번째 콘솔에서 undefined가 나오는 이유는?12345678var obj = &amp;#123;  name: &quot;Lee&quot;,  sayHi: function() &amp;#123;    console.log(&quot;Hi! &quot; + this.name); // Hi! Lee  &amp;#125;&amp;#125;;console.log(obj.sayHi()); // undefined 답 : obj">
 <meta name="twitter:image" content="http://hanhyunjin-mis.github.io/images/og_image.png">
 
 
@@ -147,7 +147,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    a few seconds read (About 74 words)
+                    a few seconds read (About 69 words)
                 </span>
                 
                 
@@ -160,8 +160,7 @@
             
         </h1>
         <div class="content">
-            <h3 id="오늘의-질문"><a href="#오늘의-질문" class="headerlink" title="오늘의 질문"></a>오늘의 질문</h3><figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">var</span> obj = &#123;</span><br><span class="line">  name: <span class="hljs-string">"Lee"</span>,</span><br><span class="line">  sayHi: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>&#123;</span><br><span class="line">    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Hi! "</span> + <span class="hljs-keyword">this</span>.name); <span class="hljs-comment">// Hi! Lee</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="hljs-built_in">console</span>.log(obj.sayHi()); <span class="hljs-comment">// undefined</span></span><br></pre></td></tr></table></figure>
-<p>두번째 콘솔에서 undefined가 나오는 이유는?</p>
+            <h2 id="두번째-콘솔에서-undefined가-나오는-이유는"><a href="#두번째-콘솔에서-undefined가-나오는-이유는" class="headerlink" title="두번째 콘솔에서 undefined가 나오는 이유는?"></a>두번째 콘솔에서 undefined가 나오는 이유는?</h2><figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">var</span> obj = &#123;</span><br><span class="line">  name: <span class="hljs-string">"Lee"</span>,</span><br><span class="line">  sayHi: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>&#123;</span><br><span class="line">    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Hi! "</span> + <span class="hljs-keyword">this</span>.name); <span class="hljs-comment">// Hi! Lee</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="hljs-built_in">console</span>.log(obj.sayHi()); <span class="hljs-comment">// undefined</span></span><br></pre></td></tr></table></figure>
 <p>답 : obj라는 객체 내부의 메소드에 return 문이 없으므로 함수 자체가 undefined를 반환하기 때문이다.</p>
 
         </div>
