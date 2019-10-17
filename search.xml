@@ -31,6 +31,35 @@
     
     
     <entry>
+      <title>191017 오늘의 질문</title>
+      <link href="/2019/10/17/191017-%EC%98%A4%EB%8A%98%EC%9D%98-%EC%A7%88%EB%AC%B8/"/>
+      <url>/2019/10/17/191017-%EC%98%A4%EB%8A%98%EC%9D%98-%EC%A7%88%EB%AC%B8/</url>
+      
+        <content type="html"><![CDATA[<h2 id="세번째-console에서-undefined가-나오는-이유는"><a href="#세번째-console에서-undefined가-나오는-이유는" class="headerlink" title="세번째 console에서 undefined가 나오는 이유는?"></a>세번째 console에서 undefined가 나오는 이유는?</h2><figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Person</span>(<span class="hljs-params">name</span>) </span>&#123;</span><br><span class="line">  <span class="hljs-keyword">this</span>.name = name;</span><br><span class="line">&#125;</span><br><span class="line">Person.prototype.getName = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>&#123;</span><br><span class="line">  <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.name;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="hljs-keyword">const</span> me = <span class="hljs-keyword">new</span> Person(<span class="hljs-string">"Lee"</span>);</span><br><span class="line">me.__proto__.setName = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>&#123;</span><br><span class="line">  <span class="hljs-built_in">console</span>.log(<span class="hljs-keyword">this</span>);</span><br><span class="line">  <span class="hljs-keyword">return</span> <span class="hljs-string">"set "</span> + <span class="hljs-keyword">this</span>.name;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="hljs-keyword">const</span> you = <span class="hljs-keyword">new</span> Person(<span class="hljs-string">"Kim"</span>);</span><br><span class="line"></span><br><span class="line"><span class="hljs-built_in">console</span>.log(me.getName()); <span class="hljs-comment">// Lee</span></span><br><span class="line"><span class="hljs-built_in">console</span>.log(you.__proto__.setName()); <span class="hljs-comment">// set undefined</span></span><br><span class="line"><span class="hljs-built_in">console</span>.log(you.setName()); <span class="hljs-comment">// set Kim</span></span><br></pre></td></tr></table></figure><p>답 : 메소드 내에서의 this는 메소드를 호출한 객체이기 때문에</p><figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-built_in">console</span>.log(you.__proto__.setName());</span><br></pre></td></tr></table></figure><p>에서의 <strong><strong>proto</strong></strong> 내에는 name이라는 프로퍼티가 없으므로 undefined가 나온다.</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> javascript </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> question </tag>
+            
+            <tag> prototype </tag>
+            
+            <tag> this </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>compiler vs interpreter</title>
       <link href="/2019/10/17/191017-compiler-vs-interpreter/"/>
       <url>/2019/10/17/191017-compiler-vs-interpreter/</url>
