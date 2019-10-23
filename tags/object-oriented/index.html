@@ -7,22 +7,17 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-<title>[191002 LeetCode] MatrixCells in Distance-Order</title>
+<title>Tag: object-oriented</title>
 
 
-    <meta name="description" content="DescriptionAlice and Bob have candy bars of different sizes: A[i] is the size of the i-th bar of candy that Alice has, and B[j] is the size of the j-th bar of candy that Bob has. Since they are friend">
-<meta name="keywords" content="Algorithm">
-<meta property="og:type" content="article">
-<meta property="og:title" content="[191002 LeetCode] MatrixCells in Distance-Order">
-<meta property="og:url" content="http://HanHyunJin-mis.github.io/2019/10/02/191001-LeetCode-1030/index.html">
+    <meta property="og:type" content="website">
+<meta property="og:title">
+<meta property="og:url" content="http://HanHyunJin-mis.github.io/tags/object-oriented/index.html">
 <meta property="og:site_name">
-<meta property="og:description" content="DescriptionAlice and Bob have candy bars of different sizes: A[i] is the size of the i-th bar of candy that Alice has, and B[j] is the size of the j-th bar of candy that Bob has. Since they are friend">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="http://hanhyunjin-mis.github.io/images/og_image.png">
-<meta property="og:updated_time" content="2019-10-02T08:33:08.626Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="[191002 LeetCode] MatrixCells in Distance-Order">
-<meta name="twitter:description" content="DescriptionAlice and Bob have candy bars of different sizes: A[i] is the size of the i-th bar of candy that Alice has, and B[j] is the size of the j-th bar of candy that Bob has. Since they are friend">
+<meta name="twitter:title">
 <meta name="twitter:image" content="http://hanhyunjin-mis.github.io/images/og_image.png">
 
 
@@ -81,7 +76,7 @@
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/">
             
-                <img src="/images/logo.JPG" alt="[191002 LeetCode] MatrixCells in Distance-Order" height="28">
+                <img src="/images/logo.JPG" alt="" height="28">
             
             </a>
         </div>
@@ -130,24 +125,35 @@
     <section class="section">
         <div class="container">
             <div class="columns">
-                <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main">
+                <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main"><div class="card">
+    <div class="card-content">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+        <ul>
+            <li><a href="/tags">Tags</a></li>
+            <li class="is-active"><a href="#" aria-current="page">object-oriented</a></li>
+        </ul>
+        </nav>
+    </div>
+</div>
+
+    
 <div class="card">
     
     <div class="card-content article ">
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-10-02T08:17:18.000Z">2019-10-02</time>
+                <time class="level-item has-text-grey" datetime="2019-10-22T08:27:43.000Z">2019-10-22</time>
                 
                 <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a>
+                <a class="has-link-grey -link" href="/categories/javascript/">javascript</a>
                 </div>
                 
                 
                 <span class="level-item has-text-grey">
                     
                     
-                    a minute read (About 189 words)
+                    a few seconds read (About 0 words)
                 </span>
                 
                 
@@ -156,28 +162,11 @@
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                [191002 LeetCode] MatrixCells in Distance-Order
+                <a class="has-link-black-ter" href="/2019/10/22/191022-객체지향-vs-절차지향/">191022 객체지향 vs 절차지향</a>
             
         </h1>
         <div class="content">
-            <h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>Alice and Bob have candy bars of different sizes: A[i] is the size of the i-th bar of candy that Alice has, and B[j] is the size of the j-th bar of candy that Bob has.</p>
-<p>Since they are friends, they would like to exchange one candy bar each so that after the exchange, they both have the same total amount of candy. (The total amount of candy a person has is the sum of the sizes of candy bars they have.)</p>
-<p>Return an integer array ans where ans[0] is the size of the candy bar that Alice must exchange, and ans[1] is the size of the candy bar that Bob must exchange.</p>
-<p>If there are multiple answers, you may return any one of them. It is guaranteed an answer exists.</p>
-<a id="more"></a>
-<p><br></p>
-<h3 id="Example"><a href="#Example" class="headerlink" title="Example:"></a>Example:</h3><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Input: A = [1,1], B = [2,2]</span><br><span class="line">Output: [1,2]</span><br></pre></td></tr></table></figure>
-<h3 id="Submission"><a href="#Submission" class="headerlink" title="Submission"></a>Submission</h3><figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">var</span> fairCandySwap = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">A, B</span>) </span>&#123;</span><br><span class="line">  <span class="hljs-keyword">let</span> first = A.reduce(<span class="hljs-function">(<span class="hljs-params">pre, cur</span>) =&gt;</span> pre + cur);</span><br><span class="line">  <span class="hljs-keyword">let</span> Aver = <span class="hljs-function">(<span class="hljs-params">first + B.reduce((pre, cur</span>) =&gt;</span> pre + cur)) / <span class="hljs-number">2</span>;</span><br><span class="line">  <span class="hljs-keyword">let</span> Bidx = <span class="hljs-number">0</span>;</span><br><span class="line">  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; A.length; i++) &#123;</span><br><span class="line">    Bidx = B.indexOf(A[i] - (first - Aver));</span><br><span class="line">    <span class="hljs-keyword">if</span> (Bidx !== <span class="hljs-number">-1</span>) <span class="hljs-keyword">return</span> [A[i], B[Bidx]];</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-        </div>
-        
-        <div class="level is-size-7 is-uppercase">
-            <div class="level-start">
-                <div class="level-item">
-                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
-                    <a class="has-link-grey -link" href="/tags/Algorithm/">Algorithm</a>
-                </div>
-            </div>
+            
         </div>
         
         
@@ -189,52 +178,9 @@
 
 
 
-<div class="card card-transparent">
-    <div class="level post-navigation is-flex-wrap is-mobile">
-        
-        <div class="level-start">
-            <a class="level level-item has-link-grey  article-nav-prev" href="/2019/10/09/191009-브라우저-동작-원리/">
-                <i class="level-item fas fa-chevron-left"></i>
-                <span class="level-item">브라우저 동작 원리</span>
-            </a>
-        </div>
-        
-        
-        <div class="level-end">
-            <a class="level level-item has-link-grey  article-nav-next" href="/2019/10/01/191001-LeetCode-888/">
-                <span class="level-item">[191001 LeetCode] Fair Candy Swap</span>
-                <i class="level-item fas fa-chevron-right"></i>
-            </a>
-        </div>
-        
-    </div>
-</div>
 
 
 
-<div class="card">
-    <div class="card-content">
-        <h3 class="title is-5 has-text-weight-normal">Comments</h3>
-        
-<script>
-    var disqus_config = function () {
-        this.page.url = 'http://HanHyunJin-mis.github.io/2019/10/02/191001-LeetCode-1030/';
-        this.page.identifier = '2019/10/02/191001-LeetCode-1030/';
-    };
-    (function() {
-        var d = document, s = d.createElement('script');  
-        s.src = '//' + 'hyunlog' + '.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
-</script>
-
-<div id="disqus_thread">
-    
-    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-</div>
-    </div>
-</div>
 </div>
                 
 
@@ -1231,7 +1177,7 @@
             <div class="level-start has-text-centered-mobile">
                 <a class="footer-logo is-block has-mb-6" href="/">
                 
-                    <img src="/images/logo.JPG" alt="[191002 LeetCode] MatrixCells in Distance-Order" height="28">
+                    <img src="/images/logo.JPG" alt="" height="28">
                 
                 </a>
                 <p class="is-size-7">
