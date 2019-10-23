@@ -133,6 +133,121 @@
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-04-26T09:13:22.000Z">2019-04-26</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    a few seconds read (About 82 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2019/04/26/[Codewars] 190426_Eureka/">[Codewars] Take a Number And Sum Its Digits Raised To The Consecutive Powers And ....¡Eureka!!</a>
+            
+        </h1>
+        <div class="content">
+            <h3 id="문제"><a href="#문제" class="headerlink" title="문제"></a>문제</h3><ol>
+<li>n</li>
+</ol>
+<h3 id="내-코드"><a href="#내-코드" class="headerlink" title="내 코드"></a>내 코드</h3><figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">sumDigPow</span>(<span class="hljs-params">a, b</span>) </span>&#123;</span><br><span class="line">  <span class="hljs-keyword">var</span> li = [];</span><br><span class="line">            <span class="hljs-keyword">while</span> (a &lt; b) &#123;</span><br><span class="line">                <span class="hljs-keyword">var</span> a_arr = [];</span><br><span class="line">                a_arr = a.toString().split(<span class="hljs-string">''</span>);</span><br><span class="line">                <span class="hljs-keyword">var</span> sum = <span class="hljs-number">0</span>;</span><br><span class="line">                <span class="hljs-keyword">for</span> (i = a_arr.length - <span class="hljs-number">1</span>; i &gt;= <span class="hljs-number">0</span>; i--) &#123;</span><br><span class="line">                    sum += <span class="hljs-built_in">Math</span>.pow(a_arr[i], i + <span class="hljs-number">1</span>);</span><br><span class="line">                    <span class="hljs-keyword">if</span> (sum &gt;= a &amp;&amp; (i != <span class="hljs-number">0</span>)) &#123;</span><br><span class="line">                        <span class="hljs-keyword">break</span>;</span><br><span class="line">                    &#125; <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (a == sum) &#123;</span><br><span class="line">                        li.push(a);</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;</span><br><span class="line">                a++;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="hljs-keyword">return</span> li;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="내-풀이"><a href="#내-풀이" class="headerlink" title="내 풀이"></a>내 풀이</h3><pre><code>1.  내풀이 1
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">	</span><br></pre></td></tr></table></figure>
+
+2.  풀이 과정 중 어려움
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">	</span><br></pre></td></tr></table></figure>
+</code></pre><h3 id="다른-사람-풀이"><a href="#다른-사람-풀이" class="headerlink" title="다른 사람 풀이"></a>다른 사람 풀이</h3><h4 id="다른점"><a href="#다른점" class="headerlink" title="다른점"></a>다른점</h4><p>1.</p>
+<h4 id="알게-된-것"><a href="#알게-된-것" class="headerlink" title="알게 된 것"></a>알게 된 것</h4>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    
+<div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-04-24T11:38:21.000Z">2019-04-24</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    2 minutes read (About 267 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2019/04/24/Hanoi tower/">Hanoi tower</a>
+            
+        </h1>
+        <div class="content">
+            <h3 id="하노이의-탑"><a href="#하노이의-탑" class="headerlink" title="하노이의 탑"></a>하노이의 탑</h3><ol>
+<li>세 개의 기둥과 이 기둥에 꽂을 수 있는 각각 다른 크기의 원판들이 있다.</li>
+<li>처음에는 한 기둥에 원판이 아래부터 큰 순서대로 쌓여있다.</li>
+<li>한 기둥에 꽂혀있는 원판들을 꽂혀있는 순서 그대로 다른 기둥으로 옮겨야 한다.</li>
+</ol>
+<h4 id="조건"><a href="#조건" class="headerlink" title="조건"></a>조건</h4><ol>
+<li>한번에 하나의 원판만 움직일 수 있다.</li>
+<li>큰 원판 위에 작은 원판이 올라갈 수 없다.</li></ol>
+        </div>
+        
+        
+        <div class="level is-mobile">
+            <div class="level-start">
+                <div class="level-item">
+                <a class="button is-size-7 is-light" href="/2019/04/24/Hanoi tower/#more">Read More</a>
+                </div>
+            </div>
+        </div>
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    
+<div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
                 <time class="level-item has-text-grey" datetime="2019-04-24T11:38:04.000Z">2019-04-24</time>
                 
                 <div class="level-item">
@@ -573,122 +688,6 @@
 
 
 
-    
-<div class="card">
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-04-20T08:40:03.000Z">2019-04-20</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/ComputerEngineering/">ComputerEngineering</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    16 minutes read (About 2393 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/2019/04/20/190420_SCSS 특강/">SCSS 특강</a>
-            
-        </h1>
-        <div class="content">
-            <h2 id="node-sass-설치"><a href="#node-sass-설치" class="headerlink" title="node sass 설치"></a>node sass 설치</h2><ol>
-<li>$ npm i -g node-sass</li>
-<li>$ npm i -D node-sass</li>
-<li>버전확인 : $ node-sass -v<pre><code>$ node -v
-</code></pre></li>
-</ol>
-<h2 id="SCSS-vs-CSS"><a href="#SCSS-vs-CSS" class="headerlink" title="SCSS vs CSS"></a>SCSS vs CSS</h2>
-        </div>
-        
-        
-        <div class="level is-mobile">
-            <div class="level-start">
-                <div class="level-item">
-                <a class="button is-size-7 is-light" href="/2019/04/20/190420_SCSS 특강/#more">Read More</a>
-                </div>
-            </div>
-        </div>
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-    
-<div class="card">
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-04-19T06:58:31.000Z">2019-04-19</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    3 minutes read (About 402 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/2019/04/19/[Codewars] 190419_Persistent Bugger/">[Codewars] Persistent Bugger</a>
-            
-        </h1>
-        <div class="content">
-            <h3 id="문제"><a href="#문제" class="headerlink" title="문제"></a>문제</h3><ol>
-<li>숫자를 각각 1자리 수로 떼서 곱하기 연산</li>
-<li>자리수가 1이 될 때까지 연산한다.</li>
-<li>1이 될 때까지 연산한 횟수를 return<br>ex.<br><code>39</code> -&gt; 3 x 9 = 27<br><code>27</code> -&gt; 2 x 7 = 14<br><code>14</code> -&gt; 1 x 4 = 4<br><code>return 3</code> </li>
-</ol>
-        </div>
-        
-        
-        <div class="level is-mobile">
-            <div class="level-start">
-                <div class="level-item">
-                <a class="button is-size-7 is-light" href="/2019/04/19/[Codewars] 190419_Persistent Bugger/#more">Read More</a>
-                </div>
-            </div>
-        </div>
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
 
     
 <div class="card card-transparent">
@@ -756,7 +755,7 @@
                         Posts
                     </p>
                     <p class="title has-text-weight-normal">
-                        35
+                        37
                     </p>
                 </div>
             </div>
@@ -951,6 +950,44 @@
         
         <article class="media">
             
+            <a href="/2019/10/23/191023-오늘의-질문/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="191023 오늘의 질문">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-10-23T07:46:06.000Z">2019-10-23</time></div>
+                    <a href="/2019/10/23/191023-오늘의-질문/" class="title has-link-black-ter is-size-6 has-text-weight-normal">191023 오늘의 질문</a>
+                    <p class="is-size-7 is-uppercase">
+                        
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2019/10/22/191022-객체지향-vs-절차지향/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="191022 객체지향 vs 절차지향">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-10-22T08:27:43.000Z">2019-10-22</time></div>
+                    <a href="/2019/10/22/191022-객체지향-vs-절차지향/" class="title has-link-black-ter is-size-6 has-text-weight-normal">191022 객체지향 vs 절차지향</a>
+                    <p class="is-size-7 is-uppercase">
+                        
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
             <a href="/2019/10/22/191022-constructor/" class="media-left">
                 <p class="image is-64x64">
                     <img class="thumbnail" src="/images/thumbnail.svg" alt="Constructor">
@@ -1006,44 +1043,6 @@
             </div>
         </article>
         
-        <article class="media">
-            
-            <a href="/2019/10/17/191017-compiler-vs-interpreter/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="compiler vs interpreter">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-10-17T06:15:51.000Z">2019-10-17</time></div>
-                    <a href="/2019/10/17/191017-compiler-vs-interpreter/" class="title has-link-black-ter is-size-6 has-text-weight-normal">compiler vs interpreter</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/javascript/">javascript</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
-            <a href="/2019/10/16/191016-memo/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="191016 memo">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-10-16T03:34:26.000Z">2019-10-16</time></div>
-                    <a href="/2019/10/16/191016-memo/" class="title has-link-black-ter is-size-6 has-text-weight-normal">191016 memo</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/react/">react</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
     </div>
 </div>
         
@@ -1061,7 +1060,7 @@
                     <span class="level-item">October 2019</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">13</span>
+                    <span class="level-item tag">15</span>
                 </span>
             </a>
         </li>
@@ -1294,6 +1293,44 @@
         
         <article class="media">
             
+            <a href="/2019/10/23/191023-오늘의-질문/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="191023 오늘의 질문">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-10-23T07:46:06.000Z">2019-10-23</time></div>
+                    <a href="/2019/10/23/191023-오늘의-질문/" class="title has-link-black-ter is-size-6 has-text-weight-normal">191023 오늘의 질문</a>
+                    <p class="is-size-7 is-uppercase">
+                        
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2019/10/22/191022-객체지향-vs-절차지향/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="191022 객체지향 vs 절차지향">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-10-22T08:27:43.000Z">2019-10-22</time></div>
+                    <a href="/2019/10/22/191022-객체지향-vs-절차지향/" class="title has-link-black-ter is-size-6 has-text-weight-normal">191022 객체지향 vs 절차지향</a>
+                    <p class="is-size-7 is-uppercase">
+                        
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
             <a href="/2019/10/22/191022-constructor/" class="media-left">
                 <p class="image is-64x64">
                     <img class="thumbnail" src="/images/thumbnail.svg" alt="Constructor">
@@ -1349,44 +1386,6 @@
             </div>
         </article>
         
-        <article class="media">
-            
-            <a href="/2019/10/17/191017-compiler-vs-interpreter/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="compiler vs interpreter">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-10-17T06:15:51.000Z">2019-10-17</time></div>
-                    <a href="/2019/10/17/191017-compiler-vs-interpreter/" class="title has-link-black-ter is-size-6 has-text-weight-normal">compiler vs interpreter</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/javascript/">javascript</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
-            <a href="/2019/10/16/191016-memo/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="191016 memo">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-10-16T03:34:26.000Z">2019-10-16</time></div>
-                    <a href="/2019/10/16/191016-memo/" class="title has-link-black-ter is-size-6 has-text-weight-normal">191016 memo</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/react/">react</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
     </div>
 </div>
     
@@ -1404,7 +1403,7 @@
                     <span class="level-item">October 2019</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">13</span>
+                    <span class="level-item tag">15</span>
                 </span>
             </a>
         </li>

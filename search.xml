@@ -4,6 +4,32 @@
   
     
     <entry>
+      <title>191023 오늘의 질문</title>
+      <link href="/2019/10/23/191023-%EC%98%A4%EB%8A%98%EC%9D%98-%EC%A7%88%EB%AC%B8/"/>
+      <url>/2019/10/23/191023-%EC%98%A4%EB%8A%98%EC%9D%98-%EC%A7%88%EB%AC%B8/</url>
+      
+        <content type="html"><![CDATA[<p>x</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>191022 객체지향 vs 절차지향</title>
+      <link href="/2019/10/22/191022-%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5-vs-%EC%A0%88%EC%B0%A8%EC%A7%80%ED%96%A5/"/>
+      <url>/2019/10/22/191022-%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5-vs-%EC%A0%88%EC%B0%A8%EC%A7%80%ED%96%A5/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Constructor</title>
       <link href="/2019/10/22/191022-constructor/"/>
       <url>/2019/10/22/191022-constructor/</url>
@@ -107,11 +133,11 @@
             
             <tag> javascript </tag>
             
+            <tag> build </tag>
+            
             <tag> compiler </tag>
             
             <tag> interpreter </tag>
-            
-            <tag> build </tag>
             
         </tags>
       
