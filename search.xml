@@ -8,9 +8,27 @@
       <link href="/2019/10/23/191023-%EC%98%A4%EB%8A%98%EC%9D%98-%EC%A7%88%EB%AC%B8/"/>
       <url>/2019/10/23/191023-%EC%98%A4%EB%8A%98%EC%9D%98-%EC%A7%88%EB%AC%B8/</url>
       
-        <content type="html"><![CDATA[<p>x</p>]]></content>
+        <content type="html"><![CDATA[]]></content>
       
       
+      <categories>
+          
+          <category> javascript </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> javascript </tag>
+            
+            <tag> object </tag>
+            
+            <tag> prototype </tag>
+            
+            <tag> window </tag>
+            
+        </tags>
       
     </entry>
     
@@ -133,11 +151,11 @@
             
             <tag> javascript </tag>
             
-            <tag> build </tag>
-            
             <tag> compiler </tag>
             
             <tag> interpreter </tag>
+            
+            <tag> build </tag>
             
         </tags>
       
