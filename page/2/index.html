@@ -133,6 +133,57 @@
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-10-16T03:34:26.000Z">2019-10-16</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/react/">react</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    a few seconds read (About 80 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2019/10/16/191016-memo/">191016 memo</a>
+            
+        </h1>
+        <div class="content">
+            <h2 id="React-memo란"><a href="#React-memo란" class="headerlink" title="React.memo란?"></a>React.memo란?</h2><ul>
+<li><p>컴포넌트의 props가 바뀌지 않았다면, 리렌더링을 방지하여 컴포넌트의 리렌더링 성능 최적화를 해줄 수 있는 함수이다.</p>
+</li>
+<li><p>리렌더링이 필요한 상황에서만 리렌더링을 할 수 있도록 설정해줄 수 있다.</p>
+</li>
+</ul>
+
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    
+<div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
                 <time class="level-item has-text-grey" datetime="2019-10-16T01:14:02.000Z">2019-10-16</time>
                 
                 <div class="level-item">
@@ -598,73 +649,15 @@
 
 
 
-    
-<div class="card">
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-05-03T11:33:12.000Z">2019-05-03</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    a minute read (About 152 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/2019/05/03/[Codewars] 190503_ Double Cola/">[Codewars] Double Cola</a>
-            
-        </h1>
-        <div class="content">
-            <h3 id="문제"><a href="#문제" class="headerlink" title="문제"></a>문제</h3><ol>
-<li>names라는 배열과 r이라는 수가 들어온다.</li>
-<li>names라는 배열에<br>3.<br>4.</li>
-</ol>
-<h4 id="예시"><a href="#예시" class="headerlink" title="예시"></a>예시</h4><p><code>whoIsNext</code>([“Sheldon”, “Leonard”, “Penny”, “Rajesh”, “Howard”], 1) == <code>&quot;Sheldon&quot;</code><br><code>whoIsNext</code>([“Sheldon”, “Leonard”, “Penny”, “Rajesh”, “Howard”], 52) == <code>&quot;Penny&quot;</code></p>
-<h3 id="내-코드"><a href="#내-코드" class="headerlink" title="내 코드"></a>내 코드</h3><figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">whoIsNext</span>(<span class="hljs-params">names, r</span>) </span>&#123;</span><br><span class="line">  <span class="hljs-keyword">var</span> count = <span class="hljs-number">0</span>;</span><br><span class="line">  <span class="hljs-keyword">var</span> sum = <span class="hljs-number">0</span>;</span><br><span class="line">  <span class="hljs-keyword">while</span> (sum &lt; r) &#123;</span><br><span class="line">    <span class="hljs-keyword">var</span> five = names.length * <span class="hljs-number">2</span> ** count;</span><br><span class="line">    sum += five;</span><br><span class="line">    count++;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="hljs-keyword">var</span> pow = <span class="hljs-number">2</span> ** (count - <span class="hljs-number">1</span>);</span><br><span class="line">  <span class="hljs-keyword">var</span> new_idx = r - (sum - five) - <span class="hljs-number">1</span>;</span><br><span class="line"></span><br><span class="line">  <span class="hljs-keyword">return</span> names[<span class="hljs-built_in">parseInt</span>(new_idx / pow)];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="내-풀이"><a href="#내-풀이" class="headerlink" title="내 풀이"></a>내 풀이</h3><pre><code>1.  내풀이 1
-<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"> </span><br></pre></td></tr></table></figure>
-
-2.  풀이 과정 중 어려움
-five에 표현식을 할당하는 것을 while문 밖에서 선언하니 반복될 때마다 계산이 되지 않았다.
-
-names의 length가 경우에 따라 달라질 것이라는 것을 예상하지 못했다.
-</code></pre>
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
 
     
 <div class="card card-transparent">
     <nav class="pagination is-centered" role="navigation" aria-label="pagination">
         <div class="pagination-previous">
-            <a class="is-flex-grow has-text-black-ter" href="/">前</a>
+            <a class="is-flex-grow has-text-black-ter" href="/">Anterior</a>
         </div>
         <div class="pagination-next">
-            <a class="is-flex-grow has-text-black-ter" href="/page/3/">次</a>
+            <a class="is-flex-grow has-text-black-ter" href="/page/3/">Siguiente</a>
         </div>
         <ul class="pagination-list is-hidden-mobile">
             
@@ -675,6 +668,8 @@ names의 length가 경우에 따라 달라질 것이라는 것을 예상하지 �
             <li><a class="pagination-link has-text-black-ter" href="/page/3/">3</a></li>
             
             <li><a class="pagination-link has-text-black-ter" href="/page/4/">4</a></li>
+            
+            <li><a class="pagination-link has-text-black-ter" href="/page/5/">5</a></li>
             
         </ul>
     </nav>
@@ -720,17 +715,17 @@ names의 length가 경우에 따라 달라질 것이라는 것을 예상하지 �
             <div class="level-item has-text-centered is-marginless">
                 <div>
                     <p class="heading">
-                        投稿
+                        Entradas
                     </p>
                     <p class="title has-text-weight-normal">
-                        40
+                        41
                     </p>
                 </div>
             </div>
             <div class="level-item has-text-centered is-marginless">
                 <div>
                     <p class="heading">
-                        カテゴリ
+                        Categorias
                     </p>
                     <p class="title has-text-weight-normal">
                         7
@@ -740,7 +735,7 @@ names의 length가 경우에 따라 달라질 것이라는 것을 예상하지 �
             <div class="level-item has-text-centered is-marginless">
                 <div>
                     <p class="heading">
-                        タグ
+                        Etiquetas
                     </p>
                     <p class="title has-text-weight-normal">
                         31
@@ -751,7 +746,7 @@ names의 length가 경우에 따라 달라질 것이라는 것을 예상하지 �
         
         <div class="level">
             <a class="level-item button is-link is-rounded" href="https://github.com/HanHyunJin-mis" target="_blank">
-                フォローする</a>
+                SEGUIR</a>
         </div>
         
         
@@ -804,7 +799,7 @@ names의 length가 경우에 따라 달라질 것이라는 것을 예상하지 �
     <div class="card-content">
         <div class="menu">
         <h3 class="menu-label">
-            リンク
+            Links
         </h3>
         <ul class="menu-list">
         
@@ -841,7 +836,7 @@ names의 length가 경우에 따라 달라질 것이라는 것을 예상하지 �
     <div class="card-content">
         <div class="menu">
             <h3 class="menu-label">
-                カテゴリ
+                Categorias
             </h3>
             <ul class="menu-list">
             <li>
@@ -909,7 +904,7 @@ names의 length가 경우에 따라 달라질 것이라는 것을 예상하지 �
         <div class="card widget">
     <div class="card-content">
         <h3 class="menu-label">
-            タグクラウド
+            Nube de etiquetas
         </h3>
         <a href="/tags/Algorithm/" style="font-size: 20px;">Algorithm</a> <a href="/tags/ComputerEngineering/" style="font-size: 11.67px;">ComputerEngineering</a> <a href="/tags/TIL/" style="font-size: 15px;">TIL</a> <a href="/tags/Unknown-term/" style="font-size: 10px;">Unknown term</a> <a href="/tags/arguments/" style="font-size: 10px;">arguments</a> <a href="/tags/array/" style="font-size: 10px;">array</a> <a href="/tags/build/" style="font-size: 11.67px;">build</a> <a href="/tags/callable/" style="font-size: 10px;">callable</a> <a href="/tags/compiler/" style="font-size: 10px;">compiler</a> <a href="/tags/constructor/" style="font-size: 10px;">constructor</a> <a href="/tags/copy/" style="font-size: 10px;">copy</a> <a href="/tags/excution-context/" style="font-size: 10px;">excution-context</a> <a href="/tags/for/" style="font-size: 10px;">for</a> <a href="/tags/function/" style="font-size: 11.67px;">function</a> <a href="/tags/get-set/" style="font-size: 10px;">get/set</a> <a href="/tags/interpreter/" style="font-size: 10px;">interpreter</a> <a href="/tags/iterable/" style="font-size: 10px;">iterable</a> <a href="/tags/iterate/" style="font-size: 10px;">iterate</a> <a href="/tags/javascript/" style="font-size: 18.33px;">javascript</a> <a href="/tags/memo/" style="font-size: 10px;">memo</a> <a href="/tags/object/" style="font-size: 13.33px;">object</a> <a href="/tags/object-oriented/" style="font-size: 10px;">object-oriented</a> <a href="/tags/procedural-oriented/" style="font-size: 10px;">procedural-oriented</a> <a href="/tags/prototype/" style="font-size: 13.33px;">prototype</a> <a href="/tags/question/" style="font-size: 16.67px;">question</a> <a href="/tags/react/" style="font-size: 10px;">react</a> <a href="/tags/this/" style="font-size: 10px;">this</a> <a href="/tags/window/" style="font-size: 10px;">window</a> <a href="/tags/브라우저/" style="font-size: 10px;">브라우저</a> <a href="/tags/유사배열/" style="font-size: 10px;">유사배열</a> <a href="/tags/제어문/" style="font-size: 10px;">제어문</a>
     </div>
@@ -921,8 +916,27 @@ names의 length가 경우에 따라 달라질 것이라는 것을 예상하지 �
             <div class="card widget">
     <div class="card-content">
         <h3 class="menu-label">
-            最近の記事
+            Recientes
         </h3>
+        
+        <article class="media">
+            
+            <a href="/2019/10/25/191025-super/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="191025 super">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-10-25T08:16:19.000Z">2019-10-25</time></div>
+                    <a href="/2019/10/25/191025-super/" class="title has-link-black-ter is-size-6 has-text-weight-normal">191025 super</a>
+                    <p class="is-size-7 is-uppercase">
+                        
+                    </p>
+                </div>
+            </div>
+        </article>
         
         <article class="media">
             
@@ -1000,25 +1014,6 @@ names의 length가 경우에 따라 달라질 것이라는 것을 예상하지 �
             </div>
         </article>
         
-        <article class="media">
-            
-            <a href="/2019/10/22/191022-절차지향,객체지향/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="절차지향, 객체지향">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-10-22T08:27:43.000Z">2019-10-22</time></div>
-                    <a href="/2019/10/22/191022-절차지향,객체지향/" class="title has-link-black-ter is-size-6 has-text-weight-normal">절차지향, 객체지향</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/javascript/">javascript</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
     </div>
 </div>
         
@@ -1026,7 +1021,7 @@ names의 length가 경우에 따라 달라질 것이라는 것을 예상하지 �
     <div class="card-content">
         <div class="menu">
         <h3 class="menu-label">
-            アーカイブ
+            Archivos
         </h3>
         <ul class="menu-list">
         
@@ -1036,7 +1031,7 @@ names의 length가 경우에 따라 달라질 것이라는 것을 예상하지 �
                     <span class="level-item">October 2019</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">18</span>
+                    <span class="level-item tag">19</span>
                 </span>
             </a>
         </li>
@@ -1094,7 +1089,7 @@ names의 length가 경우에 따라 달라질 것이라는 것을 예상하지 �
     <div class="card-content">
         <div class="menu">
             <h3 class="menu-label">
-                タグ
+                Etiquetas
             </h3>
             <div class="field is-grouped is-grouped-multiline">
                 
@@ -1334,8 +1329,27 @@ names의 length가 경우에 따라 달라질 것이라는 것을 예상하지 �
         <div class="card widget">
     <div class="card-content">
         <h3 class="menu-label">
-            最近の記事
+            Recientes
         </h3>
+        
+        <article class="media">
+            
+            <a href="/2019/10/25/191025-super/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="191025 super">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-10-25T08:16:19.000Z">2019-10-25</time></div>
+                    <a href="/2019/10/25/191025-super/" class="title has-link-black-ter is-size-6 has-text-weight-normal">191025 super</a>
+                    <p class="is-size-7 is-uppercase">
+                        
+                    </p>
+                </div>
+            </div>
+        </article>
         
         <article class="media">
             
@@ -1413,25 +1427,6 @@ names의 length가 경우에 따라 달라질 것이라는 것을 예상하지 �
             </div>
         </article>
         
-        <article class="media">
-            
-            <a href="/2019/10/22/191022-절차지향,객체지향/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="절차지향, 객체지향">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-10-22T08:27:43.000Z">2019-10-22</time></div>
-                    <a href="/2019/10/22/191022-절차지향,객체지향/" class="title has-link-black-ter is-size-6 has-text-weight-normal">절차지향, 객체지향</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/javascript/">javascript</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
     </div>
 </div>
     
@@ -1439,7 +1434,7 @@ names의 length가 경우에 따라 달라질 것이라는 것을 예상하지 �
     <div class="card-content">
         <div class="menu">
         <h3 class="menu-label">
-            アーカイブ
+            Archivos
         </h3>
         <ul class="menu-list">
         
@@ -1449,7 +1444,7 @@ names의 length가 경우에 따라 달라질 것이라는 것을 예상하지 �
                     <span class="level-item">October 2019</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">18</span>
+                    <span class="level-item tag">19</span>
                 </span>
             </a>
         </li>
@@ -1507,7 +1502,7 @@ names의 length가 경우에 따라 달라질 것이라는 것을 예상하지 �
     <div class="card-content">
         <div class="menu">
             <h3 class="menu-label">
-                タグ
+                Etiquetas
             </h3>
             <div class="field is-grouped is-grouped-multiline">
                 
@@ -1863,7 +1858,7 @@ document.addEventListener('DOMContentLoaded', function () {
 </script>
     
     
-<a id="back-to-top" title="Back to Top" href="javascript:;">
+<a id="back-to-top" title="Kembali ke atas" href="javascript:;">
     <i class="fas fa-chevron-up"></i>
 </a>
 <script src="/js/back-to-top.js" defer></script>
@@ -1899,10 +1894,10 @@ document.addEventListener('DOMContentLoaded', function () {
     (function (window) {
         var INSIGHT_CONFIG = {
             TRANSLATION: {
-                POSTS: '投稿',
+                POSTS: 'Entradas',
                 PAGES: 'Pages',
-                CATEGORIES: 'カテゴリ',
-                TAGS: 'タグ',
+                CATEGORIES: 'Categorias',
+                TAGS: 'Etiquetas',
                 UNTITLED: '(Untitled)',
             },
             CONTENT_URL: '/content.json',

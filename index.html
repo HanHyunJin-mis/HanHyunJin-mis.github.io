@@ -133,6 +133,48 @@
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-10-25T08:16:19.000Z">2019-10-25</time>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    a few seconds read (About 28 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2019/10/25/191025-super/">191025 super</a>
+            
+        </h1>
+        <div class="content">
+            <figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Parent</span> </span>&#123;</span><br><span class="line">  <span class="hljs-keyword">constructor</span>(one) &#123;</span><br><span class="line">    <span class="hljs-comment">// ④</span></span><br><span class="line">    <span class="hljs-keyword">this</span>.one = one;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Child</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Parent</span> </span>&#123;</span><br><span class="line">  <span class="hljs-keyword">constructor</span>(one, two) &#123;</span><br><span class="line">    <span class="hljs-keyword">super</span>(one);</span><br><span class="line">    <span class="hljs-keyword">this</span>.two = two;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="hljs-keyword">const</span> children = <span class="hljs-keyword">new</span> Child(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>);</span><br><span class="line"><span class="hljs-built_in">console</span>.log(children);</span><br></pre></td></tr></table></figure>
+
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    
+<div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
                 <time class="level-item has-text-grey" datetime="2019-10-25T02:41:02.000Z">2019-10-25</time>
                 
                 <div class="level-item">
@@ -143,7 +185,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    a few seconds read (About 0 words)
+                    a few seconds read (About 38 words)
                 </span>
                 
                 
@@ -156,7 +198,14 @@
             
         </h1>
         <div class="content">
-            
+            <h2 id="iterable란"><a href="#iterable란" class="headerlink" title="iterable란?"></a>iterable란?</h2><p>-</p>
+<h2 id="iterator란"><a href="#iterator란" class="headerlink" title="iterator란?"></a>iterator란?</h2><ul>
+<li>이터러블의 요소를 탐색하기 위한 포인터</li>
+</ul>
+<h2 id="유사배열이란"><a href="#유사배열이란" class="headerlink" title="유사배열이란?"></a>유사배열이란?</h2><ul>
+<li>대표적으로 arguments 객체가 있다.</li>
+</ul>
+
         </div>
         
         
@@ -344,7 +393,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    3 minutes read (About 434 words)
+                    4 minutes read (About 663 words)
                 </span>
                 
                 
@@ -363,9 +412,7 @@
 <p>데이터(즉, 구조체)와 함수(기능)가 분리되어 있다.</p>
 <p>프로그램의 순서와 흐름을 먼저 세우고 필요한 자료구조와 함수들을 설계하는 방식</p>
 <h3 id="객체지향이란"><a href="#객체지향이란" class="headerlink" title="객체지향이란?"></a>객체지향이란?</h3><p>개발하려는 것을 지능별로 묶어 모듈화를 하는 것</p>
-<blockquote>
 <p>-&gt; 하드웨어가 같은 기능을 중복으로 연산하는 것이 아니라 모듈을 재활용함으로써 하드웨어의 처리양을 획기적으로 줄여줄 수 있다.</p>
-</blockquote>
 <h4 id="객체지향의-4가지-특징"><a href="#객체지향의-4가지-특징" class="headerlink" title="객체지향의 4가지 특징"></a>객체지향의 4가지 특징</h4><ol>
 <li><p>추상화</p>
 <blockquote>
@@ -377,9 +424,20 @@
 <p>하나의 기능을 위해 묶인 class 내에서만 통용되는 변수와 메소드를 외부에서 접근할 수 없도록 차단하는 것<br>즉, 데이터를 감추어 외부 상호작용은 메소드를 통해서 하는 방법 (get / set)</p>
 </blockquote>
 </li>
-<li>상속성</li>
-<li>다형성</li>
+<li><p>상속성</p>
+<blockquote>
+<p>상위 개념의 특징을 하위 개념이 물려받는 것<br>공통된 소스코드를 부모 class로 정의하고 자식은 이를 상속받아 소스의 재사용율을 높인다.<br>ex. prototype, class</p>
+</blockquote>
+</li>
+<li><p>다형성</p>
+<blockquote>
+<p>overriding, 가공하여 여러 타입으로 변형 가능함을 의미한다.<br>super, extends</p>
+</blockquote>
+</li>
 </ol>
+<p>모듈에 있는 기능 중 하나만 필요하더라도 전체를 가져온다는 면에서 크기가 커질 수 있다.</p>
+<p>객체 지향 프로그래밍을 하기 위해서는 객체의 설계가 우선되며 자료구조, 모듈들을 우선 설계한 후 실행 순서나 흐름을 짜야 한다.</p>
+<p><strong>하지만 그렇다고 해서 객체 지향 프로그래밍이 절차를 무시하는 것은 아니다.</strong><br><strong>또한 둘은 상반된 개념이 아니라 단지 다른 개념이라고 이해하는 것이 좋다.</strong></p>
 
         </div>
         
@@ -631,66 +689,15 @@
 
 
 
-    
-<div class="card">
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-10-16T03:34:26.000Z">2019-10-16</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/react/">react</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    a few seconds read (About 80 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/2019/10/16/191016-memo/">191016 memo</a>
-            
-        </h1>
-        <div class="content">
-            <h2 id="React-memo란"><a href="#React-memo란" class="headerlink" title="React.memo란?"></a>React.memo란?</h2><ul>
-<li><p>컴포넌트의 props가 바뀌지 않았다면, 리렌더링을 방지하여 컴포넌트의 리렌더링 성능 최적화를 해줄 수 있는 함수이다.</p>
-</li>
-<li><p>리렌더링이 필요한 상황에서만 리렌더링을 할 수 있도록 설정해줄 수 있다.</p>
-</li>
-</ul>
-
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
 
     
 <div class="card card-transparent">
     <nav class="pagination is-centered" role="navigation" aria-label="pagination">
         <div class="pagination-previous is-invisible is-hidden-mobile">
-            <a class="is-flex-grow has-text-black-ter" href="/page/0/">前</a>
+            <a class="is-flex-grow has-text-black-ter" href="/page/0/">Anterior</a>
         </div>
         <div class="pagination-next">
-            <a class="is-flex-grow has-text-black-ter" href="/page/2/">次</a>
+            <a class="is-flex-grow has-text-black-ter" href="/page/2/">Siguiente</a>
         </div>
         <ul class="pagination-list is-hidden-mobile">
             
@@ -698,9 +705,9 @@
             
             <li><a class="pagination-link has-text-black-ter" href="/page/2/">2</a></li>
             
-            <li><a class="pagination-link has-text-black-ter" href="/page/3/">3</a></li>
+            <li><span class="pagination-ellipsis has-text-black-ter">&hellip;</span></li>
             
-            <li><a class="pagination-link has-text-black-ter" href="/page/4/">4</a></li>
+            <li><a class="pagination-link has-text-black-ter" href="/page/5/">5</a></li>
             
         </ul>
     </nav>
@@ -746,17 +753,17 @@
             <div class="level-item has-text-centered is-marginless">
                 <div>
                     <p class="heading">
-                        投稿
+                        Entradas
                     </p>
                     <p class="title has-text-weight-normal">
-                        40
+                        41
                     </p>
                 </div>
             </div>
             <div class="level-item has-text-centered is-marginless">
                 <div>
                     <p class="heading">
-                        カテゴリ
+                        Categorias
                     </p>
                     <p class="title has-text-weight-normal">
                         7
@@ -766,7 +773,7 @@
             <div class="level-item has-text-centered is-marginless">
                 <div>
                     <p class="heading">
-                        タグ
+                        Etiquetas
                     </p>
                     <p class="title has-text-weight-normal">
                         31
@@ -777,7 +784,7 @@
         
         <div class="level">
             <a class="level-item button is-link is-rounded" href="https://github.com/HanHyunJin-mis" target="_blank">
-                フォローする</a>
+                SEGUIR</a>
         </div>
         
         
@@ -830,7 +837,7 @@
     <div class="card-content">
         <div class="menu">
         <h3 class="menu-label">
-            リンク
+            Links
         </h3>
         <ul class="menu-list">
         
@@ -867,7 +874,7 @@
     <div class="card-content">
         <div class="menu">
             <h3 class="menu-label">
-                カテゴリ
+                Categorias
             </h3>
             <ul class="menu-list">
             <li>
@@ -935,7 +942,7 @@
         <div class="card widget">
     <div class="card-content">
         <h3 class="menu-label">
-            タグクラウド
+            Nube de etiquetas
         </h3>
         <a href="/tags/Algorithm/" style="font-size: 20px;">Algorithm</a> <a href="/tags/ComputerEngineering/" style="font-size: 11.67px;">ComputerEngineering</a> <a href="/tags/TIL/" style="font-size: 15px;">TIL</a> <a href="/tags/Unknown-term/" style="font-size: 10px;">Unknown term</a> <a href="/tags/arguments/" style="font-size: 10px;">arguments</a> <a href="/tags/array/" style="font-size: 10px;">array</a> <a href="/tags/build/" style="font-size: 11.67px;">build</a> <a href="/tags/callable/" style="font-size: 10px;">callable</a> <a href="/tags/compiler/" style="font-size: 10px;">compiler</a> <a href="/tags/constructor/" style="font-size: 10px;">constructor</a> <a href="/tags/copy/" style="font-size: 10px;">copy</a> <a href="/tags/excution-context/" style="font-size: 10px;">excution-context</a> <a href="/tags/for/" style="font-size: 10px;">for</a> <a href="/tags/function/" style="font-size: 11.67px;">function</a> <a href="/tags/get-set/" style="font-size: 10px;">get/set</a> <a href="/tags/interpreter/" style="font-size: 10px;">interpreter</a> <a href="/tags/iterable/" style="font-size: 10px;">iterable</a> <a href="/tags/iterate/" style="font-size: 10px;">iterate</a> <a href="/tags/javascript/" style="font-size: 18.33px;">javascript</a> <a href="/tags/memo/" style="font-size: 10px;">memo</a> <a href="/tags/object/" style="font-size: 13.33px;">object</a> <a href="/tags/object-oriented/" style="font-size: 10px;">object-oriented</a> <a href="/tags/procedural-oriented/" style="font-size: 10px;">procedural-oriented</a> <a href="/tags/prototype/" style="font-size: 13.33px;">prototype</a> <a href="/tags/question/" style="font-size: 16.67px;">question</a> <a href="/tags/react/" style="font-size: 10px;">react</a> <a href="/tags/this/" style="font-size: 10px;">this</a> <a href="/tags/window/" style="font-size: 10px;">window</a> <a href="/tags/브라우저/" style="font-size: 10px;">브라우저</a> <a href="/tags/유사배열/" style="font-size: 10px;">유사배열</a> <a href="/tags/제어문/" style="font-size: 10px;">제어문</a>
     </div>
@@ -947,8 +954,27 @@
             <div class="card widget">
     <div class="card-content">
         <h3 class="menu-label">
-            最近の記事
+            Recientes
         </h3>
+        
+        <article class="media">
+            
+            <a href="/2019/10/25/191025-super/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="191025 super">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-10-25T08:16:19.000Z">2019-10-25</time></div>
+                    <a href="/2019/10/25/191025-super/" class="title has-link-black-ter is-size-6 has-text-weight-normal">191025 super</a>
+                    <p class="is-size-7 is-uppercase">
+                        
+                    </p>
+                </div>
+            </div>
+        </article>
         
         <article class="media">
             
@@ -1026,25 +1052,6 @@
             </div>
         </article>
         
-        <article class="media">
-            
-            <a href="/2019/10/22/191022-절차지향,객체지향/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="절차지향, 객체지향">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-10-22T08:27:43.000Z">2019-10-22</time></div>
-                    <a href="/2019/10/22/191022-절차지향,객체지향/" class="title has-link-black-ter is-size-6 has-text-weight-normal">절차지향, 객체지향</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/javascript/">javascript</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
     </div>
 </div>
         
@@ -1052,7 +1059,7 @@
     <div class="card-content">
         <div class="menu">
         <h3 class="menu-label">
-            アーカイブ
+            Archivos
         </h3>
         <ul class="menu-list">
         
@@ -1062,7 +1069,7 @@
                     <span class="level-item">October 2019</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">18</span>
+                    <span class="level-item tag">19</span>
                 </span>
             </a>
         </li>
@@ -1120,7 +1127,7 @@
     <div class="card-content">
         <div class="menu">
             <h3 class="menu-label">
-                タグ
+                Etiquetas
             </h3>
             <div class="field is-grouped is-grouped-multiline">
                 
@@ -1360,8 +1367,27 @@
         <div class="card widget">
     <div class="card-content">
         <h3 class="menu-label">
-            最近の記事
+            Recientes
         </h3>
+        
+        <article class="media">
+            
+            <a href="/2019/10/25/191025-super/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="191025 super">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-10-25T08:16:19.000Z">2019-10-25</time></div>
+                    <a href="/2019/10/25/191025-super/" class="title has-link-black-ter is-size-6 has-text-weight-normal">191025 super</a>
+                    <p class="is-size-7 is-uppercase">
+                        
+                    </p>
+                </div>
+            </div>
+        </article>
         
         <article class="media">
             
@@ -1439,25 +1465,6 @@
             </div>
         </article>
         
-        <article class="media">
-            
-            <a href="/2019/10/22/191022-절차지향,객체지향/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="절차지향, 객체지향">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-10-22T08:27:43.000Z">2019-10-22</time></div>
-                    <a href="/2019/10/22/191022-절차지향,객체지향/" class="title has-link-black-ter is-size-6 has-text-weight-normal">절차지향, 객체지향</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/javascript/">javascript</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
     </div>
 </div>
     
@@ -1465,7 +1472,7 @@
     <div class="card-content">
         <div class="menu">
         <h3 class="menu-label">
-            アーカイブ
+            Archivos
         </h3>
         <ul class="menu-list">
         
@@ -1475,7 +1482,7 @@
                     <span class="level-item">October 2019</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">18</span>
+                    <span class="level-item tag">19</span>
                 </span>
             </a>
         </li>
@@ -1533,7 +1540,7 @@
     <div class="card-content">
         <div class="menu">
             <h3 class="menu-label">
-                タグ
+                Etiquetas
             </h3>
             <div class="field is-grouped is-grouped-multiline">
                 
@@ -1889,7 +1896,7 @@ document.addEventListener('DOMContentLoaded', function () {
 </script>
     
     
-<a id="back-to-top" title="Back to Top" href="javascript:;">
+<a id="back-to-top" title="Kembali ke atas" href="javascript:;">
     <i class="fas fa-chevron-up"></i>
 </a>
 <script src="/js/back-to-top.js" defer></script>
@@ -1925,10 +1932,10 @@ document.addEventListener('DOMContentLoaded', function () {
     (function (window) {
         var INSIGHT_CONFIG = {
             TRANSLATION: {
-                POSTS: '投稿',
+                POSTS: 'Entradas',
                 PAGES: 'Pages',
-                CATEGORIES: 'カテゴリ',
-                TAGS: 'タグ',
+                CATEGORIES: 'Categorias',
+                TAGS: 'Etiquetas',
                 UNTITLED: '(Untitled)',
             },
             CONTENT_URL: '/content.json',
