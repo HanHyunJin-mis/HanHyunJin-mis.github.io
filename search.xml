@@ -11,6 +11,22 @@
         <content type="html"><![CDATA[<figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Parent</span> </span>&#123;</span><br><span class="line">  <span class="hljs-keyword">constructor</span>(one) &#123;</span><br><span class="line">    <span class="hljs-comment">// ④</span></span><br><span class="line">    <span class="hljs-keyword">this</span>.one = one;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Child</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Parent</span> </span>&#123;</span><br><span class="line">  <span class="hljs-keyword">constructor</span>(one, two) &#123;</span><br><span class="line">    <span class="hljs-keyword">super</span>(one);</span><br><span class="line">    <span class="hljs-keyword">this</span>.two = two;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="hljs-keyword">const</span> children = <span class="hljs-keyword">new</span> Child(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>);</span><br><span class="line"><span class="hljs-built_in">console</span>.log(children);</span><br></pre></td></tr></table></figure>]]></content>
       
       
+      <categories>
+          
+          <category> javascript </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> javascript </tag>
+            
+            <tag> class </tag>
+            
+            <tag> super </tag>
+            
+        </tags>
       
     </entry>
     
