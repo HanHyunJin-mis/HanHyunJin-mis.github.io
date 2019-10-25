@@ -133,6 +133,61 @@
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-05-02T11:18:04.000Z">2019-05-02</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    a minute read (About 201 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2019/05/02/[Codewars] 190502_Playing with digits/">[Codewars] Playing with digits</a>
+            
+        </h1>
+        <div class="content">
+            <h3 id="문제"><a href="#문제" class="headerlink" title="문제"></a>문제</h3><ol>
+<li><code>n이라는 정수</code>와 <code>p라는 정수</code> 두가지가 주어진다.</li>
+<li>n이라는 정수의 <code>제일 큰 자릿수(10의 자리, 100의 자리)</code>의 수에 <code>p</code>라는 수만큼 제곱한다.</li>
+<li>그 다음 자릿수에 <code>p+1만큼 제곱</code>한다.</li>
+<li>자릿수가 커질수록 <code>p가 1씩 증가</code>한다.</li>
+<li>제곱수를 모두 더한다.</li>
+<li>더한 제곱수를 처음 <code>n이라는 값으로 나누어서</code> <code>정수이면 나눈 몫을 반환</code>, <code>정수가 아닌 경우에는 -1을 return</code>한다.</li>
+</ol>
+<h4 id="예시"><a href="#예시" class="headerlink" title="예시"></a>예시</h4><p><code>digPow(89, 1)</code> =&gt; 8¹ + 9² = 89 = 89 _ 1 <code>return 1</code><br><code>digPow(92, 1)</code> =&gt; there is no k such as 9¹ + 2² equals 92 _ k <code>return -1</code><br><code>digPow(695, 2)</code> =&gt; 6² + 9³ + 5⁴= 1390 = 695 * 2 <code>return 2</code></p>
+<h3 id="내-코드"><a href="#내-코드" class="headerlink" title="내 코드"></a>내 코드</h3><figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">digPow</span>(<span class="hljs-params">n, p</span>) </span>&#123;</span><br><span class="line">  <span class="hljs-keyword">var</span> str_num = n.toString();</span><br><span class="line">  <span class="hljs-keyword">var</span> pow = <span class="hljs-number">0</span>;</span><br><span class="line">  <span class="hljs-keyword">var</span> sum = <span class="hljs-number">0</span>;</span><br><span class="line"></span><br><span class="line">  <span class="hljs-keyword">for</span> (i = <span class="hljs-number">0</span>; i &lt; str_num.length; i++) &#123;</span><br><span class="line">    pow = <span class="hljs-built_in">Math</span>.pow(str_num[i], p + i);</span><br><span class="line">    sum += pow;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="hljs-keyword">var</span> int_num = sum / n;</span><br><span class="line"></span><br><span class="line">  <span class="hljs-keyword">if</span> (int_num === <span class="hljs-built_in">parseInt</span>(int_num)) &#123;</span><br><span class="line">    <span class="hljs-keyword">return</span> int_num;</span><br><span class="line">  &#125; <span class="hljs-keyword">else</span> &#123;</span><br><span class="line">    <span class="hljs-keyword">return</span> <span class="hljs-number">-1</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    
+<div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
                 <time class="level-item has-text-grey" datetime="2019-04-30T02:39:53.000Z">2019-04-30</time>
                 
                 <div class="level-item">
@@ -629,63 +684,6 @@
 
 
 
-    
-<div class="card">
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-04-22T11:42:15.000Z">2019-04-22</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/ComputerEngineering/">ComputerEngineering</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    7 minutes read (About 1062 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/2019/04/22/190422_variables, function, closure, binary, linear search/">190422_variables, function, closure, binary, linear search</a>
-            
-        </h1>
-        <div class="content">
-            <h2 id="함수"><a href="#함수" class="headerlink" title="함수"></a>함수</h2><ol>
-<li>namespace</li>
-<li>stack frame</li>
-<li>call by value(왜 call by value와 reference를 나누었을까?)<br> call by reference~<br> call by reference object</li>
-</ol>
-        </div>
-        
-        
-        <div class="level is-mobile">
-            <div class="level-start">
-                <div class="level-item">
-                <a class="button is-size-7 is-light" href="/2019/04/22/190422_variables, function, closure, binary, linear search/#more">Read More</a>
-                </div>
-            </div>
-        </div>
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
 
     
 <div class="card card-transparent">
@@ -753,7 +751,7 @@
                         Entradas
                     </p>
                     <p class="title has-text-weight-normal">
-                        39
+                        40
                     </p>
                 </div>
             </div>
@@ -773,7 +771,7 @@
                         Etiquetas
                     </p>
                     <p class="title has-text-weight-normal">
-                        26
+                        31
                     </p>
                 </div>
             </div>
@@ -920,7 +918,7 @@
                 <span class="level-item">javascript</span>
             </span>
             <span class="level-end">
-                <span class="level-item tag">12</span>
+                <span class="level-item tag">14</span>
             </span>
         </a></li><li>
         <a class="level is-marginless" href="/categories/react/">
@@ -941,7 +939,7 @@
         <h3 class="menu-label">
             Nube de etiquetas
         </h3>
-        <a href="/tags/Algorithm/" style="font-size: 20px;">Algorithm</a> <a href="/tags/ComputerEngineering/" style="font-size: 11.67px;">ComputerEngineering</a> <a href="/tags/TIL/" style="font-size: 15px;">TIL</a> <a href="/tags/Unknown-term/" style="font-size: 10px;">Unknown term</a> <a href="/tags/array/" style="font-size: 10px;">array</a> <a href="/tags/build/" style="font-size: 11.67px;">build</a> <a href="/tags/callable/" style="font-size: 10px;">callable</a> <a href="/tags/compiler/" style="font-size: 10px;">compiler</a> <a href="/tags/constructor/" style="font-size: 10px;">constructor</a> <a href="/tags/copy/" style="font-size: 10px;">copy</a> <a href="/tags/for/" style="font-size: 10px;">for</a> <a href="/tags/function/" style="font-size: 11.67px;">function</a> <a href="/tags/get-set/" style="font-size: 10px;">get/set</a> <a href="/tags/interpreter/" style="font-size: 10px;">interpreter</a> <a href="/tags/javascript/" style="font-size: 18.33px;">javascript</a> <a href="/tags/memo/" style="font-size: 10px;">memo</a> <a href="/tags/object/" style="font-size: 13.33px;">object</a> <a href="/tags/object-oriented/" style="font-size: 10px;">object-oriented</a> <a href="/tags/procedural-oriented/" style="font-size: 10px;">procedural-oriented</a> <a href="/tags/prototype/" style="font-size: 11.67px;">prototype</a> <a href="/tags/question/" style="font-size: 16.67px;">question</a> <a href="/tags/react/" style="font-size: 10px;">react</a> <a href="/tags/this/" style="font-size: 10px;">this</a> <a href="/tags/window/" style="font-size: 10px;">window</a> <a href="/tags/브라우저/" style="font-size: 10px;">브라우저</a> <a href="/tags/제어문/" style="font-size: 10px;">제어문</a>
+        <a href="/tags/Algorithm/" style="font-size: 20px;">Algorithm</a> <a href="/tags/ComputerEngineering/" style="font-size: 11.67px;">ComputerEngineering</a> <a href="/tags/TIL/" style="font-size: 15px;">TIL</a> <a href="/tags/Unknown-term/" style="font-size: 10px;">Unknown term</a> <a href="/tags/arguments/" style="font-size: 10px;">arguments</a> <a href="/tags/array/" style="font-size: 10px;">array</a> <a href="/tags/build/" style="font-size: 11.67px;">build</a> <a href="/tags/callable/" style="font-size: 10px;">callable</a> <a href="/tags/compiler/" style="font-size: 10px;">compiler</a> <a href="/tags/constructor/" style="font-size: 10px;">constructor</a> <a href="/tags/copy/" style="font-size: 10px;">copy</a> <a href="/tags/excution-context/" style="font-size: 10px;">excution-context</a> <a href="/tags/for/" style="font-size: 10px;">for</a> <a href="/tags/function/" style="font-size: 11.67px;">function</a> <a href="/tags/get-set/" style="font-size: 10px;">get/set</a> <a href="/tags/interpreter/" style="font-size: 10px;">interpreter</a> <a href="/tags/iterable/" style="font-size: 10px;">iterable</a> <a href="/tags/iterate/" style="font-size: 10px;">iterate</a> <a href="/tags/javascript/" style="font-size: 18.33px;">javascript</a> <a href="/tags/memo/" style="font-size: 10px;">memo</a> <a href="/tags/object/" style="font-size: 13.33px;">object</a> <a href="/tags/object-oriented/" style="font-size: 10px;">object-oriented</a> <a href="/tags/procedural-oriented/" style="font-size: 10px;">procedural-oriented</a> <a href="/tags/prototype/" style="font-size: 13.33px;">prototype</a> <a href="/tags/question/" style="font-size: 16.67px;">question</a> <a href="/tags/react/" style="font-size: 10px;">react</a> <a href="/tags/this/" style="font-size: 10px;">this</a> <a href="/tags/window/" style="font-size: 10px;">window</a> <a href="/tags/브라우저/" style="font-size: 10px;">브라우저</a> <a href="/tags/유사배열/" style="font-size: 10px;">유사배열</a> <a href="/tags/제어문/" style="font-size: 10px;">제어문</a>
     </div>
 </div>
     
@@ -956,6 +954,25 @@
         
         <article class="media">
             
+            <a href="/2019/10/25/191025-iterable-유사배열-객체/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="191025 iterable, 유사배열 객체">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-10-25T02:41:02.000Z">2019-10-25</time></div>
+                    <a href="/2019/10/25/191025-iterable-유사배열-객체/" class="title has-link-black-ter is-size-6 has-text-weight-normal">191025 iterable, 유사배열 객체</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/javascript/">javascript</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
             <a href="/2019/10/25/191025-오늘의-질문/" class="media-left">
                 <p class="image is-64x64">
                     <img class="thumbnail" src="/images/thumbnail.svg" alt="191025 오늘의 질문">
@@ -967,7 +984,7 @@
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-10-25T02:39:46.000Z">2019-10-25</time></div>
                     <a href="/2019/10/25/191025-오늘의-질문/" class="title has-link-black-ter is-size-6 has-text-weight-normal">191025 오늘의 질문</a>
                     <p class="is-size-7 is-uppercase">
-                        
+                        <a class="has-link-grey -link" href="/categories/javascript/">javascript</a>
                     </p>
                 </div>
             </div>
@@ -1030,25 +1047,6 @@
             </div>
         </article>
         
-        <article class="media">
-            
-            <a href="/2019/10/22/191022-constructor/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="Constructor">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-10-22T06:39:48.000Z">2019-10-22</time></div>
-                    <a href="/2019/10/22/191022-constructor/" class="title has-link-black-ter is-size-6 has-text-weight-normal">Constructor</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/javascript/">javascript</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
     </div>
 </div>
         
@@ -1066,7 +1064,7 @@
                     <span class="level-item">October 2019</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">17</span>
+                    <span class="level-item tag">18</span>
                 </span>
             </a>
         </li>
@@ -1157,6 +1155,13 @@
                 </div>
                 
                 <div class="control">
+                    <a class="tags has-addons" href="/tags/arguments/">
+                        <span class="tag">arguments</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
                     <a class="tags has-addons" href="/tags/array/">
                         <span class="tag">array</span>
                         <span class="tag is-grey">1</span>
@@ -1199,6 +1204,13 @@
                 </div>
                 
                 <div class="control">
+                    <a class="tags has-addons" href="/tags/excution-context/">
+                        <span class="tag">excution-context</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
                     <a class="tags has-addons" href="/tags/for/">
                         <span class="tag">for</span>
                         <span class="tag is-grey">1</span>
@@ -1227,9 +1239,23 @@
                 </div>
                 
                 <div class="control">
+                    <a class="tags has-addons" href="/tags/iterable/">
+                        <span class="tag">iterable</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/iterate/">
+                        <span class="tag">iterate</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
                     <a class="tags has-addons" href="/tags/javascript/">
                         <span class="tag">javascript</span>
-                        <span class="tag is-grey">8</span>
+                        <span class="tag is-grey">10</span>
                     </a>
                 </div>
                 
@@ -1264,7 +1290,7 @@
                 <div class="control">
                     <a class="tags has-addons" href="/tags/prototype/">
                         <span class="tag">prototype</span>
-                        <span class="tag is-grey">2</span>
+                        <span class="tag is-grey">3</span>
                     </a>
                 </div>
                 
@@ -1299,6 +1325,13 @@
                 <div class="control">
                     <a class="tags has-addons" href="/tags/브라우저/">
                         <span class="tag">브라우저</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/유사배열/">
+                        <span class="tag">유사배열</span>
                         <span class="tag is-grey">1</span>
                     </a>
                 </div>
@@ -1334,6 +1367,25 @@
         
         <article class="media">
             
+            <a href="/2019/10/25/191025-iterable-유사배열-객체/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="191025 iterable, 유사배열 객체">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-10-25T02:41:02.000Z">2019-10-25</time></div>
+                    <a href="/2019/10/25/191025-iterable-유사배열-객체/" class="title has-link-black-ter is-size-6 has-text-weight-normal">191025 iterable, 유사배열 객체</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/javascript/">javascript</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
             <a href="/2019/10/25/191025-오늘의-질문/" class="media-left">
                 <p class="image is-64x64">
                     <img class="thumbnail" src="/images/thumbnail.svg" alt="191025 오늘의 질문">
@@ -1345,7 +1397,7 @@
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-10-25T02:39:46.000Z">2019-10-25</time></div>
                     <a href="/2019/10/25/191025-오늘의-질문/" class="title has-link-black-ter is-size-6 has-text-weight-normal">191025 오늘의 질문</a>
                     <p class="is-size-7 is-uppercase">
-                        
+                        <a class="has-link-grey -link" href="/categories/javascript/">javascript</a>
                     </p>
                 </div>
             </div>
@@ -1408,25 +1460,6 @@
             </div>
         </article>
         
-        <article class="media">
-            
-            <a href="/2019/10/22/191022-constructor/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="Constructor">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-10-22T06:39:48.000Z">2019-10-22</time></div>
-                    <a href="/2019/10/22/191022-constructor/" class="title has-link-black-ter is-size-6 has-text-weight-normal">Constructor</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/javascript/">javascript</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
     </div>
 </div>
     
@@ -1444,7 +1477,7 @@
                     <span class="level-item">October 2019</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">17</span>
+                    <span class="level-item tag">18</span>
                 </span>
             </a>
         </li>
@@ -1535,6 +1568,13 @@
                 </div>
                 
                 <div class="control">
+                    <a class="tags has-addons" href="/tags/arguments/">
+                        <span class="tag">arguments</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
                     <a class="tags has-addons" href="/tags/array/">
                         <span class="tag">array</span>
                         <span class="tag is-grey">1</span>
@@ -1577,6 +1617,13 @@
                 </div>
                 
                 <div class="control">
+                    <a class="tags has-addons" href="/tags/excution-context/">
+                        <span class="tag">excution-context</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
                     <a class="tags has-addons" href="/tags/for/">
                         <span class="tag">for</span>
                         <span class="tag is-grey">1</span>
@@ -1605,9 +1652,23 @@
                 </div>
                 
                 <div class="control">
+                    <a class="tags has-addons" href="/tags/iterable/">
+                        <span class="tag">iterable</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/iterate/">
+                        <span class="tag">iterate</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
                     <a class="tags has-addons" href="/tags/javascript/">
                         <span class="tag">javascript</span>
-                        <span class="tag is-grey">8</span>
+                        <span class="tag is-grey">10</span>
                     </a>
                 </div>
                 
@@ -1642,7 +1703,7 @@
                 <div class="control">
                     <a class="tags has-addons" href="/tags/prototype/">
                         <span class="tag">prototype</span>
-                        <span class="tag is-grey">2</span>
+                        <span class="tag is-grey">3</span>
                     </a>
                 </div>
                 
@@ -1677,6 +1738,13 @@
                 <div class="control">
                     <a class="tags has-addons" href="/tags/브라우저/">
                         <span class="tag">브라우저</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/유사배열/">
+                        <span class="tag">유사배열</span>
                         <span class="tag is-grey">1</span>
                     </a>
                 </div>
