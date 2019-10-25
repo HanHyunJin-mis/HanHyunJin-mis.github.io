@@ -7,22 +7,18 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-<title>[Codewars] Dubstep</title>
+<title>191025 오늘의 질문</title>
 
 
-    <meta name="description" content="문제 문자열에서 “WUB”이라는 문자가 단어의 사이 사이에는 1개 이상   단어의 맨 끝에는 0개 또는 1개가 올 수 있다. “WUB”을 제거하고 단어와 단어 사이에 하나의 공백으로 return ex. WUB  WUB  I  WUB  AM  WUB  WUB  X return  “I AM X”">
-<meta name="keywords" content="Algorithm">
-<meta property="og:type" content="article">
-<meta property="og:title" content="[Codewars] Dubstep">
-<meta property="og:url" content="http://HanHyunJin-mis.github.io/2019/04/18/[Codewars] 190418_Dubstep/index.html">
+    <meta property="og:type" content="article">
+<meta property="og:title" content="191025 오늘의 질문">
+<meta property="og:url" content="http://HanHyunJin-mis.github.io/2019/10/25/191025-오늘의-질문/index.html">
 <meta property="og:site_name">
-<meta property="og:description" content="문제 문자열에서 “WUB”이라는 문자가 단어의 사이 사이에는 1개 이상   단어의 맨 끝에는 0개 또는 1개가 올 수 있다. “WUB”을 제거하고 단어와 단어 사이에 하나의 공백으로 return ex. WUB  WUB  I  WUB  AM  WUB  WUB  X return  “I AM X”">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="http://hanhyunjin-mis.github.io/images/og_image.png">
-<meta property="og:updated_time" content="2019-05-02T12:05:24.661Z">
+<meta property="og:updated_time" content="2019-10-25T02:39:46.440Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="[Codewars] Dubstep">
-<meta name="twitter:description" content="문제 문자열에서 “WUB”이라는 문자가 단어의 사이 사이에는 1개 이상   단어의 맨 끝에는 0개 또는 1개가 올 수 있다. “WUB”을 제거하고 단어와 단어 사이에 하나의 공백으로 return ex. WUB  WUB  I  WUB  AM  WUB  WUB  X return  “I AM X”">
+<meta name="twitter:title" content="191025 오늘의 질문">
 <meta name="twitter:image" content="http://hanhyunjin-mis.github.io/images/og_image.png">
 
 
@@ -81,7 +77,7 @@
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/">
             
-                <img src="/images/logo.JPG" alt="[Codewars] Dubstep" height="28">
+                <img src="/images/logo.JPG" alt="191025 오늘의 질문" height="28">
             
             </a>
         </div>
@@ -137,17 +133,13 @@
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-04-18T12:38:24.000Z">2019-04-18</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a>
-                </div>
+                <time class="level-item has-text-grey" datetime="2019-10-25T02:39:46.000Z">2019-10-25</time>
                 
                 
                 <span class="level-item has-text-grey">
                     
                     
-                    2 minutes read (About 356 words)
+                    a few seconds read (About 0 words)
                 </span>
                 
                 
@@ -156,40 +148,11 @@
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                [Codewars] Dubstep
+                191025 오늘의 질문
             
         </h1>
         <div class="content">
-            <h3 id="문제"><a href="#문제" class="headerlink" title="문제"></a>문제</h3><ol>
-<li>문자열에서 “WUB”이라는 문자가 단어의 사이 사이에는 1개 이상  </li>
-<li>단어의 맨 끝에는 0개 또는 1개가 올 수 있다.</li>
-<li>“WUB”을 제거하고 단어와 단어 사이에 하나의 공백으로 return<br> ex. WUB  WUB  I  WUB  AM  WUB  WUB  X<br> return  “I AM X”  </li>
-</ol>
-<a id="more"></a>
-<p><br></p>
-<h3 id="내-코드"><a href="#내-코드" class="headerlink" title="내 코드"></a>내 코드</h3><figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">songDecoder</span>(<span class="hljs-params">song</span>) </span>&#123;</span><br><span class="line">	<span class="hljs-keyword">var</span> join = <span class="hljs-string">""</span>;</span><br><span class="line">	<span class="hljs-keyword">var</span> arr = [];</span><br><span class="line">	<span class="hljs-keyword">var</span> wub = song.replace(<span class="hljs-regexp">/WUB/gi</span>, <span class="hljs-string">" "</span>);</span><br><span class="line">	<span class="hljs-keyword">var</span> a = wub.split(<span class="hljs-string">" "</span>);</span><br><span class="line">	<span class="hljs-keyword">for</span> (i = <span class="hljs-number">0</span>; i &lt; a.length; i++) &#123;</span><br><span class="line">		<span class="hljs-keyword">if</span> (a[i] !== <span class="hljs-string">""</span>) &#123;</span><br><span class="line">			arr.push(a[i]);</span><br><span class="line">			join = arr.join(<span class="hljs-string">' '</span>);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="hljs-keyword">return</span> join;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p><br></p>
-<h3 id="내-풀이"><a href="#내-풀이" class="headerlink" title="내 풀이"></a>내 풀이</h3><p><code>/search value/</code> : //사이에 검색할 문자를 입력<br><code>플래그</code><br><code>g</code>는 전체 모든 문자열을 변경한다는 말 : global<br><code>i</code>는 영문 대소문자 구분 없는 검색: case-intensive<br><code>m</code>은 여러 줄 검색 : multi-line search  </p>
-<p><br></p>
-<h3 id="다른-사람-풀이"><a href="#다른-사람-풀이" class="headerlink" title="다른 사람 풀이"></a>다른 사람 풀이</h3><figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">songDecoder</span>(<span class="hljs-params">song</span>) </span>&#123;</span><br><span class="line">	<span class="hljs-keyword">var</span> reg = <span class="hljs-regexp">/@+/gi</span>;</span><br><span class="line">	song1 = song.replace(<span class="hljs-regexp">/WUB/gi</span>, ‘@’).replace(<span class="hljs-regexp">/@+/gi</span>, <span class="hljs-string">' '</span>).replace(<span class="hljs-regexp">/^ | $/gi</span>,‘’);</span><br><span class="line">	<span class="hljs-keyword">return</span> song1;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h4 id="다른점"><a href="#다른점" class="headerlink" title="다른점"></a>다른점</h4><ol>
-<li><code>replace(/WUB/gi, &quot; &quot;)</code>에서 공백을 @로 바꿔줌 <code>replace(/WUB/gi, ‘@’)</code></li>
-<li>replace를 한번 더 써서 모든@를 하나의 공백으로 바꿔 줌  </li>
-<li><code>replace(/^ | $/gi,‘’)</code> : 처음 시작부터 공백이 있거나 맨 뒤에 공백이 있으면 삭제  </li>
-</ol>
-<p><br></p>
-<h4 id="알게-된-것"><a href="#알게-된-것" class="headerlink" title="알게 된 것"></a>알게 된 것</h4><p><code>trim( )</code> : 문자열 양 끝의 공백을 제거한다.<br><code>filter(word=&gt;word!=&#39;&#39;)</code> :  word라는 변수와 word가 “”(공백)이 아닌 것을 return<br><code>filter(parameter =&gt; return)</code> : 배열에 사용할 수 있음  </p>
-<p><code>replace(/(^\s*)|(\s*$)/gi, &quot;&quot;)</code>  : 맨 앞과 맨 뒤의 공백 제거<br><code>replace(/(WUB)+/g,&quot; &quot;)</code> : 한번 이상(+)인 WUB를 공백 하나로 바꿔주기  </p>
-
-        </div>
-        
-        <div class="level is-size-7 is-uppercase">
-            <div class="level-start">
-                <div class="level-item">
-                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
-                    <a class="has-link-grey -link" href="/tags/Algorithm/">Algorithm</a>
-                </div>
-            </div>
+            
         </div>
         
         
@@ -204,17 +167,10 @@
 <div class="card card-transparent">
     <div class="level post-navigation is-flex-wrap is-mobile">
         
-        <div class="level-start">
-            <a class="level level-item has-link-grey  article-nav-prev" href="/2019/04/19/[Codewars] 190419_Persistent Bugger/">
-                <i class="level-item fas fa-chevron-left"></i>
-                <span class="level-item">[Codewars] Persistent Bugger</span>
-            </a>
-        </div>
-        
         
         <div class="level-end">
-            <a class="level level-item has-link-grey  article-nav-next" href="/2019/04/17/[Codewars] 190417_Multiples of 3 or 5/">
-                <span class="level-item">[Codewars] Multiples of 3 or 5</span>
+            <a class="level level-item has-link-grey  article-nav-next" href="/2019/10/23/191023-오늘의-질문/">
+                <span class="level-item">191023 오늘의 질문</span>
                 <i class="level-item fas fa-chevron-right"></i>
             </a>
         </div>
@@ -230,8 +186,8 @@
         
 <script>
     var disqus_config = function () {
-        this.page.url = 'http://HanHyunJin-mis.github.io/2019/04/18/[Codewars] 190418_Dubstep/';
-        this.page.identifier = '2019/04/18/[Codewars] 190418_Dubstep/';
+        this.page.url = 'http://HanHyunJin-mis.github.io/2019/10/25/191025-오늘의-질문/';
+        this.page.identifier = '2019/10/25/191025-오늘의-질문/';
     };
     (function() {
         var d = document, s = d.createElement('script');  
@@ -1243,7 +1199,7 @@
             <div class="level-start has-text-centered-mobile">
                 <a class="footer-logo is-block has-mb-6" href="/">
                 
-                    <img src="/images/logo.JPG" alt="[Codewars] Dubstep" height="28">
+                    <img src="/images/logo.JPG" alt="191025 오늘의 질문" height="28">
                 
                 </a>
                 <p class="is-size-7">
